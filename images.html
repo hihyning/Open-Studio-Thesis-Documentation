@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEN STUDIO: 256 Images</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="icon" href="world-grid.png" type="image/png"> <!-- Global Favicon -->
+
+</head>
+<body class="grid-paper">
+    <div class="container">
+        <header>
+            <h1>256 Images&nbsp;<span style="font-size: 18px; font-weight: 500; letter-spacing: -0.02em;">Archiving Visual Documentation</span></h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </header>
+        
+        <!-- Top Control Bar -->
+        <div class="topbar">
+            <div class="row">
+                <!-- Search -->
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search images..." class="search-input">
+                </div>
+                
+                <!-- Filter Dropdown -->
+                <div class="filter-container">
+                    <button id="filter-btn" class="filter-btn">Filter</button>
+                    <div id="filter-panel" class="filter-panel">
+                        <div class="filter-section">
+                            <h3>Categories</h3>
+                            <div id="category-filters" class="filter-options"></div>
+                        </div>
+                        <div class="filter-section">
+                            <h3>Tags</h3>
+                            <div id="tag-filters" class="filter-options"></div>
+                        </div>
+                        <div class="filter-actions">
+                            <button id="clear-filters" class="clear-btn">Clear All</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mode Toggle -->
+                <div class="mode-container">
+                    <button id="mode-toggle" class="mode-btn" data-mode="grid">Grid ↔ Mess</button>
+                </div>
+                
+                <!-- Columns Slider -->
+                <div class="columns-container">
+                    <label for="columns-slider">Columns:</label>
+                    <input type="range" id="columns-slider" min="2" max="8" value="4" class="columns-slider">
+                    <span id="columns-value">4</span>
+                </div>
+                
+                <!-- AND/OR Toggle -->
+                <div class="logic-container">
+                    <button id="logic-toggle" class="logic-btn" data-logic="or">OR</button>
+                </div>
+                
+                <!-- Date Sort Toggle -->
+                <div class="date-sort-container">
+                    <button id="date-sort-toggle" class="date-sort-btn" data-sort="newest">Newest</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <div id="grid-container" class="grid">
+                <!-- Images will be rendered here -->
+            </div>
+        </main>
+    </div>
+    
+    <!-- Modal -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-backdrop"></div>
+        <div class="dialog">
+            <div class="dialog-header">
+                <h2 id="modal-title">Image Details</h2>
+                <button id="modal-close" class="modal-close" aria-label="Close modal">×</button>
+            </div>
+            <div class="dialog-content">
+                <div class="image-container">
+                    <img id="modal-image" src="" alt="" class="modal-image">
+                </div>
+                <div class="meta-container">
+                    <div class="meta">
+                        <h3 id="modal-image-title"></h3>
+                        <p id="modal-image-credit"></p>
+                        <p id="modal-image-year"></p>
+                        <a id="modal-image-link" href="" target="_blank" rel="noopener">View Source</a>
+                    </div>
+                    <div class="categories-container">
+                        <h4>Categories</h4>
+                        <div id="modal-categories" class="pills"></div>
+                    </div>
+                    <div class="tags-container">
+                        <h4>Tags</h4>
+                        <div id="modal-tags" class="pills"></div>
+                    </div>
+                    <div class="notes-container">
+                        <h4>Notes</h4>
+                        <p id="modal-notes" class="notes"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/images.js"></script>
+</body>
+</html>

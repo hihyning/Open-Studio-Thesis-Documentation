@@ -1,0 +1,4757 @@
+[
+  {
+    "id": "img-001",
+    "src": "assets/DesignAsArt_BrunoMunari.jpg",
+    "title": "Design as Art",
+    "creator": "Bruno Munari",
+    "year": 2009,
+    "credit_url": "https://draw-down.com/products/design-as-art-bruno-munari",
+    "categories": [
+      "Text",
+      "Book"
+    ],
+    "tags": [
+      "#owned",
+      "#reading",
+      "#research",
+      "#european",
+      "#italy",
+      "#theory"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-002",
+    "src": "assets/CyberFeminismIndex_MindySeu.jpg",
+    "title": "Cyber Feminism Index",
+    "creator": "Mindy Seu",
+    "year": 2023,
+    "credit_url": "https://brooklynrail.org/2023/04/art_books/Mindy-Seus-Cyberfeminism-Index/",
+    "categories": [
+      "Text",
+      "Book",
+      "Tech",
+      "Editorial"
+    ],
+    "tags": [
+      "#theory",
+      "#asian",
+      "#woman",
+      "#research",
+      "#to-read",
+      "collection"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-003",
+    "src": "assets/VicosSpiral_CBA.jpeg",
+    "title": "Vico's Spiral: Half Century of Artists' Books",
+    "creator": "Center for Book Arts",
+    "year": 2024,
+    "credit_url": "https://shop.centerforbookarts.org/products/vicos-spiral-catalog",
+    "categories": [
+      "Editorial",
+      "Book",
+      "Text"
+    ],
+    "tags": [
+      "#owned",
+      "#reading",
+      "#research",
+      "#collection"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-004",
+    "src": "assets/NewProgramGD_DavidReinfurt.jpg",
+    "title": "A *New* Program for Graphic Design",
+    "creator": "David Reinfurt",
+    "year": 2019,
+    "credit_url": "https://a-new-program-for-graphic-design.org/",
+    "categories": [
+      "Text",
+      "Book",
+      "Pedagogy"
+    ],
+    "tags": [
+      "#have-read",
+      "#theory",
+      "#usa",
+      "#application"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-005",
+    "src": "assets/ThinkingThroughGD_AggieToppins.jpg",
+    "title": "Thinking Through Graphic Design",
+    "creator": "Aggie Toppins",
+    "year": 2025,
+    "credit_url": "https://scratchingthesurface.fm/stories/aggie-toppins-design-history",
+    "categories": [
+      "Text",
+      "Book",
+      "Pedagogy"
+    ],
+    "tags": [
+      "#owned",
+      "#reading",
+      "#usa",
+      "#application",
+      "#history"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-006",
+    "src": "assets/Gestalt_KurtKoffka.jpg",
+    "title": "Principles Of Gestalt Psychology",
+    "creator": "Kurt Koffka",
+    "year": 2008,
+    "credit_url": "https://www.amazon.com/International-Library-Psychology-Principles-Gestalt/dp/0415209625",
+    "categories": [
+      "Text",
+      "Book",
+      "Psychology"
+    ],
+    "tags": [
+      "#usa",
+      "#application",
+      "#history",
+      "#research",
+      "#theory"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-007",
+    "src": "assets/007.jpg",
+    "title": "Data Visualization",
+    "creator": "Maria Rodriguez",
+    "year": 1982,
+    "credit_url": "https://example.com/source007",
+    "categories": [
+      "User Interface",
+      "Data Visualization",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#research",
+      "#geometric"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-008",
+    "src": "assets/008.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Tom Wilson",
+    "year": 2021,
+    "credit_url": "https://example.com/source008",
+    "categories": [
+      "Editorial Design",
+      "Poster Design",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#documentation",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-009",
+    "src": "assets/009.jpg",
+    "title": "Information Design",
+    "creator": "Daniel White",
+    "year": 2007,
+    "credit_url": "https://example.com/source009",
+    "categories": [
+      "Photography"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#yellow",
+      "#typography"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-010",
+    "src": "assets/010.jpg",
+    "title": "Typography Experiment",
+    "creator": "Rachel Green",
+    "year": 1987,
+    "credit_url": "https://example.com/source010",
+    "categories": [
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#visual",
+      "#typography",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-011",
+    "src": "assets/011.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Jennifer Davis",
+    "year": 2000,
+    "credit_url": "https://example.com/source011",
+    "categories": [
+      "Information Design"
+    ],
+    "tags": [
+      "#documentation",
+      "#typography"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-012",
+    "src": "assets/012.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Robert Lee",
+    "year": 2011,
+    "credit_url": "https://example.com/source012",
+    "categories": [
+      "Information Design",
+      "Bilingual Typography",
+      "Documentation"
+    ],
+    "tags": [
+      "#gray",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-013",
+    "src": "assets/013.jpg",
+    "title": "Photography Series",
+    "creator": "Chris Anderson",
+    "year": 2023,
+    "credit_url": "https://example.com/source013",
+    "categories": [
+      "User Interface",
+      "Digital Design",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#documentation",
+      "#technical",
+      "#bold",
+      "#black"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-014",
+    "src": "assets/014.jpg",
+    "title": "Digital Interface Study",
+    "creator": "David Kim",
+    "year": 2003,
+    "credit_url": "https://example.com/source014",
+    "categories": [
+      "Documentation"
+    ],
+    "tags": [
+      "#documentation",
+      "#grid",
+      "#interface",
+      "#red"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-015",
+    "src": "assets/015.jpg",
+    "title": "Research Documentation",
+    "creator": "Maria Santos",
+    "year": 2021,
+    "credit_url": "https://example.com/source015",
+    "categories": [
+      "Photography",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#geometric",
+      "#yellow",
+      "#blue",
+      "#white"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-016",
+    "src": "assets/016.jpg",
+    "title": "Data Visualization",
+    "creator": "Lisa Zhang",
+    "year": 2008,
+    "credit_url": "https://example.com/source016",
+    "categories": [
+      "Photography",
+      "Data Visualization",
+      "Digital Design"
+    ],
+    "tags": [
+      "#bold",
+      "#geometric",
+      "#organic",
+      "#green"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-017",
+    "src": "assets/017.jpg",
+    "title": "Visual Research",
+    "creator": "Tom Wilson",
+    "year": 1981,
+    "credit_url": "https://example.com/source017",
+    "categories": [
+      "Data Visualization"
+    ],
+    "tags": [
+      "#grid",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-018",
+    "src": "assets/018.jpg",
+    "title": "Photography Series",
+    "creator": "Rachel Green",
+    "year": 1988,
+    "credit_url": "https://example.com/source018",
+    "categories": [
+      "Data Visualization",
+      "Editorial Design",
+      "Photography"
+    ],
+    "tags": [
+      "#white",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-019",
+    "src": "assets/019.jpg",
+    "title": "Street Sign, Mong Kok",
+    "creator": "Lisa Zhang",
+    "year": 2023,
+    "credit_url": "https://example.com/source019",
+    "categories": [
+      "Documentation",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#modern",
+      "#technical",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-020",
+    "src": "assets/020.jpg",
+    "title": "Information Design",
+    "creator": "Robert Lee",
+    "year": 2019,
+    "credit_url": "https://example.com/source020",
+    "categories": [
+      "Editorial Design",
+      "Vernacular Signage",
+      "Photography"
+    ],
+    "tags": [
+      "#typography",
+      "#personal",
+      "#research",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-021",
+    "src": "assets/021.jpg",
+    "title": "Creative Process",
+    "creator": "Robert Lee",
+    "year": 2001,
+    "credit_url": "https://example.com/source021",
+    "categories": [
+      "Documentation",
+      "Visual Research"
+    ],
+    "tags": [
+      "#vintage",
+      "#green",
+      "#typography",
+      "#modern"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-022",
+    "src": "assets/022.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Emma Thompson",
+    "year": 2021,
+    "credit_url": "https://example.com/source022",
+    "categories": [
+      "Editorial Design",
+      "Poster Design",
+      "Photography"
+    ],
+    "tags": [
+      "#typography",
+      "#green",
+      "#design",
+      "#bold",
+      "#technical"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-023",
+    "src": "assets/023.jpg",
+    "title": "Visual Research",
+    "creator": "Sarah Chen",
+    "year": 2000,
+    "credit_url": "https://example.com/source023",
+    "categories": [
+      "Editorial Design",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#visual",
+      "#documentation",
+      "#organic"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-024",
+    "src": "assets/024.jpg",
+    "title": "Editorial Layout",
+    "creator": "Rachel Green",
+    "year": 1995,
+    "credit_url": "https://example.com/source024",
+    "categories": [
+      "Digital Design",
+      "Visual Research"
+    ],
+    "tags": [
+      "#yellow",
+      "#technical",
+      "#modern",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-025",
+    "src": "assets/025.jpg",
+    "title": "Street Sign, Mong Kok",
+    "creator": "Sophie Martin",
+    "year": 1991,
+    "credit_url": "https://example.com/source025",
+    "categories": [
+      "Handwriting"
+    ],
+    "tags": [
+      "#interface",
+      "#black",
+      "#research",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-026",
+    "src": "assets/026.jpg",
+    "title": "Data Visualization",
+    "creator": "Lisa Zhang",
+    "year": 1982,
+    "credit_url": "https://example.com/source026",
+    "categories": [
+      "Editorial Design"
+    ],
+    "tags": [
+      "#interface",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-027",
+    "src": "assets/027.jpg",
+    "title": "Editorial Layout",
+    "creator": "Lisa Zhang",
+    "year": 2013,
+    "credit_url": "https://example.com/source027",
+    "categories": [
+      "User Interface",
+      "Digital Design"
+    ],
+    "tags": [
+      "#research",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-028",
+    "src": "assets/028.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "James Wilson",
+    "year": 2013,
+    "credit_url": "https://example.com/source028",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#research",
+      "#design",
+      "#modern"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-029",
+    "src": "assets/029.jpg",
+    "title": "Creative Process",
+    "creator": "Anna Garcia",
+    "year": 2005,
+    "credit_url": "https://example.com/source029",
+    "categories": [
+      "Architectural Drawing",
+      "Editorial Design",
+      "Visual Research"
+    ],
+    "tags": [
+      "#research",
+      "#visual",
+      "#interface"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-030",
+    "src": "assets/030.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Alex Rivera",
+    "year": 1996,
+    "credit_url": "https://example.com/source030",
+    "categories": [
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#research",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-031",
+    "src": "assets/031.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Rachel Green",
+    "year": 1997,
+    "credit_url": "https://example.com/source031",
+    "categories": [
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#red",
+      "#green",
+      "#research",
+      "#visual",
+      "#organic"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-032",
+    "src": "assets/032.jpg",
+    "title": "Documentation Study",
+    "creator": "Daniel White",
+    "year": 2020,
+    "credit_url": "https://example.com/source032",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#technical",
+      "#interface",
+      "#bold",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-033",
+    "src": "assets/033.jpg",
+    "title": "Street Sign, Shinjuku",
+    "creator": "Lisa Zhang",
+    "year": 2014,
+    "credit_url": "https://example.com/source033",
+    "categories": [
+      "Handwriting",
+      "Vintage Graphics",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#visual",
+      "#black"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-034",
+    "src": "assets/034.jpg",
+    "title": "Visual Language",
+    "creator": "Anna Garcia",
+    "year": 1986,
+    "credit_url": "https://example.com/source034",
+    "categories": [
+      "User Interface",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#gray",
+      "#white",
+      "#documentation",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-035",
+    "src": "assets/035.jpg",
+    "title": "Design System",
+    "creator": "Amy Johnson",
+    "year": 2010,
+    "credit_url": "https://example.com/source035",
+    "categories": [
+      "User Interface",
+      "Poster Design"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#geometric",
+      "#organic"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-036",
+    "src": "assets/036.jpg",
+    "title": "Design System",
+    "creator": "Sarah Chen",
+    "year": 1985,
+    "credit_url": "https://example.com/source036",
+    "categories": [
+      "Brand Identity",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#visual",
+      "#documentation",
+      "#research",
+      "#gray"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-037",
+    "src": "assets/037.jpg",
+    "title": "Design System",
+    "creator": "Jennifer Davis",
+    "year": 2013,
+    "credit_url": "https://example.com/source037",
+    "categories": [
+      "Information Design"
+    ],
+    "tags": [
+      "#documentation",
+      "#modern",
+      "#personal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-038",
+    "src": "assets/038.jpg",
+    "title": "Data Visualization",
+    "creator": "Amy Johnson",
+    "year": 2003,
+    "credit_url": "https://example.com/source038",
+    "categories": [
+      "Architectural Drawing",
+      "User Interface"
+    ],
+    "tags": [
+      "#documentation",
+      "#modern",
+      "#red",
+      "#grid"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-039",
+    "src": "assets/039.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Anna Garcia",
+    "year": 2010,
+    "credit_url": "https://example.com/source039",
+    "categories": [
+      "Visual Research",
+      "Poster Design",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#white",
+      "#black",
+      "#grid",
+      "#red",
+      "#gray"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-040",
+    "src": "assets/040.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Maria Santos",
+    "year": 2009,
+    "credit_url": "https://example.com/source040",
+    "categories": [
+      "Editorial Design",
+      "Handwriting"
+    ],
+    "tags": [
+      "#white",
+      "#organic",
+      "#interface",
+      "#bold",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-041",
+    "src": "assets/041.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Chan Tai Man",
+    "year": 2023,
+    "credit_url": "https://example.com/source041",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#grid",
+      "#white"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-042",
+    "src": "assets/042.jpg",
+    "title": "Visual Research",
+    "creator": "Alex Rivera",
+    "year": 2002,
+    "credit_url": "https://example.com/source042",
+    "categories": [
+      "Brand Identity"
+    ],
+    "tags": [
+      "#red",
+      "#grid",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-043",
+    "src": "assets/043.jpg",
+    "title": "Documentation Study",
+    "creator": "Amy Johnson",
+    "year": 2011,
+    "credit_url": "https://example.com/source043",
+    "categories": [
+      "Architectural Drawing",
+      "User Interface",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#black",
+      "#white",
+      "#design",
+      "#gray",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-044",
+    "src": "assets/044.jpg",
+    "title": "Editorial Layout",
+    "creator": "David Kim",
+    "year": 2007,
+    "credit_url": "https://example.com/source044",
+    "categories": [
+      "Visual Research",
+      "Poster Design",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#minimal",
+      "#personal",
+      "#green",
+      "#technical",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-045",
+    "src": "assets/045.jpg",
+    "title": "Creative Process",
+    "creator": "Robert Lee",
+    "year": 1981,
+    "credit_url": "https://example.com/source045",
+    "categories": [
+      "User Interface",
+      "Photography"
+    ],
+    "tags": [
+      "#modern",
+      "#calligraphy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-046",
+    "src": "assets/046.jpg",
+    "title": "Creative Process",
+    "creator": "Rachel Green",
+    "year": 2013,
+    "credit_url": "https://example.com/source046",
+    "categories": [
+      "Visual Research",
+      "User Interface"
+    ],
+    "tags": [
+      "#modern",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-047",
+    "src": "assets/047.jpg",
+    "title": "Creative Process",
+    "creator": "Jennifer Davis",
+    "year": 1980,
+    "credit_url": "https://example.com/source047",
+    "categories": [
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#yellow",
+      "#interface",
+      "#documentation",
+      "#visual"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-048",
+    "src": "assets/048.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Maria Rodriguez",
+    "year": 2000,
+    "credit_url": "https://example.com/source048",
+    "categories": [
+      "Digital Design",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#blue",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-049",
+    "src": "assets/049.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Chan Tai Man",
+    "year": 2001,
+    "credit_url": "https://example.com/source049",
+    "categories": [
+      "Vernacular Signage",
+      "Documentation",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#documentation",
+      "#design",
+      "#red",
+      "#typography",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-050",
+    "src": "assets/050.jpg",
+    "title": "Creative Process",
+    "creator": "Emma Thompson",
+    "year": 1983,
+    "credit_url": "https://example.com/source050",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#documentation",
+      "#geometric",
+      "#white",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-051",
+    "src": "assets/051.jpg",
+    "title": "Street Sign, Berlin",
+    "creator": "Jennifer Davis",
+    "year": 1980,
+    "credit_url": "https://example.com/source051",
+    "categories": [
+      "Handwriting",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#interface",
+      "#minimal"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-052",
+    "src": "assets/052.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Maria Rodriguez",
+    "year": 1995,
+    "credit_url": "https://example.com/source052",
+    "categories": [
+      "User Interface",
+      "Information Design"
+    ],
+    "tags": [
+      "#black",
+      "#research",
+      "#modern",
+      "#design",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-053",
+    "src": "assets/053.jpg",
+    "title": "Research Documentation",
+    "creator": "Amy Johnson",
+    "year": 2001,
+    "credit_url": "https://example.com/source053",
+    "categories": [
+      "Handwriting",
+      "Editorial Design",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#bold",
+      "#gray",
+      "#modern",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-054",
+    "src": "assets/054.jpg",
+    "title": "Editorial Layout",
+    "creator": "David Kim",
+    "year": 2012,
+    "credit_url": "https://example.com/source054",
+    "categories": [
+      "Handwriting",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#design",
+      "#bold"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-055",
+    "src": "assets/055.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Sophie Martin",
+    "year": 2020,
+    "credit_url": "https://example.com/source055",
+    "categories": [
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#yellow",
+      "#design",
+      "#red"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-056",
+    "src": "assets/056.jpg",
+    "title": "Photography Series",
+    "creator": "Michael Brown",
+    "year": 2018,
+    "credit_url": "https://example.com/source056",
+    "categories": [
+      "User Interface"
+    ],
+    "tags": [
+      "#modern",
+      "#yellow",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-057",
+    "src": "assets/057.jpg",
+    "title": "Brand Identity Study",
+    "creator": "David Kim",
+    "year": 1990,
+    "credit_url": "https://example.com/source057",
+    "categories": [
+      "Vernacular Signage",
+      "Documentation"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#gray"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-058",
+    "src": "assets/058.jpg",
+    "title": "Design System",
+    "creator": "Tom Wilson",
+    "year": 1980,
+    "credit_url": "https://example.com/source058",
+    "categories": [
+      "Brand Identity",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#visual",
+      "#grid",
+      "#blue",
+      "#green",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-059",
+    "src": "assets/059.jpg",
+    "title": "Typography Experiment",
+    "creator": "Sarah Chen",
+    "year": 2023,
+    "credit_url": "https://example.com/source059",
+    "categories": [
+      "Brand Identity"
+    ],
+    "tags": [
+      "#yellow",
+      "#design",
+      "#geometric",
+      "#visual",
+      "#interface"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-060",
+    "src": "assets/060.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Alex Rivera",
+    "year": 2018,
+    "credit_url": "https://example.com/source060",
+    "categories": [
+      "Brand Identity"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-061",
+    "src": "assets/061.jpg",
+    "title": "Research Documentation",
+    "creator": "Anna Garcia",
+    "year": 2012,
+    "credit_url": "https://example.com/source061",
+    "categories": [
+      "Technical Documentation",
+      "Data Visualization",
+      "Poster Design"
+    ],
+    "tags": [
+      "#modern",
+      "#yellow",
+      "#green",
+      "#red",
+      "#gray"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-062",
+    "src": "assets/062.jpg",
+    "title": "Typography Experiment",
+    "creator": "Sophie Martin",
+    "year": 2003,
+    "credit_url": "https://example.com/source062",
+    "categories": [
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#geometric",
+      "#blue",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-063",
+    "src": "assets/063.jpg",
+    "title": "Information Design",
+    "creator": "Chris Anderson",
+    "year": 1991,
+    "credit_url": "https://example.com/source063",
+    "categories": [
+      "Vintage Graphics",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#geometric",
+      "#design",
+      "#black"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-064",
+    "src": "assets/064.jpg",
+    "title": "Visual Research",
+    "creator": "Robert Lee",
+    "year": 2005,
+    "credit_url": "https://example.com/source064",
+    "categories": [
+      "Handwriting",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#minimal",
+      "#black"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-065",
+    "src": "assets/065.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Amy Johnson",
+    "year": 1990,
+    "credit_url": "https://example.com/source065",
+    "categories": [
+      "Data Visualization",
+      "Vintage Graphics",
+      "Handwriting"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#modern",
+      "#technical",
+      "#interface"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-066",
+    "src": "assets/066.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Amy Johnson",
+    "year": 2004,
+    "credit_url": "https://example.com/source066",
+    "categories": [
+      "Poster Design"
+    ],
+    "tags": [
+      "#research",
+      "#minimal",
+      "#technical",
+      "#interface"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-067",
+    "src": "assets/067.jpg",
+    "title": "Visual Language",
+    "creator": "James Wilson",
+    "year": 2023,
+    "credit_url": "https://example.com/source067",
+    "categories": [
+      "Architectural Drawing",
+      "Editorial Design",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#yellow",
+      "#bold",
+      "#gray",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-068",
+    "src": "assets/068.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Jennifer Davis",
+    "year": 1986,
+    "credit_url": "https://example.com/source068",
+    "categories": [
+      "Handwriting"
+    ],
+    "tags": [
+      "#red",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-069",
+    "src": "assets/069.jpg",
+    "title": "Design System",
+    "creator": "Chan Tai Man",
+    "year": 2015,
+    "credit_url": "https://example.com/source069",
+    "categories": [
+      "Brand Identity",
+      "Poster Design"
+    ],
+    "tags": [
+      "#vintage",
+      "#minimal",
+      "#yellow",
+      "#blue",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-070",
+    "src": "assets/070.jpg",
+    "title": "Photography Series",
+    "creator": "David Kim",
+    "year": 2021,
+    "credit_url": "https://example.com/source070",
+    "categories": [
+      "Photography"
+    ],
+    "tags": [
+      "#vintage",
+      "#red",
+      "#green",
+      "#modern"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-071",
+    "src": "assets/071.jpg",
+    "title": "Visual Research",
+    "creator": "Michael Brown",
+    "year": 2016,
+    "credit_url": "https://example.com/source071",
+    "categories": [
+      "Editorial Design",
+      "Photography",
+      "Digital Design"
+    ],
+    "tags": [
+      "#green",
+      "#white",
+      "#modern",
+      "#organic",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-072",
+    "src": "assets/072.jpg",
+    "title": "Typography Experiment",
+    "creator": "Michael Brown",
+    "year": 1987,
+    "credit_url": "https://example.com/source072",
+    "categories": [
+      "Vernacular Signage",
+      "Brand Identity",
+      "Editorial Design"
+    ],
+    "tags": [
+      "#vintage",
+      "#personal",
+      "#minimal",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-073",
+    "src": "assets/073.jpg",
+    "title": "Creative Process",
+    "creator": "Amy Johnson",
+    "year": 1989,
+    "credit_url": "https://example.com/source073",
+    "categories": [
+      "Visual Research",
+      "Bilingual Typography",
+      "Documentation"
+    ],
+    "tags": [
+      "#research",
+      "#green",
+      "#design"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-074",
+    "src": "assets/074.jpg",
+    "title": "Visual Research",
+    "creator": "Jennifer Davis",
+    "year": 2007,
+    "credit_url": "https://example.com/source074",
+    "categories": [
+      "Visual Research"
+    ],
+    "tags": [
+      "#technical",
+      "#bold",
+      "#black",
+      "#yellow",
+      "#documentation"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-075",
+    "src": "assets/075.jpg",
+    "title": "Editorial Layout",
+    "creator": "Lisa Zhang",
+    "year": 2014,
+    "credit_url": "https://example.com/source075",
+    "categories": [
+      "Vintage Graphics",
+      "Editorial Design",
+      "Visual Research"
+    ],
+    "tags": [
+      "#interface",
+      "#gray"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-076",
+    "src": "assets/076.jpg",
+    "title": "Visual Research",
+    "creator": "David Kim",
+    "year": 2011,
+    "credit_url": "https://example.com/source076",
+    "categories": [
+      "Handwriting",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#research",
+      "#blue",
+      "#green",
+      "#white"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-077",
+    "src": "assets/077.jpg",
+    "title": "Visual Language",
+    "creator": "Jennifer Davis",
+    "year": 2009,
+    "credit_url": "https://example.com/source077",
+    "categories": [
+      "Editorial Design",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#white",
+      "#gray",
+      "#typography",
+      "#red"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-078",
+    "src": "assets/078.jpg",
+    "title": "Editorial Layout",
+    "creator": "Emma Thompson",
+    "year": 1987,
+    "credit_url": "https://example.com/source078",
+    "categories": [
+      "Editorial Design",
+      "User Interface"
+    ],
+    "tags": [
+      "#white",
+      "#red",
+      "#geometric",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-079",
+    "src": "assets/079.jpg",
+    "title": "Information Design",
+    "creator": "Michael Brown",
+    "year": 1996,
+    "credit_url": "https://example.com/source079",
+    "categories": [
+      "Visual Research",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#white",
+      "#red",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-080",
+    "src": "assets/080.jpg",
+    "title": "Visual Research",
+    "creator": "Emma Thompson",
+    "year": 2010,
+    "credit_url": "https://example.com/source080",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#design",
+      "#red",
+      "#vintage"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-081",
+    "src": "assets/081.jpg",
+    "title": "Research Documentation",
+    "creator": "Maria Rodriguez",
+    "year": 2008,
+    "credit_url": "https://example.com/source081",
+    "categories": [
+      "Bilingual Typography",
+      "Digital Design"
+    ],
+    "tags": [
+      "#bold",
+      "#black",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-082",
+    "src": "assets/082.jpg",
+    "title": "Street Sign, Paris",
+    "creator": "Jennifer Davis",
+    "year": 1983,
+    "credit_url": "https://example.com/source082",
+    "categories": [
+      "Bilingual Typography",
+      "Digital Design"
+    ],
+    "tags": [
+      "#research",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-083",
+    "src": "assets/083.jpg",
+    "title": "Photography Series",
+    "creator": "Sarah Chen",
+    "year": 2012,
+    "credit_url": "https://example.com/source083",
+    "categories": [
+      "Photography",
+      "Handwriting",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#blue",
+      "#visual",
+      "#modern",
+      "#technical",
+      "#research"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-084",
+    "src": "assets/084.jpg",
+    "title": "Typography Experiment",
+    "creator": "Sophie Martin",
+    "year": 2006,
+    "credit_url": "https://example.com/source084",
+    "categories": [
+      "Editorial Design",
+      "User Interface"
+    ],
+    "tags": [
+      "#red",
+      "#research",
+      "#technical",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-085",
+    "src": "assets/085.jpg",
+    "title": "Creative Process",
+    "creator": "Kevin Park",
+    "year": 2005,
+    "credit_url": "https://example.com/source085",
+    "categories": [
+      "Editorial Design",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#research",
+      "#white",
+      "#red",
+      "#green"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-086",
+    "src": "assets/086.jpg",
+    "title": "Research Documentation",
+    "creator": "Rachel Green",
+    "year": 2001,
+    "credit_url": "https://example.com/source086",
+    "categories": [
+      "Vintage Graphics",
+      "Visual Research",
+      "Photography"
+    ],
+    "tags": [
+      "#white",
+      "#modern",
+      "#grid"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-087",
+    "src": "assets/087.jpg",
+    "title": "Typography Experiment",
+    "creator": "David Kim",
+    "year": 2006,
+    "credit_url": "https://example.com/source087",
+    "categories": [
+      "Vintage Graphics",
+      "Vernacular Signage",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#modern",
+      "#black",
+      "#interface",
+      "#technical",
+      "#yellow"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-088",
+    "src": "assets/088.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Lisa Zhang",
+    "year": 2020,
+    "credit_url": "https://example.com/source088",
+    "categories": [
+      "Photography",
+      "Bilingual Typography",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#visual",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-089",
+    "src": "assets/089.jpg",
+    "title": "Data Visualization",
+    "creator": "Sarah Chen",
+    "year": 1984,
+    "credit_url": "https://example.com/source089",
+    "categories": [
+      "Documentation",
+      "Visual Research",
+      "User Interface"
+    ],
+    "tags": [
+      "#blue",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-090",
+    "src": "assets/090.jpg",
+    "title": "Street Sign, Mong Kok",
+    "creator": "Jennifer Davis",
+    "year": 2008,
+    "credit_url": "https://example.com/source090",
+    "categories": [
+      "Data Visualization",
+      "Handwriting"
+    ],
+    "tags": [
+      "#geometric",
+      "#modern",
+      "#research",
+      "#interface",
+      "#calligraphy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-091",
+    "src": "assets/091.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Robert Lee",
+    "year": 2007,
+    "credit_url": "https://example.com/source091",
+    "categories": [
+      "Photography",
+      "Data Visualization",
+      "Handwriting"
+    ],
+    "tags": [
+      "#yellow",
+      "#design",
+      "#documentation",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-092",
+    "src": "assets/092.jpg",
+    "title": "Visual Language",
+    "creator": "Maria Rodriguez",
+    "year": 1985,
+    "credit_url": "https://example.com/source092",
+    "categories": [
+      "Poster Design",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#red",
+      "#vintage",
+      "#green",
+      "#typography",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-093",
+    "src": "assets/093.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Anna Garcia",
+    "year": 2023,
+    "credit_url": "https://example.com/source093",
+    "categories": [
+      "Brand Identity",
+      "Information Design"
+    ],
+    "tags": [
+      "#green",
+      "#bold",
+      "#vintage",
+      "#visual",
+      "#interface"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-094",
+    "src": "assets/094.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Maria Santos",
+    "year": 1997,
+    "credit_url": "https://example.com/source094",
+    "categories": [
+      "Bilingual Typography",
+      "Vintage Graphics",
+      "Digital Design"
+    ],
+    "tags": [
+      "#personal",
+      "#gray",
+      "#interface",
+      "#visual",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-095",
+    "src": "assets/095.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Sophie Martin",
+    "year": 2018,
+    "credit_url": "https://example.com/source095",
+    "categories": [
+      "Brand Identity"
+    ],
+    "tags": [
+      "#grid",
+      "#organic",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-096",
+    "src": "assets/096.jpg",
+    "title": "Creative Process",
+    "creator": "Alex Rivera",
+    "year": 2023,
+    "credit_url": "https://example.com/source096",
+    "categories": [
+      "Digital Design",
+      "Documentation",
+      "User Interface"
+    ],
+    "tags": [
+      "#blue",
+      "#research",
+      "#black",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-097",
+    "src": "assets/097.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Michael Brown",
+    "year": 2005,
+    "credit_url": "https://example.com/source097",
+    "categories": [
+      "Digital Design",
+      "Documentation",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#interface",
+      "#vintage",
+      "#modern",
+      "#visual",
+      "#personal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-098",
+    "src": "assets/098.jpg",
+    "title": "Data Visualization",
+    "creator": "Amy Johnson",
+    "year": 2011,
+    "credit_url": "https://example.com/source098",
+    "categories": [
+      "Poster Design",
+      "Digital Design",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#gray",
+      "#red",
+      "#modern",
+      "#technical",
+      "#calligraphy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-099",
+    "src": "assets/099.jpg",
+    "title": "Visual Research",
+    "creator": "Kevin Park",
+    "year": 2004,
+    "credit_url": "https://example.com/source099",
+    "categories": [
+      "Documentation",
+      "Poster Design"
+    ],
+    "tags": [
+      "#gray",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-100",
+    "src": "assets/100.jpg",
+    "title": "Editorial Layout",
+    "creator": "Robert Lee",
+    "year": 1990,
+    "credit_url": "https://example.com/source100",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#white",
+      "#vintage",
+      "#modern"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-101",
+    "src": "assets/101.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Amy Johnson",
+    "year": 1984,
+    "credit_url": "https://example.com/source101",
+    "categories": [
+      "Digital Design",
+      "Visual Research",
+      "User Interface"
+    ],
+    "tags": [
+      "#gray",
+      "#white",
+      "#vintage",
+      "#technical",
+      "#geometric"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-102",
+    "src": "assets/102.jpg",
+    "title": "Documentation Study",
+    "creator": "Lisa Zhang",
+    "year": 2006,
+    "credit_url": "https://example.com/source102",
+    "categories": [
+      "Information Design"
+    ],
+    "tags": [
+      "#green",
+      "#personal",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-103",
+    "src": "assets/103.jpg",
+    "title": "Visual Research",
+    "creator": "Maria Rodriguez",
+    "year": 2021,
+    "credit_url": "https://example.com/source103",
+    "categories": [
+      "Information Design",
+      "Architectural Drawing",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#organic",
+      "#yellow",
+      "#typography",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-104",
+    "src": "assets/104.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Rachel Green",
+    "year": 2019,
+    "credit_url": "https://example.com/source104",
+    "categories": [
+      "Poster Design"
+    ],
+    "tags": [
+      "#green",
+      "#black",
+      "#modern",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-105",
+    "src": "assets/105.jpg",
+    "title": "Visual Language",
+    "creator": "Sarah Chen",
+    "year": 1983,
+    "credit_url": "https://example.com/source105",
+    "categories": [
+      "Documentation"
+    ],
+    "tags": [
+      "#research",
+      "#personal",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-106",
+    "src": "assets/106.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Chan Tai Man",
+    "year": 2016,
+    "credit_url": "https://example.com/source106",
+    "categories": [
+      "Vernacular Signage",
+      "Poster Design"
+    ],
+    "tags": [
+      "#red",
+      "#calligraphy",
+      "#black",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-107",
+    "src": "assets/107.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Amy Johnson",
+    "year": 2023,
+    "credit_url": "https://example.com/source107",
+    "categories": [
+      "Vintage Graphics",
+      "Architectural Drawing",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#red",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-108",
+    "src": "assets/108.jpg",
+    "title": "Street Sign, New York",
+    "creator": "Chan Tai Man",
+    "year": 2009,
+    "credit_url": "https://example.com/source108",
+    "categories": [
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#modern",
+      "#typography",
+      "#organic",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-109",
+    "src": "assets/109.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Maria Rodriguez",
+    "year": 1982,
+    "credit_url": "https://example.com/source109",
+    "categories": [
+      "Technical Documentation",
+      "Vernacular Signage",
+      "Information Design"
+    ],
+    "tags": [
+      "#black",
+      "#design",
+      "#yellow",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-110",
+    "src": "assets/110.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Maria Rodriguez",
+    "year": 2003,
+    "credit_url": "https://example.com/source110",
+    "categories": [
+      "Handwriting",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#vintage",
+      "#modern"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-111",
+    "src": "assets/111.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Rachel Green",
+    "year": 2018,
+    "credit_url": "https://example.com/source111",
+    "categories": [
+      "Architectural Drawing",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#documentation",
+      "#organic",
+      "#research",
+      "#modern",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-112",
+    "src": "assets/112.jpg",
+    "title": "Street Sign, Brooklyn",
+    "creator": "Lisa Zhang",
+    "year": 1988,
+    "credit_url": "https://example.com/source112",
+    "categories": [
+      "User Interface"
+    ],
+    "tags": [
+      "#visual",
+      "#black",
+      "#geometric",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-113",
+    "src": "assets/113.jpg",
+    "title": "Visual Research",
+    "creator": "David Kim",
+    "year": 2019,
+    "credit_url": "https://example.com/source113",
+    "categories": [
+      "Photography"
+    ],
+    "tags": [
+      "#research",
+      "#documentation",
+      "#grid",
+      "#design",
+      "#calligraphy"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-114",
+    "src": "assets/114.jpg",
+    "title": "Documentation Study",
+    "creator": "James Wilson",
+    "year": 1994,
+    "credit_url": "https://example.com/source114",
+    "categories": [
+      "Digital Design"
+    ],
+    "tags": [
+      "#personal",
+      "#research",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-115",
+    "src": "assets/115.jpg",
+    "title": "Visual Research",
+    "creator": "Sophie Martin",
+    "year": 2017,
+    "credit_url": "https://example.com/source115",
+    "categories": [
+      "Visual Research",
+      "Information Design"
+    ],
+    "tags": [
+      "#black",
+      "#calligraphy",
+      "#visual"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-116",
+    "src": "assets/116.jpg",
+    "title": "Editorial Layout",
+    "creator": "Michael Brown",
+    "year": 2013,
+    "credit_url": "https://example.com/source116",
+    "categories": [
+      "Vernacular Signage",
+      "Information Design"
+    ],
+    "tags": [
+      "#black",
+      "#personal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-117",
+    "src": "assets/117.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Maria Rodriguez",
+    "year": 2023,
+    "credit_url": "https://example.com/source117",
+    "categories": [
+      "Digital Design",
+      "Handwriting",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#red",
+      "#white",
+      "#organic",
+      "#technical",
+      "#green"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-118",
+    "src": "assets/118.jpg",
+    "title": "User Interface Mockup",
+    "creator": "James Wilson",
+    "year": 2021,
+    "credit_url": "https://example.com/source118",
+    "categories": [
+      "Technical Documentation",
+      "Handwriting"
+    ],
+    "tags": [
+      "#gray",
+      "#documentation",
+      "#interface"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-119",
+    "src": "assets/119.jpg",
+    "title": "Information Design",
+    "creator": "Lisa Zhang",
+    "year": 2000,
+    "credit_url": "https://example.com/source119",
+    "categories": [
+      "Architectural Drawing",
+      "Photography"
+    ],
+    "tags": [
+      "#gray",
+      "#grid",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-120",
+    "src": "assets/120.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Robert Lee",
+    "year": 1994,
+    "credit_url": "https://example.com/source120",
+    "categories": [
+      "Documentation",
+      "Editorial Design"
+    ],
+    "tags": [
+      "#white",
+      "#personal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-121",
+    "src": "assets/121.jpg",
+    "title": "Data Visualization",
+    "creator": "Emma Thompson",
+    "year": 2000,
+    "credit_url": "https://example.com/source121",
+    "categories": [
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#personal",
+      "#green",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-122",
+    "src": "assets/122.jpg",
+    "title": "Street Sign, New York",
+    "creator": "Amy Johnson",
+    "year": 2005,
+    "credit_url": "https://example.com/source122",
+    "categories": [
+      "Visual Research"
+    ],
+    "tags": [
+      "#research",
+      "#vintage",
+      "#geometric",
+      "#red",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-123",
+    "src": "assets/123.jpg",
+    "title": "Research Documentation",
+    "creator": "Sarah Chen",
+    "year": 1986,
+    "credit_url": "https://example.com/source123",
+    "categories": [
+      "Bilingual Typography",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#minimal",
+      "#research",
+      "#design",
+      "#documentation"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-124",
+    "src": "assets/124.jpg",
+    "title": "Photography Series",
+    "creator": "Daniel White",
+    "year": 1983,
+    "credit_url": "https://example.com/source124",
+    "categories": [
+      "Photography",
+      "Digital Design",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#minimal",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-125",
+    "src": "assets/125.jpg",
+    "title": "Photography Series",
+    "creator": "Lisa Zhang",
+    "year": 1983,
+    "credit_url": "https://example.com/source125",
+    "categories": [
+      "Handwriting"
+    ],
+    "tags": [
+      "#visual",
+      "#modern",
+      "#typography",
+      "#gray",
+      "#vintage"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-126",
+    "src": "assets/126.jpg",
+    "title": "Data Visualization",
+    "creator": "Maria Santos",
+    "year": 2022,
+    "credit_url": "https://example.com/source126",
+    "categories": [
+      "Bilingual Typography",
+      "Technical Documentation",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-127",
+    "src": "assets/127.jpg",
+    "title": "Data Visualization",
+    "creator": "Lisa Zhang",
+    "year": 2003,
+    "credit_url": "https://example.com/source127",
+    "categories": [
+      "Editorial Design",
+      "Digital Design"
+    ],
+    "tags": [
+      "#minimal",
+      "#bold",
+      "#red",
+      "#white",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-128",
+    "src": "assets/128.jpg",
+    "title": "Digital Interface Study",
+    "creator": "David Kim",
+    "year": 2021,
+    "credit_url": "https://example.com/source128",
+    "categories": [
+      "Technical Documentation",
+      "Documentation"
+    ],
+    "tags": [
+      "#yellow",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-129",
+    "src": "assets/129.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Chris Anderson",
+    "year": 1985,
+    "credit_url": "https://example.com/source129",
+    "categories": [
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#gray",
+      "#geometric"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-130",
+    "src": "assets/130.jpg",
+    "title": "Visual Research",
+    "creator": "David Kim",
+    "year": 2017,
+    "credit_url": "https://example.com/source130",
+    "categories": [
+      "Technical Documentation",
+      "Information Design"
+    ],
+    "tags": [
+      "#blue",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-131",
+    "src": "assets/131.jpg",
+    "title": "Typography Experiment",
+    "creator": "Sophie Martin",
+    "year": 2010,
+    "credit_url": "https://example.com/source131",
+    "categories": [
+      "Brand Identity"
+    ],
+    "tags": [
+      "#minimal",
+      "#typography",
+      "#personal",
+      "#gray",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-132",
+    "src": "assets/132.jpg",
+    "title": "Documentation Study",
+    "creator": "Sarah Chen",
+    "year": 2000,
+    "credit_url": "https://example.com/source132",
+    "categories": [
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#design",
+      "#technical",
+      "#blue",
+      "#gray"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-133",
+    "src": "assets/133.jpg",
+    "title": "Street Sign, Shinjuku",
+    "creator": "James Wilson",
+    "year": 1986,
+    "credit_url": "https://example.com/source133",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#grid",
+      "#calligraphy",
+      "#personal",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-134",
+    "src": "assets/134.jpg",
+    "title": "Typography Experiment",
+    "creator": "Amy Johnson",
+    "year": 1995,
+    "credit_url": "https://example.com/source134",
+    "categories": [
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#vintage",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-135",
+    "src": "assets/135.jpg",
+    "title": "Creative Process",
+    "creator": "Michael Brown",
+    "year": 2000,
+    "credit_url": "https://example.com/source135",
+    "categories": [
+      "Visual Research",
+      "Photography",
+      "Editorial Design"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#technical",
+      "#typography",
+      "#green"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-136",
+    "src": "assets/136.jpg",
+    "title": "Visual Language",
+    "creator": "Amy Johnson",
+    "year": 2013,
+    "credit_url": "https://example.com/source136",
+    "categories": [
+      "Vernacular Signage",
+      "Brand Identity",
+      "Documentation"
+    ],
+    "tags": [
+      "#vintage",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-137",
+    "src": "assets/137.jpg",
+    "title": "Visual Language",
+    "creator": "Rachel Green",
+    "year": 2011,
+    "credit_url": "https://example.com/source137",
+    "categories": [
+      "Vernacular Signage",
+      "Bilingual Typography",
+      "Visual Research"
+    ],
+    "tags": [
+      "#research",
+      "#bold"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-138",
+    "src": "assets/138.jpg",
+    "title": "Visual Language",
+    "creator": "Robert Lee",
+    "year": 2019,
+    "credit_url": "https://example.com/source138",
+    "categories": [
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#green",
+      "#yellow"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-139",
+    "src": "assets/139.jpg",
+    "title": "Typography Experiment",
+    "creator": "Maria Rodriguez",
+    "year": 2013,
+    "credit_url": "https://example.com/source139",
+    "categories": [
+      "Technical Documentation",
+      "User Interface",
+      "Digital Design"
+    ],
+    "tags": [
+      "#research",
+      "#documentation",
+      "#vintage",
+      "#black"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-140",
+    "src": "assets/140.jpg",
+    "title": "Documentation Study",
+    "creator": "Michael Brown",
+    "year": 2006,
+    "credit_url": "https://example.com/source140",
+    "categories": [
+      "Vernacular Signage",
+      "Information Design"
+    ],
+    "tags": [
+      "#grid",
+      "#geometric",
+      "#design"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-141",
+    "src": "assets/141.jpg",
+    "title": "Visual Research",
+    "creator": "Robert Lee",
+    "year": 1989,
+    "credit_url": "https://example.com/source141",
+    "categories": [
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#typography",
+      "#blue",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-142",
+    "src": "assets/142.jpg",
+    "title": "Creative Process",
+    "creator": "Sarah Chen",
+    "year": 1995,
+    "credit_url": "https://example.com/source142",
+    "categories": [
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#research",
+      "#grid"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-143",
+    "src": "assets/143.jpg",
+    "title": "Editorial Layout",
+    "creator": "Chan Tai Man",
+    "year": 1998,
+    "credit_url": "https://example.com/source143",
+    "categories": [
+      "Information Design",
+      "Photography"
+    ],
+    "tags": [
+      "#organic",
+      "#interface",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-144",
+    "src": "assets/144.jpg",
+    "title": "Photography Series",
+    "creator": "Jennifer Davis",
+    "year": 2001,
+    "credit_url": "https://example.com/source144",
+    "categories": [
+      "Documentation",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#organic",
+      "#blue",
+      "#interface"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-145",
+    "src": "assets/145.jpg",
+    "title": "Digital Interface Study",
+    "creator": "James Wilson",
+    "year": 1980,
+    "credit_url": "https://example.com/source145",
+    "categories": [
+      "Data Visualization"
+    ],
+    "tags": [
+      "#typography",
+      "#calligraphy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-146",
+    "src": "assets/146.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Maria Rodriguez",
+    "year": 2004,
+    "credit_url": "https://example.com/source146",
+    "categories": [
+      "Digital Design",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#red",
+      "#calligraphy",
+      "#vintage",
+      "#geometric",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-147",
+    "src": "assets/147.jpg",
+    "title": "Documentation Study",
+    "creator": "James Wilson",
+    "year": 2019,
+    "credit_url": "https://example.com/source147",
+    "categories": [
+      "Vernacular Signage",
+      "Handwriting",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#black",
+      "#red",
+      "#calligraphy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-148",
+    "src": "assets/148.jpg",
+    "title": "User Interface Mockup",
+    "creator": "David Kim",
+    "year": 2005,
+    "credit_url": "https://example.com/source148",
+    "categories": [
+      "Bilingual Typography",
+      "Poster Design",
+      "Handwriting"
+    ],
+    "tags": [
+      "#geometric",
+      "#research",
+      "#documentation",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-149",
+    "src": "assets/149.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Tom Wilson",
+    "year": 1980,
+    "credit_url": "https://example.com/source149",
+    "categories": [
+      "Architectural Drawing",
+      "Handwriting"
+    ],
+    "tags": [
+      "#personal",
+      "#black",
+      "#minimal",
+      "#white",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-150",
+    "src": "assets/150.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Maria Santos",
+    "year": 1989,
+    "credit_url": "https://example.com/source150",
+    "categories": [
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#personal",
+      "#white",
+      "#visual",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-151",
+    "src": "assets/151.jpg",
+    "title": "Creative Process",
+    "creator": "Alex Rivera",
+    "year": 2021,
+    "credit_url": "https://example.com/source151",
+    "categories": [
+      "Technical Documentation",
+      "Brand Identity",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#vintage",
+      "#white",
+      "#organic",
+      "#green",
+      "#interface"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-152",
+    "src": "assets/152.jpg",
+    "title": "Design System",
+    "creator": "Tom Wilson",
+    "year": 2004,
+    "credit_url": "https://example.com/source152",
+    "categories": [
+      "Technical Documentation",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#gray",
+      "#bold",
+      "#research",
+      "#technical",
+      "#green"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-153",
+    "src": "assets/153.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Anna Garcia",
+    "year": 2021,
+    "credit_url": "https://example.com/source153",
+    "categories": [
+      "Poster Design"
+    ],
+    "tags": [
+      "#research",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-154",
+    "src": "assets/154.jpg",
+    "title": "Editorial Layout",
+    "creator": "James Wilson",
+    "year": 1998,
+    "credit_url": "https://example.com/source154",
+    "categories": [
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#modern",
+      "#blue",
+      "#typography",
+      "#bold"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-155",
+    "src": "assets/155.jpg",
+    "title": "Data Visualization",
+    "creator": "James Wilson",
+    "year": 1986,
+    "credit_url": "https://example.com/source155",
+    "categories": [
+      "Documentation",
+      "Bilingual Typography",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#green",
+      "#bold",
+      "#gray",
+      "#geometric",
+      "#modern"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-156",
+    "src": "assets/156.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Jennifer Davis",
+    "year": 1987,
+    "credit_url": "https://example.com/source156",
+    "categories": [
+      "Bilingual Typography",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#bold",
+      "#green",
+      "#gray"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-157",
+    "src": "assets/157.jpg",
+    "title": "Design System",
+    "creator": "Daniel White",
+    "year": 1999,
+    "credit_url": "https://example.com/source157",
+    "categories": [
+      "Digital Design",
+      "Information Design"
+    ],
+    "tags": [
+      "#black",
+      "#red",
+      "#bold",
+      "#green"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-158",
+    "src": "assets/158.jpg",
+    "title": "Visual Language",
+    "creator": "Alex Rivera",
+    "year": 2009,
+    "credit_url": "https://example.com/source158",
+    "categories": [
+      "Documentation",
+      "Digital Design"
+    ],
+    "tags": [
+      "#blue",
+      "#gray",
+      "#interface"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-159",
+    "src": "assets/159.jpg",
+    "title": "Photography Series",
+    "creator": "Tom Wilson",
+    "year": 2013,
+    "credit_url": "https://example.com/source159",
+    "categories": [
+      "Bilingual Typography",
+      "Brand Identity",
+      "Digital Design"
+    ],
+    "tags": [
+      "#blue",
+      "#geometric",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-160",
+    "src": "assets/160.jpg",
+    "title": "Research Documentation",
+    "creator": "James Wilson",
+    "year": 2011,
+    "credit_url": "https://example.com/source160",
+    "categories": [
+      "Information Design"
+    ],
+    "tags": [
+      "#modern",
+      "#gray"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-161",
+    "src": "assets/161.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Tom Wilson",
+    "year": 2007,
+    "credit_url": "https://example.com/source161",
+    "categories": [
+      "Photography",
+      "Information Design"
+    ],
+    "tags": [
+      "#typography",
+      "#bold",
+      "#yellow",
+      "#visual"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-162",
+    "src": "assets/162.jpg",
+    "title": "Editorial Layout",
+    "creator": "Chan Tai Man",
+    "year": 2008,
+    "credit_url": "https://example.com/source162",
+    "categories": [
+      "Handwriting"
+    ],
+    "tags": [
+      "#typography",
+      "#visual",
+      "#interface"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-163",
+    "src": "assets/163.jpg",
+    "title": "Street Sign, Brooklyn",
+    "creator": "Kevin Park",
+    "year": 2001,
+    "credit_url": "https://example.com/source163",
+    "categories": [
+      "Handwriting",
+      "Photography",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#modern",
+      "#personal",
+      "#design",
+      "#typography"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-164",
+    "src": "assets/164.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Robert Lee",
+    "year": 1988,
+    "credit_url": "https://example.com/source164",
+    "categories": [
+      "Technical Documentation",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#geometric",
+      "#vintage",
+      "#green",
+      "#gray"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-165",
+    "src": "assets/165.jpg",
+    "title": "Street Sign, London",
+    "creator": "James Wilson",
+    "year": 2007,
+    "credit_url": "https://example.com/source165",
+    "categories": [
+      "Poster Design"
+    ],
+    "tags": [
+      "#gray",
+      "#design",
+      "#minimal",
+      "#personal",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-166",
+    "src": "assets/166.jpg",
+    "title": "Design System",
+    "creator": "Chan Tai Man",
+    "year": 2008,
+    "credit_url": "https://example.com/source166",
+    "categories": [
+      "Documentation",
+      "Poster Design",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#typography",
+      "#visual",
+      "#design",
+      "#personal",
+      "#minimal"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-167",
+    "src": "assets/167.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Michael Brown",
+    "year": 2012,
+    "credit_url": "https://example.com/source167",
+    "categories": [
+      "Bilingual Typography",
+      "Brand Identity",
+      "Photography"
+    ],
+    "tags": [
+      "#visual",
+      "#minimal",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-168",
+    "src": "assets/168.jpg",
+    "title": "Visual Language",
+    "creator": "Maria Rodriguez",
+    "year": 1983,
+    "credit_url": "https://example.com/source168",
+    "categories": [
+      "User Interface",
+      "Technical Documentation",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#personal",
+      "#visual",
+      "#minimal",
+      "#red",
+      "#modern"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-169",
+    "src": "assets/169.jpg",
+    "title": "Handwritten Notes",
+    "creator": "David Kim",
+    "year": 1980,
+    "credit_url": "https://example.com/source169",
+    "categories": [
+      "Brand Identity",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#yellow",
+      "#green",
+      "#minimal",
+      "#modern"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-170",
+    "src": "assets/170.jpg",
+    "title": "Editorial Layout",
+    "creator": "James Wilson",
+    "year": 2009,
+    "credit_url": "https://example.com/source170",
+    "categories": [
+      "Information Design",
+      "Digital Design"
+    ],
+    "tags": [
+      "#yellow",
+      "#organic",
+      "#red",
+      "#design",
+      "#typography"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-171",
+    "src": "assets/171.jpg",
+    "title": "Photography Series",
+    "creator": "Kevin Park",
+    "year": 1990,
+    "credit_url": "https://example.com/source171",
+    "categories": [
+      "Photography",
+      "Visual Research",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#black",
+      "#white",
+      "#blue",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-172",
+    "src": "assets/172.jpg",
+    "title": "Research Documentation",
+    "creator": "Chris Anderson",
+    "year": 2005,
+    "credit_url": "https://example.com/source172",
+    "categories": [
+      "Photography",
+      "Handwriting",
+      "Information Design"
+    ],
+    "tags": [
+      "#black",
+      "#white",
+      "#vintage",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-173",
+    "src": "assets/173.jpg",
+    "title": "Documentation Study",
+    "creator": "David Kim",
+    "year": 1980,
+    "credit_url": "https://example.com/source173",
+    "categories": [
+      "Photography",
+      "Digital Design"
+    ],
+    "tags": [
+      "#documentation",
+      "#black",
+      "#white",
+      "#calligraphy",
+      "#personal"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-174",
+    "src": "assets/174.jpg",
+    "title": "Information Design",
+    "creator": "Jennifer Davis",
+    "year": 2023,
+    "credit_url": "https://example.com/source174",
+    "categories": [
+      "User Interface",
+      "Digital Design"
+    ],
+    "tags": [
+      "#personal",
+      "#black",
+      "#typography"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-175",
+    "src": "assets/175.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Kevin Park",
+    "year": 2000,
+    "credit_url": "https://example.com/source175",
+    "categories": [
+      "Documentation",
+      "Photography",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#typography",
+      "#calligraphy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-176",
+    "src": "assets/176.jpg",
+    "title": "Visual Research",
+    "creator": "Robert Lee",
+    "year": 2001,
+    "credit_url": "https://example.com/source176",
+    "categories": [
+      "Visual Research"
+    ],
+    "tags": [
+      "#documentation",
+      "#black",
+      "#gray",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-177",
+    "src": "assets/177.jpg",
+    "title": "Data Visualization",
+    "creator": "Amy Johnson",
+    "year": 2023,
+    "credit_url": "https://example.com/source177",
+    "categories": [
+      "Vernacular Signage",
+      "Information Design"
+    ],
+    "tags": [
+      "#documentation",
+      "#organic",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-178",
+    "src": "assets/178.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Kevin Park",
+    "year": 2004,
+    "credit_url": "https://example.com/source178",
+    "categories": [
+      "Digital Design",
+      "Editorial Design",
+      "User Interface"
+    ],
+    "tags": [
+      "#design",
+      "#red",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-179",
+    "src": "assets/179.jpg",
+    "title": "Editorial Layout",
+    "creator": "Jennifer Davis",
+    "year": 2019,
+    "credit_url": "https://example.com/source179",
+    "categories": [
+      "Visual Research",
+      "Photography",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#black",
+      "#organic",
+      "#modern",
+      "#typography"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-180",
+    "src": "assets/180.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Maria Santos",
+    "year": 2018,
+    "credit_url": "https://example.com/source180",
+    "categories": [
+      "Bilingual Typography",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#research",
+      "#modern",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-181",
+    "src": "assets/181.jpg",
+    "title": "Documentation Study",
+    "creator": "Lisa Zhang",
+    "year": 2015,
+    "credit_url": "https://example.com/source181",
+    "categories": [
+      "Editorial Design"
+    ],
+    "tags": [
+      "#red",
+      "#white",
+      "#green",
+      "#black",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-182",
+    "src": "assets/182.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Jennifer Davis",
+    "year": 1990,
+    "credit_url": "https://example.com/source182",
+    "categories": [
+      "Documentation"
+    ],
+    "tags": [
+      "#green",
+      "#technical",
+      "#black",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-183",
+    "src": "assets/183.jpg",
+    "title": "Visual Research",
+    "creator": "Robert Lee",
+    "year": 1991,
+    "credit_url": "https://example.com/source183",
+    "categories": [
+      "Documentation"
+    ],
+    "tags": [
+      "#visual",
+      "#calligraphy",
+      "#technical",
+      "#typography",
+      "#red"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-184",
+    "src": "assets/184.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Sophie Martin",
+    "year": 2011,
+    "credit_url": "https://example.com/source184",
+    "categories": [
+      "Poster Design",
+      "Technical Documentation",
+      "Photography"
+    ],
+    "tags": [
+      "#documentation",
+      "#technical",
+      "#calligraphy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-185",
+    "src": "assets/185.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Sarah Chen",
+    "year": 2010,
+    "credit_url": "https://example.com/source185",
+    "categories": [
+      "Digital Design",
+      "Poster Design",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#research",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-186",
+    "src": "assets/186.jpg",
+    "title": "Data Visualization",
+    "creator": "Sarah Chen",
+    "year": 2023,
+    "credit_url": "https://example.com/source186",
+    "categories": [
+      "Visual Research",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#design",
+      "#white",
+      "#visual",
+      "#calligraphy",
+      "#bold"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-187",
+    "src": "assets/187.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Michael Brown",
+    "year": 2012,
+    "credit_url": "https://example.com/source187",
+    "categories": [
+      "Documentation",
+      "Information Design",
+      "Visual Research"
+    ],
+    "tags": [
+      "#personal",
+      "#black",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-188",
+    "src": "assets/188.jpg",
+    "title": "Street Sign, Berlin",
+    "creator": "Amy Johnson",
+    "year": 1983,
+    "credit_url": "https://example.com/source188",
+    "categories": [
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#personal",
+      "#documentation",
+      "#green"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-189",
+    "src": "assets/189.jpg",
+    "title": "Creative Process",
+    "creator": "Anna Garcia",
+    "year": 1986,
+    "credit_url": "https://example.com/source189",
+    "categories": [
+      "Information Design",
+      "Technical Documentation",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#typography",
+      "#white",
+      "#yellow",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-190",
+    "src": "assets/190.jpg",
+    "title": "Editorial Layout",
+    "creator": "James Wilson",
+    "year": 1994,
+    "credit_url": "https://example.com/source190",
+    "categories": [
+      "Architectural Drawing",
+      "Digital Design"
+    ],
+    "tags": [
+      "#documentation",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-191",
+    "src": "assets/191.jpg",
+    "title": "Photography Series",
+    "creator": "Maria Rodriguez",
+    "year": 1988,
+    "credit_url": "https://example.com/source191",
+    "categories": [
+      "Brand Identity",
+      "Documentation"
+    ],
+    "tags": [
+      "#white",
+      "#personal",
+      "#geometric",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-192",
+    "src": "assets/192.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Maria Santos",
+    "year": 2016,
+    "credit_url": "https://example.com/source192",
+    "categories": [
+      "Architectural Drawing",
+      "Poster Design"
+    ],
+    "tags": [
+      "#vintage",
+      "#visual",
+      "#typography"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-193",
+    "src": "assets/193.jpg",
+    "title": "Visual Language",
+    "creator": "Maria Rodriguez",
+    "year": 2009,
+    "credit_url": "https://example.com/source193",
+    "categories": [
+      "Poster Design"
+    ],
+    "tags": [
+      "#documentation",
+      "#geometric"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-194",
+    "src": "assets/194.jpg",
+    "title": "Data Visualization",
+    "creator": "Chris Anderson",
+    "year": 2019,
+    "credit_url": "https://example.com/source194",
+    "categories": [
+      "Brand Identity",
+      "Architectural Drawing",
+      "Poster Design"
+    ],
+    "tags": [
+      "#organic",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-195",
+    "src": "assets/195.jpg",
+    "title": "Design System",
+    "creator": "Rachel Green",
+    "year": 2016,
+    "credit_url": "https://example.com/source195",
+    "categories": [
+      "Documentation"
+    ],
+    "tags": [
+      "#green",
+      "#vintage",
+      "#black"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-196",
+    "src": "assets/196.jpg",
+    "title": "Editorial Layout",
+    "creator": "Anna Garcia",
+    "year": 1989,
+    "credit_url": "https://example.com/source196",
+    "categories": [
+      "Editorial Design",
+      "Photography"
+    ],
+    "tags": [
+      "#design",
+      "#typography",
+      "#red",
+      "#black"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-197",
+    "src": "assets/197.jpg",
+    "title": "Creative Process",
+    "creator": "Maria Santos",
+    "year": 1987,
+    "credit_url": "https://example.com/source197",
+    "categories": [
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#black",
+      "#technical",
+      "#yellow",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-198",
+    "src": "assets/198.jpg",
+    "title": "Visual Language",
+    "creator": "James Wilson",
+    "year": 2000,
+    "credit_url": "https://example.com/source198",
+    "categories": [
+      "Poster Design"
+    ],
+    "tags": [
+      "#yellow",
+      "#bold",
+      "#organic",
+      "#technical"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-199",
+    "src": "assets/199.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "James Wilson",
+    "year": 1985,
+    "credit_url": "https://example.com/source199",
+    "categories": [
+      "Architectural Drawing",
+      "Photography",
+      "Documentation"
+    ],
+    "tags": [
+      "#black",
+      "#yellow",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-200",
+    "src": "assets/200.jpg",
+    "title": "Typography Experiment",
+    "creator": "Chan Tai Man",
+    "year": 2001,
+    "credit_url": "https://example.com/source200",
+    "categories": [
+      "Visual Research",
+      "Poster Design",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#black",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-201",
+    "src": "assets/201.jpg",
+    "title": "Editorial Layout",
+    "creator": "Lisa Zhang",
+    "year": 1989,
+    "credit_url": "https://example.com/source201",
+    "categories": [
+      "Vintage Graphics",
+      "Digital Design",
+      "Poster Design"
+    ],
+    "tags": [
+      "#organic",
+      "#minimal"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-202",
+    "src": "assets/202.jpg",
+    "title": "Street Sign, Paris",
+    "creator": "Chan Tai Man",
+    "year": 1981,
+    "credit_url": "https://example.com/source202",
+    "categories": [
+      "Photography",
+      "Poster Design",
+      "Documentation"
+    ],
+    "tags": [
+      "#bold",
+      "#organic",
+      "#research",
+      "#visual",
+      "#minimal"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-203",
+    "src": "assets/203.jpg",
+    "title": "Research Documentation",
+    "creator": "Rachel Green",
+    "year": 1993,
+    "credit_url": "https://example.com/source203",
+    "categories": [
+      "Digital Design",
+      "Documentation"
+    ],
+    "tags": [
+      "#bold",
+      "#typography"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-204",
+    "src": "assets/204.jpg",
+    "title": "Photography Series",
+    "creator": "Michael Brown",
+    "year": 1986,
+    "credit_url": "https://example.com/source204",
+    "categories": [
+      "Digital Design",
+      "Photography",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#black",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-205",
+    "src": "assets/205.jpg",
+    "title": "Research Documentation",
+    "creator": "Maria Santos",
+    "year": 2012,
+    "credit_url": "https://example.com/source205",
+    "categories": [
+      "Photography"
+    ],
+    "tags": [
+      "#minimal",
+      "#personal",
+      "#bold",
+      "#modern",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-206",
+    "src": "assets/206.jpg",
+    "title": "Visual Research",
+    "creator": "Lisa Zhang",
+    "year": 1980,
+    "credit_url": "https://example.com/source206",
+    "categories": [
+      "Poster Design",
+      "Data Visualization",
+      "Visual Research"
+    ],
+    "tags": [
+      "#green",
+      "#calligraphy",
+      "#grid",
+      "#technical",
+      "#bold"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-207",
+    "src": "assets/207.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Sophie Martin",
+    "year": 2002,
+    "credit_url": "https://example.com/source207",
+    "categories": [
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#documentation",
+      "#blue"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-208",
+    "src": "assets/208.jpg",
+    "title": "Typography Experiment",
+    "creator": "Jennifer Davis",
+    "year": 2013,
+    "credit_url": "https://example.com/source208",
+    "categories": [
+      "Brand Identity",
+      "Poster Design",
+      "Handwriting"
+    ],
+    "tags": [
+      "#grid",
+      "#bold",
+      "#typography",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-209",
+    "src": "assets/209.jpg",
+    "title": "Information Design",
+    "creator": "Anna Garcia",
+    "year": 2010,
+    "credit_url": "https://example.com/source209",
+    "categories": [
+      "Photography",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#geometric",
+      "#technical",
+      "#bold"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-210",
+    "src": "assets/210.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Sophie Martin",
+    "year": 1992,
+    "credit_url": "https://example.com/source210",
+    "categories": [
+      "Visual Research",
+      "User Interface",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#research",
+      "#typography"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-211",
+    "src": "assets/211.jpg",
+    "title": "Vintage Poster Design",
+    "creator": "Robert Lee",
+    "year": 2023,
+    "credit_url": "https://example.com/source211",
+    "categories": [
+      "Editorial Design",
+      "User Interface",
+      "Information Design"
+    ],
+    "tags": [
+      "#gray",
+      "#blue",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-212",
+    "src": "assets/212.jpg",
+    "title": "Street Sign, Paris",
+    "creator": "Amy Johnson",
+    "year": 1995,
+    "credit_url": "https://example.com/source212",
+    "categories": [
+      "Visual Research",
+      "Digital Design",
+      "User Interface"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#grid",
+      "#interface",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-213",
+    "src": "assets/213.jpg",
+    "title": "Creative Process",
+    "creator": "Sarah Chen",
+    "year": 2003,
+    "credit_url": "https://example.com/source213",
+    "categories": [
+      "Visual Research"
+    ],
+    "tags": [
+      "#gray",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-214",
+    "src": "assets/214.jpg",
+    "title": "Design System",
+    "creator": "Robert Lee",
+    "year": 2015,
+    "credit_url": "https://example.com/source214",
+    "categories": [
+      "Visual Research",
+      "Architectural Drawing",
+      "Editorial Design"
+    ],
+    "tags": [
+      "#design",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-215",
+    "src": "assets/215.jpg",
+    "title": "Information Design",
+    "creator": "James Wilson",
+    "year": 1985,
+    "credit_url": "https://example.com/source215",
+    "categories": [
+      "User Interface",
+      "Poster Design",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#visual",
+      "#red"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-216",
+    "src": "assets/216.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Daniel White",
+    "year": 2006,
+    "credit_url": "https://example.com/source216",
+    "categories": [
+      "Vernacular Signage",
+      "Visual Research"
+    ],
+    "tags": [
+      "#visual",
+      "#white"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-217",
+    "src": "assets/217.jpg",
+    "title": "Data Visualization",
+    "creator": "Robert Lee",
+    "year": 2008,
+    "credit_url": "https://example.com/source217",
+    "categories": [
+      "Poster Design",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#organic",
+      "#green"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-218",
+    "src": "assets/218.jpg",
+    "title": "Editorial Layout",
+    "creator": "Sophie Martin",
+    "year": 1983,
+    "credit_url": "https://example.com/source218",
+    "categories": [
+      "Vintage Graphics",
+      "Poster Design"
+    ],
+    "tags": [
+      "#white",
+      "#modern",
+      "#yellow",
+      "#documentation"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-219",
+    "src": "assets/219.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Sarah Chen",
+    "year": 2002,
+    "credit_url": "https://example.com/source219",
+    "categories": [
+      "Vintage Graphics",
+      "Handwriting",
+      "Information Design"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#interface",
+      "#red",
+      "#visual",
+      "#documentation"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-220",
+    "src": "assets/220.jpg",
+    "title": "Visual Language",
+    "creator": "David Kim",
+    "year": 2013,
+    "credit_url": "https://example.com/source220",
+    "categories": [
+      "Visual Research",
+      "Vintage Graphics",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#blue",
+      "#yellow"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-221",
+    "src": "assets/221.jpg",
+    "title": "Typography Experiment",
+    "creator": "Kevin Park",
+    "year": 2004,
+    "credit_url": "https://example.com/source221",
+    "categories": [
+      "Data Visualization",
+      "Documentation"
+    ],
+    "tags": [
+      "#gray",
+      "#vintage",
+      "#organic"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-222",
+    "src": "assets/222.jpg",
+    "title": "Data Visualization",
+    "creator": "Tom Wilson",
+    "year": 2006,
+    "credit_url": "https://example.com/source222",
+    "categories": [
+      "Documentation",
+      "User Interface",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#yellow",
+      "#research",
+      "#green",
+      "#geometric",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-223",
+    "src": "assets/223.jpg",
+    "title": "Digital Interface Study",
+    "creator": "James Wilson",
+    "year": 1987,
+    "credit_url": "https://example.com/source223",
+    "categories": [
+      "Editorial Design",
+      "Documentation"
+    ],
+    "tags": [
+      "#design",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-224",
+    "src": "assets/224.jpg",
+    "title": "Research Documentation",
+    "creator": "Amy Johnson",
+    "year": 1989,
+    "credit_url": "https://example.com/source224",
+    "categories": [
+      "Photography"
+    ],
+    "tags": [
+      "#typography",
+      "#minimal",
+      "#geometric",
+      "#design",
+      "#research"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-225",
+    "src": "assets/225.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Chris Anderson",
+    "year": 1995,
+    "credit_url": "https://example.com/source225",
+    "categories": [
+      "Digital Design",
+      "Information Design",
+      "Documentation"
+    ],
+    "tags": [
+      "#black",
+      "#typography",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-226",
+    "src": "assets/226.jpg",
+    "title": "Visual Language",
+    "creator": "Tom Wilson",
+    "year": 1981,
+    "credit_url": "https://example.com/source226",
+    "categories": [
+      "Poster Design"
+    ],
+    "tags": [
+      "#yellow",
+      "#typography"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-227",
+    "src": "assets/227.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Michael Brown",
+    "year": 1996,
+    "credit_url": "https://example.com/source227",
+    "categories": [
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#vintage",
+      "#gray",
+      "#bold",
+      "#technical",
+      "#yellow"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-228",
+    "src": "assets/228.jpg",
+    "title": "Editorial Layout",
+    "creator": "Maria Santos",
+    "year": 1984,
+    "credit_url": "https://example.com/source228",
+    "categories": [
+      "Data Visualization"
+    ],
+    "tags": [
+      "#vintage",
+      "#green",
+      "#black",
+      "#typography"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-229",
+    "src": "assets/229.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Maria Rodriguez",
+    "year": 1996,
+    "credit_url": "https://example.com/source229",
+    "categories": [
+      "Visual Research"
+    ],
+    "tags": [
+      "#modern",
+      "#minimal",
+      "#typography",
+      "#white",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-230",
+    "src": "assets/230.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Sophie Martin",
+    "year": 1999,
+    "credit_url": "https://example.com/source230",
+    "categories": [
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#documentation",
+      "#minimal",
+      "#geometric",
+      "#vintage",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-231",
+    "src": "assets/231.jpg",
+    "title": "Street Sign, New York",
+    "creator": "Lisa Zhang",
+    "year": 2013,
+    "credit_url": "https://example.com/source231",
+    "categories": [
+      "Information Design",
+      "Visual Research"
+    ],
+    "tags": [
+      "#gray",
+      "#visual",
+      "#yellow",
+      "#green"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-232",
+    "src": "assets/232.jpg",
+    "title": "Visual Research",
+    "creator": "Daniel White",
+    "year": 2004,
+    "credit_url": "https://example.com/source232",
+    "categories": [
+      "Digital Design",
+      "Brand Identity"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#black",
+      "#minimal"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-233",
+    "src": "assets/233.jpg",
+    "title": "Information Design",
+    "creator": "Maria Rodriguez",
+    "year": 1983,
+    "credit_url": "https://example.com/source233",
+    "categories": [
+      "Digital Design"
+    ],
+    "tags": [
+      "#minimal",
+      "#blue",
+      "#yellow",
+      "#modern"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-234",
+    "src": "assets/234.jpg",
+    "title": "Brand Identity Study",
+    "creator": "Jennifer Davis",
+    "year": 1984,
+    "credit_url": "https://example.com/source234",
+    "categories": [
+      "Handwriting",
+      "Editorial Design",
+      "Information Design"
+    ],
+    "tags": [
+      "#modern",
+      "#geometric"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-235",
+    "src": "assets/235.jpg",
+    "title": "Documentation Study",
+    "creator": "Tom Wilson",
+    "year": 2008,
+    "credit_url": "https://example.com/source235",
+    "categories": [
+      "Poster Design",
+      "User Interface",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#calligraphy",
+      "#technical"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-236",
+    "src": "assets/236.jpg",
+    "title": "Editorial Layout",
+    "creator": "Emma Thompson",
+    "year": 2020,
+    "credit_url": "https://example.com/source236",
+    "categories": [
+      "Information Design",
+      "Poster Design"
+    ],
+    "tags": [
+      "#white",
+      "#visual",
+      "#vintage"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-237",
+    "src": "assets/237.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Alex Rivera",
+    "year": 1982,
+    "credit_url": "https://example.com/source237",
+    "categories": [
+      "Digital Design"
+    ],
+    "tags": [
+      "#blue",
+      "#modern",
+      "#white",
+      "#visual",
+      "#organic"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-238",
+    "src": "assets/238.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Jennifer Davis",
+    "year": 2005,
+    "credit_url": "https://example.com/source238",
+    "categories": [
+      "Data Visualization",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#design",
+      "#minimal",
+      "#vintage",
+      "#grid",
+      "#gray"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-239",
+    "src": "assets/239.jpg",
+    "title": "Visual Research",
+    "creator": "Rachel Green",
+    "year": 2023,
+    "credit_url": "https://example.com/source239",
+    "categories": [
+      "Vernacular Signage",
+      "Photography"
+    ],
+    "tags": [
+      "#modern",
+      "#green",
+      "#design",
+      "#red",
+      "#calligraphy"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-240",
+    "src": "assets/240.jpg",
+    "title": "Creative Process",
+    "creator": "Chan Tai Man",
+    "year": 2017,
+    "credit_url": "https://example.com/source240",
+    "categories": [
+      "Vernacular Signage",
+      "Vintage Graphics",
+      "Technical Documentation"
+    ],
+    "tags": [
+      "#red",
+      "#yellow",
+      "#calligraphy",
+      "#modern",
+      "#bold"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-241",
+    "src": "assets/241.jpg",
+    "title": "Visual Research",
+    "creator": "Chris Anderson",
+    "year": 1985,
+    "credit_url": "https://example.com/source241",
+    "categories": [
+      "Brand Identity",
+      "Visual Research"
+    ],
+    "tags": [
+      "#blue",
+      "#yellow",
+      "#bold"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-242",
+    "src": "assets/242.jpg",
+    "title": "Street Sign, Paris",
+    "creator": "Kevin Park",
+    "year": 2009,
+    "credit_url": "https://example.com/source242",
+    "categories": [
+      "Editorial Design",
+      "Architectural Drawing"
+    ],
+    "tags": [
+      "#white",
+      "#design",
+      "#blue",
+      "#black"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-243",
+    "src": "assets/243.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Daniel White",
+    "year": 1984,
+    "credit_url": "https://example.com/source243",
+    "categories": [
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#blue",
+      "#minimal"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-244",
+    "src": "assets/244.jpg",
+    "title": "Creative Process",
+    "creator": "Maria Santos",
+    "year": 1984,
+    "credit_url": "https://example.com/source244",
+    "categories": [
+      "Architectural Drawing",
+      "Photography"
+    ],
+    "tags": [
+      "#organic",
+      "#minimal",
+      "#visual"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-245",
+    "src": "assets/245.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Kevin Park",
+    "year": 1991,
+    "credit_url": "https://example.com/source245",
+    "categories": [
+      "Bilingual Typography",
+      "Information Design"
+    ],
+    "tags": [
+      "#white",
+      "#grid"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-246",
+    "src": "assets/246.jpg",
+    "title": "Architectural Blueprint",
+    "creator": "Rachel Green",
+    "year": 2020,
+    "credit_url": "https://example.com/source246",
+    "categories": [
+      "Photography",
+      "Bilingual Typography"
+    ],
+    "tags": [
+      "#design",
+      "#white",
+      "#visual",
+      "#grid"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-247",
+    "src": "assets/247.jpg",
+    "title": "User Interface Mockup",
+    "creator": "James Wilson",
+    "year": 2017,
+    "credit_url": "https://example.com/source247",
+    "categories": [
+      "Editorial Design",
+      "User Interface"
+    ],
+    "tags": [
+      "#grid",
+      "#blue"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-248",
+    "src": "assets/248.jpg",
+    "title": "Digital Interface Study",
+    "creator": "Tom Wilson",
+    "year": 2007,
+    "credit_url": "https://example.com/source248",
+    "categories": [
+      "Technical Documentation",
+      "Digital Design"
+    ],
+    "tags": [
+      "#red",
+      "#interface",
+      "#visual",
+      "#typography",
+      "#grid"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-249",
+    "src": "assets/249.jpg",
+    "title": "User Interface Mockup",
+    "creator": "Chris Anderson",
+    "year": 1992,
+    "credit_url": "https://example.com/source249",
+    "categories": [
+      "Poster Design",
+      "Vernacular Signage"
+    ],
+    "tags": [
+      "#geometric",
+      "#visual",
+      "#technical",
+      "#interface",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-250",
+    "src": "assets/250.jpg",
+    "title": "Street Sign, London",
+    "creator": "Alex Rivera",
+    "year": 2003,
+    "credit_url": "https://example.com/source250",
+    "categories": [
+      "Brand Identity",
+      "Handwriting",
+      "Visual Research"
+    ],
+    "tags": [
+      "#red",
+      "#design",
+      "#geometric",
+      "#blue",
+      "#vintage"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-251",
+    "src": "assets/251.jpg",
+    "title": "Information Design",
+    "creator": "Sophie Martin",
+    "year": 2013,
+    "credit_url": "https://example.com/source251",
+    "categories": [
+      "Photography",
+      "Vintage Graphics"
+    ],
+    "tags": [
+      "#bold",
+      "#red"
+    ],
+    "notes": "Additional research notes and observations."
+  },
+  {
+    "id": "img-252",
+    "src": "assets/252.jpg",
+    "title": "Visual Language",
+    "creator": "Maria Santos",
+    "year": 1986,
+    "credit_url": "https://example.com/source252",
+    "categories": [
+      "Technical Documentation",
+      "Digital Design",
+      "Data Visualization"
+    ],
+    "tags": [
+      "#documentation",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-253",
+    "src": "assets/253.jpg",
+    "title": "Visual Language",
+    "creator": "Amy Johnson",
+    "year": 1999,
+    "credit_url": "https://example.com/source253",
+    "categories": [
+      "Photography",
+      "Poster Design"
+    ],
+    "tags": [
+      "#documentation",
+      "#research",
+      "#design"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-254",
+    "src": "assets/254.jpg",
+    "title": "Research Documentation",
+    "creator": "Robert Lee",
+    "year": 2000,
+    "credit_url": "https://example.com/source254",
+    "categories": [
+      "User Interface",
+      "Digital Design"
+    ],
+    "tags": [
+      "#organic",
+      "#interface"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-255",
+    "src": "assets/255.jpg",
+    "title": "Handwritten Notes",
+    "creator": "Anna Garcia",
+    "year": 1998,
+    "credit_url": "https://example.com/source255",
+    "categories": [
+      "Information Design",
+      "User Interface"
+    ],
+    "tags": [
+      "#grid",
+      "#visual",
+      "#organic"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-256",
+    "src": "assets/256.jpg",
+    "title": "Design System",
+    "creator": "Chris Anderson",
+    "year": 2020,
+    "credit_url": "https://example.com/source256",
+    "categories": [
+      "Photography",
+      "Bilingual Typography",
+      "Information Design"
+    ],
+    "tags": [
+      "#typography",
+      "#grid",
+      "#visual",
+      "#technical"
+    ],
+    "notes": "Additional research notes and observations."
+  }
+]
