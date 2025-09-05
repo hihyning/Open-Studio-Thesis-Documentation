@@ -26,6 +26,7 @@ const elements = {
   columnsValue: null,
   logicToggle: null,
   dateSortToggle: null,
+  shuffleBtn: null,
   gridContainer: null,
   modal: null,
   modalClose: null,
@@ -90,6 +91,7 @@ function initializeElements() {
   elements.columnsValue = utils.qs('#columns-value');
   elements.logicToggle = utils.qs('#logic-toggle');
   elements.dateSortToggle = utils.qs('#date-sort-toggle');
+  elements.shuffleBtn = utils.qs('#shuffle-btn');
   elements.gridContainer = utils.qs('#grid-container');
   elements.modal = utils.qs('#modal');
   elements.modalClose = utils.qs('#modal-close');
@@ -179,6 +181,11 @@ function setupEventListeners() {
   // Date sort toggle
   if (elements.dateSortToggle) {
     elements.dateSortToggle.addEventListener('click', toggleDateSort);
+  }
+  
+  // Shuffle button
+  if (elements.shuffleBtn) {
+    elements.shuffleBtn.addEventListener('click', shuffleImages);
   }
   
   // Modal
@@ -320,6 +327,48 @@ function toggleDateSort() {
   elements.dateSortToggle.textContent = currentFilters.dateSort === 'newest' ? 'Newest' : 'Oldest';
   applyFilters();
   saveState();
+}
+
+function shuffleImages() {
+  if (currentMode === 'grid') {
+    // For grid mode: shuffle the order of filteredImages array
+    for (let i = filteredImages.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [filteredImages[i], filteredImages[j]] = [filteredImages[j], filteredImages[i]];
+    }
+    renderImages();
+  } else {
+    // For mess mode: randomize positions of all cards
+    randomizeMessPositions();
+  }
+}
+
+function randomizeMessPositions() {
+  const cards = utils.qsa('.card');
+  const containerWidth = elements.gridContainer.offsetWidth;
+  const containerHeight = Math.max(elements.gridContainer.offsetHeight, window.innerHeight);
+  const cardWidth = 120; // Match CSS width
+  const cardHeight = 120; // Approximate card height
+  
+  const maxLeft = Math.max(0, containerWidth - cardWidth);
+  const maxTop = Math.max(0, containerHeight - cardHeight);
+  
+  cards.forEach(card => {
+    // Generate random position
+    const left = Math.random() * maxLeft;
+    const top = Math.random() * maxTop;
+    
+    // Apply position
+    card.style.left = left + 'px';
+    card.style.top = top + 'px';
+    
+    // Save position
+    const id = card.dataset.id;
+    messPositions[id] = { left, top };
+  });
+  
+  // Save positions
+  saveMessPositions();
 }
 
 function applyFilters() {
