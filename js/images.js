@@ -43,7 +43,7 @@ const elements = {
 async function init() {
   try {
     // Load images data
-    const response = await fetch('/data/images.json');
+    const response = await fetch('./data/images.json');
     images = await response.json();
     
     // Extract categories and tags
