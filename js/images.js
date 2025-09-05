@@ -512,15 +512,38 @@ function saveMessPositions() {
 }
 
 function restoreMessPositions() {
-  utils.qsa('.card').forEach(card => {
+  utils.qsa('.card').forEach((card, index) => {
     const id = card.dataset.id;
     const pos = messPositions[id];
     
     if (pos) {
+      // Use saved position
       card.style.left = pos.left + 'px';
       card.style.top = pos.top + 'px';
+    } else {
+      // Generate initial random position for new cards
+      const containerWidth = elements.gridContainer.offsetWidth;
+      const containerHeight = Math.max(elements.gridContainer.offsetHeight, window.innerHeight);
+      const cardWidth = 120; // Match CSS width
+      const cardHeight = 120; // Approximate card height
+      
+      const maxLeft = Math.max(0, containerWidth - cardWidth);
+      const maxTop = Math.max(0, containerHeight - cardHeight);
+      
+      // Use index to create a more spread out initial layout
+      const left = Math.min(maxLeft, (index * 130) % (maxLeft + 1));
+      const top = Math.min(maxTop, Math.floor((index * 130) / (maxLeft + 1)) * 130);
+      
+      card.style.left = left + 'px';
+      card.style.top = top + 'px';
+      
+      // Save the initial position
+      messPositions[id] = { left, top };
     }
   });
+  
+  // Save any new positions
+  saveMessPositions();
 }
 
 function openModal(imageId) {
