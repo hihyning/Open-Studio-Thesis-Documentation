@@ -835,9 +835,37 @@ function showError(message) {
   // Could add a toast notification here
 }
 
+// Info button functionality
+function initInfoButton() {
+  const infoBtn = document.getElementById('info-btn');
+  const infoCard = document.getElementById('info-card');
+  const closeInfo = document.querySelector('.close-info');
+
+  if (!infoBtn || !infoCard || !closeInfo) return;
+
+  infoBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    infoCard.classList.toggle('show');
+  });
+
+  closeInfo.addEventListener('click', function() {
+    infoCard.classList.remove('show');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!infoCard.contains(e.target) && e.target !== infoBtn) {
+      infoCard.classList.remove('show');
+    }
+  });
+}
+
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('DOMContentLoaded', () => {
+    init();
+    initInfoButton();
+  });
 } else {
   init();
+  initInfoButton();
 }
