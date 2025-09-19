@@ -202,6 +202,11 @@ function initDraggableGallery(containerId = 'draggableContainer') {
     element.addEventListener('pointerdown', (e) => {
       if (e.button !== 0) return; // Only left mouse button
       
+      // Check if the click is on a link - if so, don't start dragging
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        return; // Let the link handle the click
+      }
+      
       isDragging = false;
       hasMoved = false;
       startX = e.clientX;
@@ -276,6 +281,11 @@ function initDraggableGallery(containerId = 'draggableContainer') {
     
     // Also handle click events for modal (only if not dragged and only for images)
     element.addEventListener('click', (e) => {
+      // Don't interfere with link clicks
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        return; // Let the link handle the click
+      }
+      
       // Check if this was a drag operation
       if (element.dataset.wasDragged === 'true') {
         element.dataset.wasDragged = 'false'; // Reset for next interaction

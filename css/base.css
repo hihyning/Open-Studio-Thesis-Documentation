@@ -300,6 +300,25 @@ header nav a {
   cursor: grabbing;
 }
 
+/* Link styling within text post-its */
+.draggable-image.text-postit a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.draggable-image.text-postit a:hover {
+  color: blue;
+  text-decoration-color: blue;
+  background: rgba(0, 0, 255, 0.1);
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
 /* Post-it note effect with subtle rotation */
 .draggable-image:nth-child(1) { transform: rotate(-1deg); }
 .draggable-image:nth-child(2) { transform: rotate(1.5deg); }
