@@ -50,6 +50,11 @@ p {
   font-size: 14px;
 }
 
+li {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
 /* Grid Paper Background */
 .grid-paper {
   background-color: var(--bg);
