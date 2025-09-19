@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Diagonal Stack</title>
+<title>OPEN STUDIO: 256 Images</title>
+<link rel="icon" href="world-grid.png" type="image/png"> <!-- Global Favicon -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -445,6 +446,22 @@
         : `<img src="${shuffledData[index].src}" alt="${shuffledData[index].title || 'Image'}" loading="lazy">`;
       
       card.el.innerHTML = `${mediaElement}<div class="pin"></div>`;
+      
+      // Update the event handlers to use the new data
+      card.el.onclick = (e) => {
+        e.preventDefault();
+        openModal(card.data, card.el);
+      };
+      
+      // Update hover event handlers
+      card.el.onpointerenter = () => { 
+        hoveredId = card.data.id; 
+        card.el.classList.add('is-hover'); 
+      };
+      card.el.onpointerleave = () => { 
+        if(hoveredId === card.data.id) hoveredId = null; 
+        card.el.classList.remove('is-hover'); 
+      };
       
       // Reorder the DOM elements to match the new shuffled order
       world.appendChild(card.el);
