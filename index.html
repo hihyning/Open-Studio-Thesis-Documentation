@@ -19,11 +19,30 @@
         
         <main>
             <section>
-                <p>Welcome to Open Studio. This site is an open-source notebook for my thesis process, documenting research, references, and experiments in real time. By sharing the process of developing my personal practice, I'm exploring design as a shared commons—–an unfinished space where ideas surface, shift, and invite others to learn, question, and build with me.</p><br>
+                <p>Welcome to Open Studio. This site is an open-source notebook for my Parsons CD thesis process, documenting research, references, and experiments in real time. By sharing the process of developing my personal practice, I'm exploring design as a shared commons—–an unfinished space where ideas surface, shift, and invite others to learn, question, and build with me.
+                </p><br>
                 <p style="font-size: 12px; opacity: 0.5;">Last Updated: Friday, September 19, 2025</p>
             </section>
-        </main>
-    </div>
-    
-</body>
-</html>
+            <section class="draggable-gallery" style="margin-top: 40px;">
+                <div class="draggable-container" id="draggableContainer">
+                    <img src="process/Thesis256Sketch1.jpg" alt="Image 1" class="draggable-image">
+                    <img src="process/Thesis256Sketch2.jpg" alt="Image 2" class="draggable-image">
+                    <img src="process/Thesis256Sketch3.jpg" alt="Image 3" class="draggable-image">
+                    <img src="process/Thesis256Sketch4.jpg" alt="Image 4" class="draggable-image">
+                </div>
+             </section>
+         </main>
+     </div>
+
+     <!-- Image Modal -->
+     <div id="imageModal" class="image-modal">
+         <div class="modal-backdrop"></div>
+         <div class="modal-content">
+             <button id="modalClose" class="modal-close">×</button>
+             <img id="modalImage" src="" alt="" class="modal-image">
+         </div>
+     </div>
+
+     <script src="js/utils.js"></script>
+ </body>
+ </html>

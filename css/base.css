@@ -41,6 +41,7 @@ body {
   letter-spacing: .01em;
   background-color: var(--bg);
   overflow-x: auto;
+  overflow-y: visible;
 }
 
 p {
@@ -180,4 +181,179 @@ header nav a {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: -0.05em;
+}
+
+/* Draggable Gallery - Post-it Note Style */
+.draggable-gallery {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  overflow: visible;
+  position: relative;
+}
+
+.draggable-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 200px;
+  padding: 1rem;
+  background: transparent;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.draggable-image {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: grab;
+  transition: all 0.1s ease;
+  box-shadow: 
+    0 2px 8px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: #fff;
+  padding: 4px;
+  position: relative;
+  transform-origin: center;
+}
+
+.draggable-image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 
+    0 4px 16px rgba(0,0,0,0.15),
+    0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.draggable-image:active {
+  cursor: grabbing;
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 
+    0 8px 24px rgba(0,0,0,0.2),
+    0 4px 12px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.draggable-image.dragging {
+  opacity: 0.8;
+  transform: scale(1.1) rotate(3deg);
+  z-index: 1000;
+  pointer-events: none;
+  cursor: grabbing;
+}
+
+/* Post-it note effect with subtle rotation */
+.draggable-image:nth-child(1) { transform: rotate(-1deg); }
+.draggable-image:nth-child(2) { transform: rotate(1.5deg); }
+.draggable-image:nth-child(3) { transform: rotate(-0.5deg); }
+.draggable-image:nth-child(4) { transform: rotate(2deg); }
+.draggable-image:nth-child(5) { transform: rotate(-1.2deg); }
+.draggable-image:nth-child(6) { transform: rotate(0.8deg); }
+
+/* Drop zone styling */
+.draggable-container.drag-over {
+  background: rgba(0,0,0,0.02);
+  border: 2px dashed rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+/* Image Modal */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal.open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-modal.open .modal-backdrop {
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.image-modal.open .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .draggable-image {
+    width: 140px;
+    height: auto;
+  }
+  
+  .draggable-container {
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  .modal-content {
+    padding: 15px;
+    max-width: 95vw;
+    max-height: 95vh;
+  }
 }
