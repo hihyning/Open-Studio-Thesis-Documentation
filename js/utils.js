@@ -157,17 +157,17 @@ function initDraggableGallery(containerId = 'draggableContainer') {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  const images = container.querySelectorAll('.draggable-image');
+  const draggableElements = container.querySelectorAll('.draggable-image');
   const modal = document.getElementById('imageModal');
   const modalImage = document.getElementById('modalImage');
   const modalClose = document.getElementById('modalClose');
   
-  // Store positions for each image
-  const imagePositions = {};
+  // Store positions for each element
+  const elementPositions = {};
 
-  // Make images draggable and clickable
-  images.forEach((img, index) => {
-    setupDragHandlers(img, index);
+  // Make all draggable elements (images and text post-its) draggable and clickable
+  draggableElements.forEach((element, index) => {
+    setupDragHandlers(element, index);
   });
 
   // Modal events
@@ -185,18 +185,21 @@ function initDraggableGallery(containerId = 'draggableContainer') {
     }
   });
 
-  function setupDragHandlers(img, index) {
+  function setupDragHandlers(element, index) {
     let isDragging = false;
     let hasMoved = false;
     let startX, startY, startLeft, startTop;
     const DRAG_THRESHOLD = 2; // Minimum pixels to move before considering it a drag
     
+    // Create unique identifier for element (use src for images, content for text)
+    const elementId = element.src || element.textContent.trim().substring(0, 50);
+    
     // Set initial position if not already set
-    if (!imagePositions[img.src]) {
-      imagePositions[img.src] = { left: 0, top: 0 };
+    if (!elementPositions[elementId]) {
+      elementPositions[elementId] = { left: 0, top: 0 };
     }
     
-    img.addEventListener('pointerdown', (e) => {
+    element.addEventListener('pointerdown', (e) => {
       if (e.button !== 0) return; // Only left mouse button
       
       isDragging = false;
@@ -204,21 +207,21 @@ function initDraggableGallery(containerId = 'draggableContainer') {
       startX = e.clientX;
       startY = e.clientY;
       
-      const rect = img.getBoundingClientRect();
+      const rect = element.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
       startLeft = rect.left - containerRect.left;
       startTop = rect.top - containerRect.top;
       
-      img.style.position = 'absolute';
-      img.style.left = startLeft + 'px';
-      img.style.top = startTop + 'px';
-      img.setPointerCapture(e.pointerId);
+      element.style.position = 'absolute';
+      element.style.left = startLeft + 'px';
+      element.style.top = startTop + 'px';
+      element.setPointerCapture(e.pointerId);
       
       e.preventDefault();
     });
     
-    img.addEventListener('pointermove', (e) => {
-      if (!img.hasPointerCapture(e.pointerId)) return;
+    element.addEventListener('pointermove', (e) => {
+      if (!element.hasPointerCapture(e.pointerId)) return;
       
       const deltaX = e.clientX - startX;
       const deltaY = e.clientY - startY;
@@ -228,55 +231,60 @@ function initDraggableGallery(containerId = 'draggableContainer') {
       if (distance > DRAG_THRESHOLD && !hasMoved) {
         hasMoved = true;
         isDragging = true;
-        img.classList.add('dragging');
-        img.dataset.wasDragged = 'true'; // Mark that this was a drag operation
+        element.classList.add('dragging');
+        element.dataset.wasDragged = 'true'; // Mark that this was a drag operation
       }
       
       if (isDragging) {
         // Follow cursor more closely - use direct cursor position
-        const rect = img.getBoundingClientRect();
+        const rect = element.getBoundingClientRect();
         const containerRect = container.getBoundingClientRect();
         const newLeft = e.clientX - containerRect.left - (rect.width / 2);
         const newTop = e.clientY - containerRect.top - (rect.height / 2);
         
-        img.style.left = newLeft + 'px';
-        img.style.top = newTop + 'px';
+        element.style.left = newLeft + 'px';
+        element.style.top = newTop + 'px';
       }
     });
     
-    img.addEventListener('pointerup', (e) => {
-      if (!img.hasPointerCapture(e.pointerId)) return;
+    element.addEventListener('pointerup', (e) => {
+      if (!element.hasPointerCapture(e.pointerId)) return;
       
-      img.releasePointerCapture(e.pointerId);
+      element.releasePointerCapture(e.pointerId);
       
       if (isDragging) {
         // Save position only if we actually dragged
-        const left = parseInt(img.style.left);
-        const top = parseInt(img.style.top);
-        imagePositions[img.src] = { left, top };
+        const left = parseInt(element.style.left);
+        const top = parseInt(element.style.top);
+        elementPositions[elementId] = { left, top };
         
         // Add some random rotation for post-it effect
         const rotation = (Math.random() - 0.5) * 6; // -3 to +3 degrees
-        img.style.transform = `rotate(${rotation}deg)`;
+        element.style.transform = `rotate(${rotation}deg)`;
       } else {
-        // It was a click, not a drag - open modal
-        openModal(img.src, img.alt);
+        // It was a click, not a drag - open modal (only for images)
+        if (element.src) {
+          openModal(element.src, element.alt);
+        }
       }
       
       // Reset drag state
       isDragging = false;
       hasMoved = false;
-      img.classList.remove('dragging');
+      element.classList.remove('dragging');
     });
     
-    // Also handle click events for modal (only if not dragged)
-    img.addEventListener('click', (e) => {
+    // Also handle click events for modal (only if not dragged and only for images)
+    element.addEventListener('click', (e) => {
       // Check if this was a drag operation
-      if (img.dataset.wasDragged === 'true') {
-        img.dataset.wasDragged = 'false'; // Reset for next interaction
+      if (element.dataset.wasDragged === 'true') {
+        element.dataset.wasDragged = 'false'; // Reset for next interaction
         return; // Don't open modal if it was a drag
       }
-      openModal(img.src, img.alt);
+      // Only open modal for images, not text post-its
+      if (element.src) {
+        openModal(element.src, element.alt);
+      }
     });
   }
 
@@ -294,13 +302,14 @@ function initDraggableGallery(containerId = 'draggableContainer') {
 
   return {
     reset: () => {
-      images.forEach(img => {
-        img.style.position = '';
-        img.style.left = '';
-        img.style.top = '';
-        img.style.zIndex = '';
-        img.style.transform = '';
-        delete imagePositions[img.src];
+      draggableElements.forEach(element => {
+        element.style.position = '';
+        element.style.left = '';
+        element.style.top = '';
+        element.style.zIndex = '';
+        element.style.transform = '';
+        const elementId = element.src || element.textContent.trim().substring(0, 50);
+        delete elementPositions[elementId];
       });
     }
   };
