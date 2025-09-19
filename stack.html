@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Diagonal Stack</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAF8F2;
+    --ink: #0B0B0B;
+    --line: #E4DFD5;
+    --gap: 14px;
+    --cardW: 380px; /* image render width (before scaling) */
+    --cardH: 240px;
+  }
+  *{ box-sizing: border-box }
+  html,body{ height:100% }
+  body{
+    margin:0; color:var(--ink); font-family:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    background:
+      radial-gradient(circle, var(--line) 1px, transparent 1px) 0 0/18px 18px,
+      var(--bg);
+    overflow: hidden; /* we manage scrolling with wheel */
+  }
+  .ui{
+    position: fixed; inset: 0; pointer-events: none; display:flex; flex-direction:column; justify-content:space-between;
+    padding: 16px;
+  }
+  .hud{ display:flex; gap:12px; align-items:center; pointer-events:auto }
+  .hud button {
+    background: var(--bg);
+    border: 1px solid #E4DFD5;
+    color: var(--ink);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .hud button:hover {
+    background: #F5F3ED;
+    border-color: #D1CABA;
+    transform: translateY(-1px);
+  }
+  .hint{ font-size:12px; opacity:.7 }
+  .stage{
+    position: fixed; inset: 0; perspective: 1600px; overflow:hidden;
+  }
+  .world{
+    position:absolute; inset:0; transform-style: preserve-3d;
+    /* we will translate this to center cards initially */
+  }
+  .card{
+    position:absolute; 
+    transform-style: preserve-3d;
+    transition: filter .2s ease, box-shadow .2s ease, transform .2s ease;
+    will-change: transform, filter, opacity;
+    cursor: zoom-in;
+    padding: 20px; /* Add padding to make hover area larger */
+  }
+  .card img,
+  .card video {
+    max-width: var(--cardW);
+    max-height: var(--cardH);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0,0,0,.08);
+    background: transparent;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover img,
+  .card:hover video {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+  }
+  .pin{ /* tiny pin/tape decal */
+    position:absolute; width:12px; height:12px; background:#fff; border:1px solid #bbb; border-radius:50%;
+    left: 28px; top: 26px; box-shadow: 0 1px 0 rgba(0,0,0,.25);
+  }
+  .card.is-hover img,
+  .card.is-hover video { box-shadow: 0 12px 24px rgba(0,0,0,.18) }
+  .card.is-lock{ cursor: default }
+  .detailbar{
+    pointer-events:auto;
+    background: color-mix(in oklab, var(--bg) 90%, white);
+    border-top: 1px solid #E8E1D6;
+    padding: 16px 20px; font-size: 13px; 
+    min-height: auto;
+  }
+  .detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .detail-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .detail-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .pill{ font-size:12px; border:1px dashed #D1CABA; padding:2px 8px; border-radius:999px; background:#fff; }
+  .title{ font-weight:600 }
+  .spacer{ flex:1 }
+  .ghost{ opacity:.12 }
+  
+  /* Modal styles - matching images.html exactly */
+  .modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1000;
+  }
+  .modal.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.1);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .dialog {
+    background: var(--bg);
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    border: 1px solid #E6E1D6;
+    border-radius: 10px;
+    transform: translateZ(-300px) rotateX(25deg) rotateY(10deg) scale(0.5);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  }
+  .modal.open .dialog {
+    transform: translateZ(0) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+  .modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .modal.open .modal-backdrop {
+    opacity: 1;
+  }
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    z-index: 10;
+  }
+  .modal-close:hover {
+    background: rgba(0,0,0,0.05);
+    transform: scale(1.1);
+  }
+  .dialog-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .image-container {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+    border: 1px solid #E6E1D6;
+    border-radius: var(--radius);
+  }
+  .meta-container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .meta h3 {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+  }
+  .meta p {
+    margin: 0 0 0.5rem 0;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  .meta a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-size: 14px;
+  }
+  .categories-container h4,
+  .tags-container h4,
+  .notes-container h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .pills .pill {
+    font-size: 12px;
+    border: 1px dashed #D1CABA;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #fff;
+  }
+  .notes {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .dialog-content {
+      grid-template-columns: 1fr;
+      padding: 0.75rem;
+    }
+    
+    .image-container {
+      grid-column: 1;
+    }
+    
+    .meta-container {
+      grid-column: 1;
+    }
+    
+    .modal-image {
+      max-height: 50vh;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div id="world" class="world"></div>
+  </div>
+
+  <div class="ui">
+    <div class="hud">
+      <span class="hint">Scroll ←/→ along the stack · Hover to inspect · Click to view details</span>
+      <span class="spacer"></span>
+      <button id="back" class="hud">← Back to Grid</button>
+      <button id="shuffle" class="hud">Shuffle</button>
+    </div>
+    <div id="detail" class="detailbar ghost">
+      <div class="detail-content">
+        <div class="detail-header">
+      <span class="title" id="d-title"></span>
+      <span id="d-meta"></span>
+        </div>
+        <div class="detail-categories" id="d-categories"></div>
+        <div class="detail-tags" id="d-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="dialog">
+      <button id="modal-close" class="modal-close" aria-label="Close modal">×</button>
+      <div class="dialog-content">
+        <div class="image-container">
+          <img id="modal-image" src="" alt="" class="modal-image">
+        </div>
+        <div class="meta-container">
+          <div class="meta">
+            <h3 id="modal-image-title"></h3>
+            <p id="modal-image-credit"></p>
+            <p id="modal-image-year"></p>
+            <a id="modal-image-link" href="" target="_blank" rel="noopener">View Source</a>
+          </div>
+          <div class="categories-container">
+            <h4>Categories</h4>
+            <div id="modal-categories" class="pills"></div>
+          </div>
+          <div class="tags-container">
+            <h4>Tags</h4>
+            <div id="modal-tags" class="pills"></div>
+          </div>
+          <div class="notes-container">
+            <h4>Notes</h4>
+            <p id="modal-notes" class="notes"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(async function(){
+  const res = await fetch('data/images.json'); // put your JSON here
+  const data = await res.json();
+
+  // --- CONFIG: diagonal vector & scaling ---
+  const STEP_X = 160;   // pixels to advance per item on X (reduced from 220)
+  const STEP_Y = 80;    // pixels to advance per item on Y (reduced from 120)
+  const STEP_Z = -120;  // negative = farther from camera (depth) (reduced from -180)
+  const ROTATE = -8;    // degrees to tilt each card
+  const SCALE_FAR = 0.55;  // scale for far cards
+  const SCALE_NEAR = 1.0;  // scale for near cards
+
+  // --- STATE ---
+  let progress = 0;      // where we are along the stack (float)
+  let target = 0;        // where we want to be (wheel drives this)
+  let lockedId = null;   // clicked card id
+  let hoveredId = null;  // currently hovered
+
+  const world = document.getElementById('world');
+  const detail = document.getElementById('detail');
+  const dTitle = document.getElementById('d-title');
+  const dMeta  = document.getElementById('d-meta');
+  const dCategories = document.getElementById('d-categories');
+  const dTags  = document.getElementById('d-tags');
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modal-image');
+  const modalTitle = document.getElementById('modal-image-title');
+  const modalCredit = document.getElementById('modal-image-credit');
+  const modalYear = document.getElementById('modal-image-year');
+  const modalLink = document.getElementById('modal-image-link');
+  const modalCategories = document.getElementById('modal-categories');
+  const modalTags = document.getElementById('modal-tags');
+  const modalNotes = document.getElementById('modal-notes');
+  const modalClose = document.getElementById('modal-close');
+
+  // center world so index 0 roughly near center
+  world.style.left = '50%';
+  world.style.top  = '50%';
+  world.style.transform = 'translate(-50%, -50%)';
+
+  // Build cards
+  const cards = data.map((d, i) => {
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.dataset.id = d.id;
+    
+    // Create media element based on type
+    const isVideo = d.type === 'video';
+    const mediaElement = isVideo 
+      ? `<video src="${d.src}" autoplay muted loop playsinline></video>`
+      : `<img src="${d.src}" alt="${d.title || 'Image'}" loading="lazy">`;
+    
+    el.innerHTML = `${mediaElement}<div class="pin"></div>`;
+    world.appendChild(el);
+
+    el.addEventListener('pointerenter', () => { hoveredId = d.id; el.classList.add('is-hover'); });
+    el.addEventListener('pointerleave', () => { if(hoveredId === d.id) hoveredId = null; el.classList.remove('is-hover'); });
+    el.addEventListener('click', (e) => { 
+      e.preventDefault();
+      openModal(d, el);
+    });
+
+    return {el, data: d, index: i};
+  });
+
+  // wheel scroll → change target index
+  window.addEventListener('wheel', (e) => {
+    const dir = Math.sign(e.deltaY);
+    target += dir * 0.3; // reduced sensitivity
+    target = clamp(target, 0, data.length - 1);
+  }, {passive:true});
+
+  // keyboard alternative
+  window.addEventListener('keydown', (e)=>{
+    if(e.key === 'ArrowRight' || e.key === 'ArrowDown') { target = clamp(target + 1, 0, data.length-1); }
+    if(e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   { target = clamp(target - 1, 0, data.length-1); }
+    if(e.key === 'Escape'){ 
+      if(modal.classList.contains('open')) {
+        closeModal();
+      } else {
+        lockedId = null; 
+        updateDetail(); 
+        updateOpacity(); 
+      }
+    }
+  });
+
+  document.getElementById('back').onclick = () => {
+    window.location.href = 'images.html';
+  };
+
+  document.getElementById('shuffle').onclick = () => { 
+    // Shuffle the data array
+    const shuffledData = [...data].sort(() => Math.random() - 0.5);
+    
+    // Update the cards with new data order and reorder them in the DOM
+    cards.forEach((card, index) => {
+      card.data = shuffledData[index];
+      card.el.dataset.id = shuffledData[index].id;
+      
+      // Update the media content based on the new data
+      const isVideo = shuffledData[index].type === 'video';
+      const mediaElement = isVideo 
+        ? `<video src="${shuffledData[index].src}" autoplay muted loop playsinline></video>`
+        : `<img src="${shuffledData[index].src}" alt="${shuffledData[index].title || 'Image'}" loading="lazy">`;
+      
+      card.el.innerHTML = `${mediaElement}<div class="pin"></div>`;
+      
+      // Reorder the DOM elements to match the new shuffled order
+      world.appendChild(card.el);
+    });
+    
+    // Reset view to beginning
+    target = progress = 0; 
+    lockedId = null; 
+    updateDetail(); 
+    updateOpacity(); 
+  };
+
+  // Modal functionality
+  function openModal(item, clickedCard) {
+    const isVideo = item.type === 'video';
+    
+    // Get the clicked card's position and transform
+    const cardRect = clickedCard.getBoundingClientRect();
+    const cardTransform = window.getComputedStyle(clickedCard).transform;
+    
+    // Populate modal content first
+    if (isVideo) {
+      modalImage.style.display = 'none';
+      let videoElement = modalImage.parentNode.querySelector('video');
+      if (!videoElement) {
+        videoElement = document.createElement('video');
+        videoElement.className = 'modal-image';
+        videoElement.controls = true;
+        videoElement.autoplay = true;
+        videoElement.muted = true;
+        videoElement.loop = true;
+        modalImage.parentNode.appendChild(videoElement);
+      }
+      videoElement.src = item.src;
+      videoElement.style.display = 'block';
+    } else {
+      modalImage.style.display = 'block';
+      const videoElement = modalImage.parentNode.querySelector('video');
+      if (videoElement) {
+        videoElement.style.display = 'none';
+      }
+      modalImage.src = item.src;
+      modalImage.alt = item.title || 'Image';
+    }
+    
+    // Populate all the details
+    modalTitle.textContent = item.title || 'Untitled';
+    modalCredit.textContent = item.creator || 'Unknown';
+    modalYear.textContent = item.year || 'Unknown';
+    modalLink.href = item.credit_url || '#';
+    modalLink.style.display = item.credit_url ? 'inline' : 'none';
+    
+    // Categories
+    modalCategories.innerHTML = (item.categories || []).map(cat => 
+      `<span class="pill">${escapeHtml(cat)}</span>`
+    ).join('');
+    
+    // Tags
+    modalTags.innerHTML = (item.tags || []).map(tag => 
+      `<span class="pill">${escapeHtml(tag)}</span>`
+    ).join('');
+    
+    // Notes
+    modalNotes.textContent = item.notes || '';
+    modalNotes.style.display = item.notes ? 'block' : 'none';
+    
+    // Position modal at the clicked card's position and size
+    const dialog = modal.querySelector('.dialog');
+    const cardCenterX = cardRect.left + cardRect.width / 2;
+    const cardCenterY = cardRect.top + cardRect.height / 2;
+    const cardSize = Math.min(cardRect.width, cardRect.height);
+    
+    // Set initial modal position and size
+    dialog.style.position = 'fixed';
+    dialog.style.left = (cardCenterX - cardSize / 2) + 'px';
+    dialog.style.top = (cardCenterY - cardSize / 2) + 'px';
+    dialog.style.width = cardSize + 'px';
+    dialog.style.height = cardSize + 'px';
+    dialog.style.transform = cardTransform;
+    dialog.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+    
+    // Show modal immediately but positioned at card
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    
+    // Calculate final center position based on image size
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    
+    // Wait for image to load to get actual dimensions
+    const img = isVideo ? modalImage.parentNode.querySelector('video') : modalImage;
+    const updateModalSize = () => {
+      const contentPadding = 32; // 1rem on each side
+      const metaWidth = 270; // Width for meta content
+      const targetWidth = Math.min(600, window.innerWidth * 0.8); // Fixed reasonable width
+      const targetHeight = Math.min(500, window.innerHeight * 0.8); // Fixed reasonable height
+      
+      dialog.style.left = (centerX - targetWidth / 2) + 'px';
+      dialog.style.top = (centerY - targetHeight / 2) + 'px';
+      dialog.style.width = targetWidth + 'px';
+      dialog.style.height = targetHeight + 'px';
+      dialog.style.transform = 'translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) scale(1)';
+    };
+    
+    if (isVideo) {
+      // For videos, wait for loadedmetadata
+      img.addEventListener('loadedmetadata', updateModalSize, { once: true });
+    } else {
+      // For images, wait for load
+      img.addEventListener('load', updateModalSize, { once: true });
+    }
+    
+    // Fallback in case event doesn't fire
+    setTimeout(updateModalSize, 100);
+  }
+
+  function closeModal() {
+    const dialog = modal.querySelector('.dialog');
+    
+    // Calculate center position (approximate stack center)
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    const targetSize = 200; // Smaller size for stack
+    
+    // Animate modal back to stack position
+    dialog.style.left = (centerX - targetSize / 2) + 'px';
+    dialog.style.top = (centerY - targetSize / 2) + 'px';
+    dialog.style.width = targetSize + 'px';
+    dialog.style.height = targetSize + 'px';
+    dialog.style.transform = 'translate3d(0, 0, -200px) rotateX(25deg) rotateY(10deg) scale(0.6)';
+    dialog.style.opacity = '0';
+    
+    // Hide modal after animation
+    setTimeout(() => {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+      
+      // Reset dialog styles
+      dialog.style.position = '';
+      dialog.style.left = '';
+      dialog.style.top = '';
+      dialog.style.width = '';
+      dialog.style.height = '';
+      dialog.style.transform = '';
+      dialog.style.transition = '';
+      dialog.style.opacity = '';
+      
+      // Reset modal content
+      modalImage.src = '';
+      modalImage.alt = '';
+      modalTitle.textContent = '';
+      modalCredit.textContent = '';
+      modalYear.textContent = '';
+      modalLink.href = '#';
+      modalCategories.innerHTML = '';
+      modalTags.innerHTML = '';
+      modalNotes.textContent = '';
+      
+      // Hide any video element
+      const videoElement = modalImage.parentNode.querySelector('video');
+      if (videoElement) {
+        videoElement.style.display = 'none';
+      }
+    }, 400);
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal || e.target.classList.contains('modal-backdrop')) {
+      closeModal();
+    }
+  });
+
+  // Main RAF loop
+  function tick(){
+    // ease toward target
+    progress += (target - progress) * 0.08;
+
+    // position all cards relative to progress
+    cards.forEach(({el, index})=>{
+      const t = index - progress; // distance along the stack; 0 is "current"
+      const x = t * STEP_X;
+      const y = t * STEP_Y;
+      const z = t * STEP_Z; // becomes positive toward camera because STEP_Z is negative
+      const depth = Math.min(Math.abs(t), 6); // cap effect
+      const s = lerp(SCALE_NEAR, SCALE_FAR, depth/6);
+      const o = 1 - Math.min(depth * 0.10, 0.6);
+
+      // Check if this card is being hovered
+      const isHovered = el.dataset.id === hoveredId;
+      const hoverY = isHovered ? -10 : 0;
+      
+      el.style.transform = `translate3d(${x}px, ${y + hoverY}px, ${z}px) rotateZ(${ROTATE}deg) scale(${s})`;
+      el.style.opacity = o;
+      el.style.zIndex = String(1000 - Math.floor(depth*10) + (isHovered ? 100 : 0)); // hovered cards on top
+      el.style.filter = (hoveredId && el.dataset.id !== hoveredId && lockedId !== el.dataset.id) ? 'grayscale(30%) blur(0.4px)' : 'none';
+    });
+
+    updateOpacity(); // dims others when a card is locked/hovered
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  function updateOpacity(){
+    const activeId = lockedId || hoveredId;
+    if(!activeId){
+      cards.forEach(({el})=>{ el.style.opacity = el.style.opacity; });
+      detail.classList.add('ghost');
+      return;
+    }
+    cards.forEach(({el})=>{
+      if(el.dataset.id !== activeId){ el.style.opacity = 0.35; }
+    });
+  }
+
+  function updateDetail(){
+    const active = data.find(d => d.id === (lockedId || hoveredId));
+    if(!active){ 
+      detail.classList.add('ghost'); 
+      dTitle.textContent=''; 
+      dMeta.textContent=''; 
+      dCategories.innerHTML=''; 
+      dTags.innerHTML=''; 
+      return; 
+    }
+    detail.classList.remove('ghost');
+    dTitle.textContent = active.title || 'Untitled';
+    
+    const parts = [active.creator || 'Unknown'];
+    if(active.year) parts.push(String(active.year));
+    dMeta.textContent = ' · ' + parts.join(' · ');
+    
+    // Categories
+    dCategories.innerHTML = (active.categories||[]).map(c=>`<span class="pill">${escapeHtml(c)}</span>`).join(' ');
+    
+    // Tags
+    dTags.innerHTML = (active.tags||[]).map(t=>`<span class="pill">${escapeHtml(t)}</span>`).join(' ');
+  }
+
+  // helpers
+  function clamp(n, a, b){ return Math.max(a, Math.min(b, n)); }
+  function lerp(a, b, t){ return a + (b-a)*t; }
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])); }
+})();
+</script>
+</body>
+</html>

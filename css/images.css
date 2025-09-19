@@ -102,8 +102,55 @@
 }
 
 /* Mode Toggle */
+.mode-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 .mode-btn {
-  min-width: 100px;
+  min-width: 120px;
+}
+
+.mode-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #E6E1D6;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: none;
+  min-width: 120px;
+}
+
+.mode-options.show {
+  display: block;
+}
+
+.mode-option {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: white;
+  color: var(--ink);
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mode-option:hover {
+  background: #F5F3ED;
+}
+
+.mode-option:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.mode-option:last-child {
+  border-radius: 0 0 4px 4px;
 }
 
 /* Columns Slider */
@@ -210,7 +257,8 @@
 }
 
 /* Mess mode specific image sizing */
-.mess .card img {
+.mess .card img,
+.mess .card video {
   width: 100%;
   height: 80px; /* Much smaller height for mess mode */
   object-fit: contain; /* Show full image instead of cropping */
@@ -259,7 +307,8 @@
   box-shadow: var(--shadow);
 }
 
-.card img {
+.card img,
+.card video {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -347,20 +396,10 @@
   border-left: 1px solid #E6E1D6;
 }
 
-.dialog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border-bottom: 1px solid #E6E1D6;
-}
-
-.dialog-header h2 {
-  margin: 0;
-  font-size: 16px;
-}
-
 .modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   background: none;
   border: none;
   font-size: 24px;
@@ -371,13 +410,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: rgba(0,0,0,0.05);
+  transform: scale(1.1);
 }
 
 .dialog-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .image-container {
@@ -403,6 +450,8 @@
 .meta h3 {
   font-size: 16px;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
 .meta p {
@@ -499,7 +548,8 @@ transform: skew(-15deg);
     grid-template-columns: 1fr;
   }
   
-  .card img {
+  .card img,
+  .card video {
     height: 250px;
   }
 }
@@ -558,7 +608,8 @@ transform: skew(-15deg);
     page-break-inside: avoid;
   }
   
-  .card img {
+  .card img,
+  .card video {
     height: 150px;
   }
   

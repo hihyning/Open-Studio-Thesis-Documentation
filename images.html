@@ -43,10 +43,20 @@
                         </div>
                     </div>
                 </div>
-                
+                                <!-- AND/OR Toggle -->
+                                <div class="logic-container">
+                                    <button id="logic-toggle" class="logic-btn" data-logic="or">OR</button>
+                                </div>
                 <!-- Mode Toggle -->
                 <div class="mode-container">
-                    <button id="mode-toggle" class="mode-btn" data-mode="grid">Grid ↔ Mess</button>
+                    <div class="mode-dropdown">
+                        <button id="mode-toggle" class="mode-btn" data-mode="grid">VIEW IN: Grid</button>
+                        <div class="mode-options">
+                            <button class="mode-option" data-mode="grid">Grid</button>
+                            <button class="mode-option" data-mode="mess">Mess</button>
+                            <button class="mode-option" data-mode="stack">Stack</button>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Columns Slider -->
@@ -56,10 +66,6 @@
                     <span id="columns-value">4</span>
                 </div>
                 
-                <!-- AND/OR Toggle -->
-                <div class="logic-container">
-                    <button id="logic-toggle" class="logic-btn" data-logic="or">OR</button>
-                </div>
                 
                 <!-- Date Sort Toggle -->
                 <div class="date-sort-container">
@@ -88,10 +94,7 @@
     <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-backdrop"></div>
         <div class="dialog">
-            <div class="dialog-header">
-                <h2 id="modal-title">Image Details</h2>
-                <button id="modal-close" class="modal-close" aria-label="Close modal">×</button>
-            </div>
+            <button id="modal-close" class="modal-close" aria-label="Close modal">×</button>
             <div class="dialog-content">
                 <div class="image-container">
                     <img id="modal-image" src="" alt="" class="modal-image">

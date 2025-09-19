@@ -12,6 +12,8 @@ let currentFilters = {
   dateSort: 'newest'
 };
 let messPositions = {};
+let savedScrollPosition = 0;
+let isClosingModal = false;
 
 // DOM elements
 const elements = {
@@ -48,12 +50,12 @@ async function init() {
     images = await response.json();
     
     // Extract categories and tags
-    images.forEach(img => {
-      if (img.categories) {
-        img.categories.forEach(cat => allCategories.add(cat));
+    images.forEach(item => {
+      if (item.categories) {
+        item.categories.forEach(cat => allCategories.add(cat));
       }
-      if (img.tags) {
-        img.tags.forEach(tag => allTags.add(tag));
+      if (item.tags) {
+        item.tags.forEach(tag => allTags.add(tag));
       }
     });
     
@@ -96,7 +98,7 @@ function initializeElements() {
   elements.modal = utils.qs('#modal');
   elements.modalClose = utils.qs('#modal-close');
   elements.modalImage = utils.qs('#modal-image');
-  elements.modalTitle = utils.qs('#modal-title');
+  elements.modalTitle = utils.qs('#modal-image-title');
   elements.modalCredit = utils.qs('#modal-image-credit');
   elements.modalYear = utils.qs('#modal-image-year');
   elements.modalLink = utils.qs('#modal-image-link');
@@ -128,7 +130,7 @@ function restoreState() {
   if (elements.search) elements.search.value = currentFilters.q;
   if (elements.columnsSlider) elements.columnsSlider.value = cols;
   if (elements.columnsValue) elements.columnsValue.textContent = cols;
-  if (elements.modeToggle) elements.modeToggle.textContent = currentMode === 'grid' ? 'Grid ↔ Mess' : 'Mess ↔ Grid';
+  if (elements.modeToggle) updateModeButton();
   if (elements.logicToggle) elements.logicToggle.textContent = currentFilters.logic.toUpperCase();
   if (elements.dateSortToggle) elements.dateSortToggle.textContent = currentFilters.dateSort === 'newest' ? 'Newest' : 'Oldest';
   
@@ -163,9 +165,27 @@ function setupEventListeners() {
     elements.clearFilters.addEventListener('click', clearAllFilters);
   }
   
-  // Mode toggle
+  // Mode dropdown
   if (elements.modeToggle) {
-    elements.modeToggle.addEventListener('click', toggleMode);
+    elements.modeToggle.addEventListener('click', toggleDropdown);
+    
+    // Add event listeners for dropdown options
+    const modeOptions = document.querySelectorAll('.mode-option');
+    modeOptions.forEach(option => {
+      option.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const mode = e.target.dataset.mode;
+        selectMode(mode);
+        hideDropdown();
+      });
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.mode-dropdown')) {
+        hideDropdown();
+      }
+    });
   }
   
   // Columns slider
@@ -282,9 +302,25 @@ function toggleFilterPanel() {
   elements.filterPanel.classList.toggle('open');
 }
 
-function toggleMode() {
-  currentMode = currentMode === 'grid' ? 'mess' : 'grid';
-  elements.modeToggle.textContent = currentMode === 'grid' ? 'Grid ↔ Mess' : 'Mess ↔ Grid';
+function toggleDropdown() {
+  const dropdown = document.querySelector('.mode-options');
+  dropdown.classList.toggle('show');
+}
+
+function hideDropdown() {
+  const dropdown = document.querySelector('.mode-options');
+  dropdown.classList.remove('show');
+}
+
+function selectMode(mode) {
+  if (mode === 'stack') {
+    // Navigate to stack.html
+    window.location.href = 'stack.html';
+    return;
+  }
+  
+  currentMode = mode;
+  updateModeButton();
   
   if (currentMode === 'mess') {
     elements.gridContainer.classList.add('mess');
@@ -298,6 +334,11 @@ function toggleMode() {
   
   renderImages();
   saveState();
+}
+
+function updateModeButton() {
+  const modeText = currentMode.charAt(0).toUpperCase() + currentMode.slice(1);
+  elements.modeToggle.textContent = `VIEW IN: ${modeText}`;
 }
 
 function handleColumnsChange(e) {
@@ -372,14 +413,14 @@ function randomizeMessPositions() {
 }
 
 function applyFilters() {
-  filteredImages = images.filter(img => {
+  filteredImages = images.filter(item => {
     // Text search
     if (currentFilters.q) {
       const haystack = [
-        img.title || '',
-        img.creator || '',
-        ...(img.categories || []),
-        ...(img.tags || [])
+        item.title || '',
+        item.creator || '',
+        ...(item.categories || []),
+        ...(item.tags || [])
       ].join(' ').toLowerCase();
       
       if (!haystack.includes(currentFilters.q)) {
@@ -391,13 +432,13 @@ function applyFilters() {
     if (currentFilters.categories.length > 0 || currentFilters.tags.length > 0) {
       const hasCategory = currentFilters.categories.length === 0 || 
         (currentFilters.logic === 'and' 
-          ? currentFilters.categories.every(cat => img.categories?.includes(cat))
-          : currentFilters.categories.some(cat => img.categories?.includes(cat)));
+          ? currentFilters.categories.every(cat => item.categories?.includes(cat))
+          : currentFilters.categories.some(cat => item.categories?.includes(cat)));
       
       const hasTag = currentFilters.tags.length === 0 || 
         (currentFilters.logic === 'and'
-          ? currentFilters.tags.every(tag => img.tags?.includes(tag))
-          : currentFilters.tags.some(tag => img.tags?.includes(tag)));
+          ? currentFilters.tags.every(tag => item.tags?.includes(tag))
+          : currentFilters.tags.some(tag => item.tags?.includes(tag)));
       
       if (currentFilters.logic === 'and') {
         return hasCategory && hasTag;
@@ -431,8 +472,8 @@ function renderImages() {
   // Create document fragment for performance
   const fragment = document.createDocumentFragment();
   
-  filteredImages.forEach(img => {
-    const card = createImageCard(img);
+  filteredImages.forEach(item => {
+    const card = createImageCard(item);
     fragment.appendChild(card);
   });
   
@@ -446,24 +487,30 @@ function renderImages() {
   }
 }
 
-function createImageCard(img) {
+function createImageCard(item) {
   const card = document.createElement('article');
   card.className = 'card';
-  card.setAttribute('data-id', img.id);
+  card.setAttribute('data-id', item.id);
   
-  const categoriesHtml = (img.categories || []).map(cat => 
+  const categoriesHtml = (item.categories || []).map(cat => 
     `<span class="pill">${cat}</span>`
   ).join('');
   
-  const creditHtml = img.credit_url ? 
-    `<a href="${img.credit_url}" target="_blank" rel="noopener">${img.creator || 'Unknown'}</a>` :
-    (img.creator || 'Unknown');
+  const creditHtml = item.credit_url ? 
+    `<a href="${item.credit_url}" target="_blank" rel="noopener">${item.creator || 'Unknown'}</a>` :
+    (item.creator || 'Unknown');
+  
+  // Check if it's a video or image
+  const isVideo = item.type === 'video';
+  const mediaHtml = isVideo 
+    ? `<video src="${item.src}" autoplay muted loop playsinline class="card-media"></video>`
+    : `<img src="${item.src}" alt="${item.title || 'Image'}" loading="lazy" decoding="async" class="card-media">`;
   
   card.innerHTML = `
-    <img src="${img.src}" alt="${img.title || 'Image'}" loading="lazy" decoding="async">
+    ${mediaHtml}
     <div class="meta">
-      <div class="title">${img.title || 'Untitled'}</div>
-      <div class="credit">${creditHtml} · ${img.year || 'Unknown'}</div>
+      <div class="title">${item.title || 'Untitled'}</div>
+      <div class="credit">${creditHtml} · ${item.year || 'Unknown'}</div>
       <div class="pills">${categoriesHtml}</div>
     </div>
   `;
@@ -475,7 +522,7 @@ function createImageCard(img) {
       card.dataset.wasDragged = 'false'; // Reset for next interaction
       return; // Don't open modal if it was a drag
     }
-    openModal(img.id);
+    openModal(item.id);
   });
   
   // Add drag handlers for mess mode
@@ -595,32 +642,73 @@ function restoreMessPositions() {
   saveMessPositions();
 }
 
-function openModal(imageId) {
-  const img = images.find(i => i.id === imageId);
-  if (!img) return;
+function openModal(itemId) {
+  const item = images.find(i => i.id === itemId);
+  if (!item) return;
+  
+  // Save current scroll position
+  savedScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+  // Check if it's a video or image
+  const isVideo = item.type === 'video';
   
   // Update modal content
-  elements.modalImage.src = img.src;
-  elements.modalImage.alt = img.title || 'Image';
-  elements.modalTitle.textContent = img.title || 'Untitled';
-  elements.modalCredit.textContent = img.creator || 'Unknown';
-  elements.modalYear.textContent = img.year || 'Unknown';
-  elements.modalLink.href = img.credit_url || '#';
-  elements.modalLink.style.display = img.credit_url ? 'inline' : 'none';
+  if (isVideo) {
+    // Hide the image element and create a video element
+    elements.modalImage.style.display = 'none';
+    
+    // Check if video element already exists
+    let videoElement = elements.modalImage.parentNode.querySelector('video');
+    if (!videoElement) {
+      videoElement = document.createElement('video');
+      videoElement.className = 'modal-image';
+      videoElement.style.width = '100%';
+      videoElement.style.height = 'auto';
+      videoElement.style.maxHeight = '70vh';
+      videoElement.style.objectFit = 'contain';
+      videoElement.style.display = 'block';
+      elements.modalImage.parentNode.appendChild(videoElement);
+    }
+    
+    videoElement.src = item.src;
+    videoElement.controls = true;
+    videoElement.autoplay = true;
+    videoElement.muted = true;
+    videoElement.loop = true;
+    videoElement.style.display = 'block';
+  } else {
+    // Show the image element and hide any video element
+    elements.modalImage.style.display = 'block';
+    
+    // Hide any existing video element
+    const videoElement = elements.modalImage.parentNode.querySelector('video');
+    if (videoElement) {
+      videoElement.style.display = 'none';
+    }
+    
+    elements.modalImage.src = item.src;
+    elements.modalImage.alt = item.title || 'Image';
+  }
+  
+  elements.modalTitle.textContent = item.title || 'Untitled';
+  elements.modalCredit.textContent = item.creator || 'Unknown';
+  elements.modalYear.textContent = item.year || 'Unknown';
+  elements.modalLink.href = item.credit_url || '#';
+  elements.modalLink.style.display = item.credit_url ? 'inline' : 'none';
   
   // Categories
-  elements.modalCategories.innerHTML = (img.categories || []).map(cat => 
+  elements.modalCategories.innerHTML = (item.categories || []).map(cat => 
     `<span class="pill">${cat}</span>`
   ).join('');
   
   // Tags
-  elements.modalTags.innerHTML = (img.tags || []).map(tag => 
+  elements.modalTags.innerHTML = (item.tags || []).map(tag => 
     `<span class="pill">${tag}</span>`
   ).join('');
   
   // Notes
-  elements.modalNotes.textContent = img.notes || '';
-  elements.modalNotes.style.display = img.notes ? 'block' : 'none';
+  elements.modalNotes.textContent = item.notes || '';
+  elements.modalNotes.style.display = item.notes ? 'block' : 'none';
   
   // Show modal
   elements.modal.classList.add('open');
@@ -645,6 +733,7 @@ function openModal(imageId) {
 }
 
 function closeModal() {
+  isClosingModal = true;
   const dialog = elements.modal.querySelector('.dialog');
   if (dialog) {
     // Start slide-out animation to the left
@@ -658,15 +747,41 @@ function closeModal() {
       // Restore body scroll
       document.body.style.overflow = '';
       
-      // Clear hash
-      window.location.hash = '';
+      // Clear hash using history API to prevent scroll
+      history.replaceState(null, null, window.location.pathname + window.location.search);
+      
+      // Restore scroll position after a brief delay to ensure hash change is processed
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          window.scrollTo({
+            top: savedScrollPosition,
+            left: 0,
+            behavior: 'instant'
+          });
+          isClosingModal = false;
+        });
+      });
     }, 300); // Match the CSS transition duration
   } else {
     // Fallback if dialog not found
     elements.modal.classList.remove('open');
     elements.modal.removeAttribute('aria-labelledby');
     document.body.style.overflow = '';
-    window.location.hash = '';
+    
+    // Clear hash using history API to prevent scroll
+    history.replaceState(null, null, window.location.pathname + window.location.search);
+    
+    // Restore scroll position after a brief delay
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        window.scrollTo({
+          top: savedScrollPosition,
+          left: 0,
+          behavior: 'instant'
+        });
+        isClosingModal = false;
+      });
+    });
   }
 }
 
@@ -681,8 +796,11 @@ function handleKeyboard(e) {
 }
 
 function handleHashNavigation() {
+  // Don't handle hash navigation if we're in the process of closing a modal
+  if (isClosingModal) return;
+  
   const hash = window.location.hash.slice(1);
-  if (hash && images.find(img => img.id === hash)) {
+  if (hash && images.find(item => item.id === hash)) {
     openModal(hash);
   }
 }
