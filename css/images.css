@@ -41,6 +41,7 @@
 
 .filter-btn {
   min-width: 80px;
+  text-transform: uppercase;
 }
 
 .filter-panel {
@@ -99,6 +100,7 @@
 .clear-btn {
   font-size: 12px;
   padding: 4px 8px;
+  text-transform: uppercase;
 }
 
 /* Mode Toggle */
@@ -109,6 +111,7 @@
 
 .mode-btn {
   min-width: 120px;
+  text-transform: uppercase;
 }
 
 .mode-options {
@@ -139,6 +142,7 @@
   text-align: left;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  text-transform: uppercase;
 }
 
 .mode-option:hover {
@@ -206,6 +210,7 @@
 /* Logic Toggle */
 .logic-btn {
   min-width: 40px;
+  text-transform: uppercase;
 }
 
 /* Date Sort Toggle */
@@ -216,6 +221,7 @@
 
 .date-sort-btn {
   min-width: 70px;
+  text-transform: uppercase;
 }
 
 /* Shuffle Button */
@@ -226,6 +232,7 @@
 
 .shuffle-btn {
   min-width: 80px;
+  text-transform: uppercase;
 }
 
 /* Grid Layout */
