@@ -891,6 +891,11 @@ header {
     max-height: none;
     border-radius: 0;
   }
+
+  .draggable-image {
+    width: 50%;
+    height: auto;
+  }
   
   .draggable-container {
     gap: 0.75rem;
