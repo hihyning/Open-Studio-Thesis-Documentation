@@ -55,6 +55,411 @@ li {
   opacity: 0.5;
 }
 
+ul {
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* Special styling for li elements in draggable containers */
+.draggable-image li {
+  opacity: 1;
+  font-size: 10px;
+  margin-left: 10px;
+  word-break: break-all;
+}
+
+.draggable-image ul {
+  opacity: 1;
+  font-size: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+/* Image Carousel Styles */
+.image-carousel {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 
+    0 2px 8px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 4px;
+  cursor: grab;
+  transition: all 0.1s ease;
+  transform-origin: center;
+}
+
+.image-carousel:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 
+    0 4px 16px rgba(0,0,0,0.15),
+    0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.image-carousel:active {
+  cursor: grabbing;
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 
+    0 8px 24px rgba(0,0,0,0.2),
+    0 4px 12px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.image-carousel.dragging {
+  opacity: 0.8;
+  transform: scale(1.1) rotate(3deg);
+  z-index: 1000;
+  pointer-events: none;
+  cursor: grabbing;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+
+.nav-btn:hover {
+  transform: translateY(-50%) scale(1.2);
+  color: blue;
+}
+
+.prev-btn {
+  left: -60px;
+}
+
+.next-btn {
+  right: -60px;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide-counter {
+  font-size: 10px;
+  margin: 8px 0 0 10px;
+  color: var(--muted);
+}
+
+/* Carousel Modal Styles */
+.carousel-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 3000;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-modal.open {
+  display: flex;
+}
+
+.carousel-modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-modal.open .carousel-modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.carousel-slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+
+.carousel-nav-btn:hover {
+  background: rgba(255,255,255,1);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.carousel-prev-btn {
+  left: 20px;
+}
+
+.carousel-next-btn {
+  right: 20px;
+}
+
+.carousel-slide-counter {
+  font-size: 14px;
+  margin: 15px 0 0 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Sketch Modal Styles */
+.sketch-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 3000;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketch-modal.open {
+  display: flex;
+}
+
+.sketch-modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.sketch-modal.open .sketch-modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.sketch-slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.sketch-slide {
+  display: none;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.sketch-slide.active {
+  display: block;
+}
+
+.sketch-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--ink);
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.sketch-prev-btn {
+  left: 10px;
+}
+
+.sketch-next-btn {
+  right: 10px;
+}
+
+.sketch-nav-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.sketch-slide-counter {
+  font-size: 14px;
+  margin: 15px 0 0 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.sketch-modal.open {
+  display: flex;
+}
+
+.sketch-modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketch-modal.open .sketch-modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.sketch-slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketch-slide {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.sketch-slide.active {
+  display: block;
+}
+
+.sketch-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+
+.sketch-nav-btn:hover {
+  background: rgba(255,255,255,1);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.sketch-prev-btn {
+  left: 20px;
+}
+
+.sketch-next-btn {
+  right: 20px;
+}
+
+
 /* Grid Paper Background */
 .grid-paper {
   background-color: var(--bg);
@@ -193,7 +598,7 @@ select:focus-visible {
 .sidebar-nav a {
   display: block;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.2;
   font-weight: 500;
   text-transform: uppercase;
@@ -228,6 +633,7 @@ header {
   padding: 1rem 0;
   overflow: visible;
   position: relative;
+  width: 100%;
 }
 
 .draggable-container {
@@ -244,7 +650,7 @@ header {
 }
 
 .draggable-image {
-  width: 180px;
+  width: 15%;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
@@ -258,6 +664,10 @@ header {
   padding: 4px;
   position: relative;
   transform-origin: center;
+}
+
+#imageCarousel {
+  width: 100%;
 }
 
 .draggable-image:hover {
@@ -378,22 +788,6 @@ header {
   justify-content: center;
 }
 
-.image-modal.open {
-  display: flex;
-}
-
-.modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-modal.open .modal-backdrop {
-  opacity: 1;
-}
-
 .modal-content {
   position: relative;
   background: white;
@@ -469,7 +863,7 @@ header {
     display: inline-block;
     margin-bottom: 0;
     padding: 0.25rem 0;
-    font-size: 12px;
+    font-size: 1em;
     flex: 1;
     text-align: center;
   }
