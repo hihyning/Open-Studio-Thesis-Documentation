@@ -849,10 +849,9 @@ header {
   
   .sidebar-nav {
     position: fixed;
-    top: 10px;
+    margin-left: 5px;
     max-width: 200px;
     display: flex;
-    gap: 1rem;
     z-index: 1000;
   }
   
@@ -861,7 +860,7 @@ header {
     margin-bottom: 0;
     font-size: 1em;
     flex: 1;
-    text-align: center;
+    text-align: left;
   }
   
   .sidebar-nav a:hover {
