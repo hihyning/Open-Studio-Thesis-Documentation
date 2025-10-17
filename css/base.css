@@ -889,7 +889,6 @@ header {
     height: auto;
     max-width: none;
     max-height: none;
-    border-radius: 0;
   }
 
   .draggable-image {
