@@ -330,6 +330,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('draggableContainer')) {
     initDraggableGallery();
   }
+  if (document.getElementById('draggableContainer2')) {
+    initDraggableGallery('draggableContainer2');
+  }
 });
 
 // Export for use in other files
