@@ -883,14 +883,9 @@ header {
     margin-left: 0;
     margin-top: 60px;
   }
-  
-  .draggable-image {
-    width: 100%;
-    height: auto;
-  }
 
   #imageCarousel{
-    width: 250%;
+    width: 250px;
     height: auto;
     max-width: none;
     max-height: none;
@@ -903,8 +898,7 @@ header {
   }
   
   .modal-content {
-    padding: 15px;
     max-width: 95vw;
-    max-height: 95vh;
+    height: auto;
   }
 }
