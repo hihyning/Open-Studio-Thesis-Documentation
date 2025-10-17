@@ -899,6 +899,7 @@ header {
   .draggable-container {
     gap: 0.75rem;
     padding: 0.75rem;
+    width: 100%;
   }
   
   .modal-content {
