@@ -885,8 +885,16 @@ header {
   }
   
   .draggable-image {
-    width: 140px;
+    width: 100%;
     height: auto;
+  }
+
+  #imageCarousel{
+    width: 250%;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
   }
   
   .draggable-container {
