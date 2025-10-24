@@ -763,6 +763,25 @@ header {
   border-radius: 2px;
 }
 
+/* Link styling within ul elements in text post-its */
+.draggable-image.text-postit ul a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.draggable-image.text-postit ul a:hover {
+  color: blue;
+  text-decoration-color: blue;
+  background: rgba(0, 0, 255, 0.1);
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
 /* Post-it note effect with subtle rotation */
 .draggable-image:nth-child(1) { transform: rotate(-1deg); }
 .draggable-image:nth-child(2) { transform: rotate(1.5deg); }
@@ -840,6 +859,64 @@ header {
   border-radius: 8px;
 }
 
+/* Toggle Button Styles */
+#toggleUpdates {
+  margin: 0;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+#toggleUpdates:hover {
+color: blue;
+scale: 1.1;
+transition: scale 0.2s ease;
+}
+
+#toggleUpdates.expanded {
+  color: blue;
+  scale: 1.1;
+  transition: scale 0.2s ease;
+}
+
+/* Desktop styles for sketch container */
+@media (min-width: 768px) {
+  #draggableContainer {
+    margin-top: -3em;
+    margin-bottom: -3em;
+  }
+}
+
+/* Updates List Styles */
+.updates-list {
+  display: none;
+  margin-top: -2em;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.updates-list li {
+  font-size: 1em;
+}
+
+.updates-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.updates-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
@@ -899,8 +976,63 @@ header {
     grid-template-columns: repeat(2, minmax(0, 0.5fr));
   }
   
+  /* Special mobile layout for the sketch images section */
+  #draggableContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #draggableContainer .draggable-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure text content is full width on mobile for this section */
+  section div[style*="flex: 1"] {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+  }
+  
+  /* Adjust proportions for this specific section to match other sections */
+  section div[style*="display: flex"] {
+    gap: 1rem !important;
+  }
+  
+  /* Make text take 70% width like other sections */
+  section div[style*="flex: 1"] {
+    flex: 0 0 70% !important;
+    width: 70% !important;
+  }
+  
+  /* Make post-it take 30% width like other sections */
+  section .draggable-container[style*="flex: 0 0 300px"] {
+    flex: 0 0 30% !important;
+    width: 30% !important;
+  }
+  
   .modal-content {
     max-width: 95vw;
     height: auto;
+  }
+  
+  /* Updates list mobile styles */
+  .updates-list {
+    margin-top: -1rem;
+    padding: 0.75rem;
+  }
+  
+  .updates-list li {
+    font-size: 0.9em;
+    padding: 0.25rem 0;
+  }
+  
+  #toggleUpdates {
+    font-size: 1.1em;
+    padding: 2px 6px;
   }
 }

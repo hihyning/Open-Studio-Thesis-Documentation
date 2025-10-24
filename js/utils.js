@@ -170,8 +170,8 @@ function initDraggableGallery(containerId = 'draggableContainer') {
     setupDragHandlers(element, index);
   });
 
-  // Special handling for sketch images in draggableContainer
-  if (containerId === 'draggableContainer') {
+  // Special handling for sketch images in draggableContainer and draggableContainer4
+  if (containerId === 'draggableContainer' || containerId === 'draggableContainer4') {
     const sketchImages = container.querySelectorAll('.draggable-image');
     sketchImages.forEach((sketchImage, index) => {
       // Override the click handler for sketch images
@@ -188,7 +188,7 @@ function initDraggableGallery(containerId = 'draggableContainer') {
         }
         
         console.log('Opening sketch modal for image:', index);
-        openSketchModal();
+        openSketchModal(index);
       });
     });
   }
@@ -238,14 +238,12 @@ function initDraggableGallery(containerId = 'draggableContainer') {
       startY = e.clientY;
       startTime = Date.now();
       
+      // Store initial position but don't change element positioning yet
       const rect = element.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
       startLeft = rect.left - containerRect.left;
       startTop = rect.top - containerRect.top;
       
-      element.style.position = 'absolute';
-      element.style.left = startLeft + 'px';
-      element.style.top = startTop + 'px';
       element.setPointerCapture(e.pointerId);
       
       e.preventDefault();
@@ -265,6 +263,11 @@ function initDraggableGallery(containerId = 'draggableContainer') {
         isDragging = true;
         element.classList.add('dragging');
         element.dataset.wasDragged = 'true'; // Mark that this was a drag operation
+        
+        // Only set positioning when we've confirmed it's a drag
+        element.style.position = 'absolute';
+        element.style.left = startLeft + 'px';
+        element.style.top = startTop + 'px';
       }
       
       if (isDragging) {
@@ -294,7 +297,12 @@ function initDraggableGallery(containerId = 'draggableContainer') {
         const rotation = (Math.random() - 0.5) * 6; // -3 to +3 degrees
         element.style.transform = `rotate(${rotation}deg)`;
       } else {
-        // It was a click, not a drag - open modal (only for images)
+        // It was a click, not a drag - reset any positioning and open modal (only for images)
+        element.style.position = '';
+        element.style.left = '';
+        element.style.top = '';
+        element.style.transform = '';
+        
         if (element.src) {
           openModal(element.src, element.alt);
         }
@@ -656,9 +664,14 @@ function initSketchModal() {
   };
 }
 
-function openSketchModal() {
+function openSketchModal(startIndex = 0) {
   const sketchModal = document.getElementById('sketchModal');
   if (sketchModal) {
+    // Set the starting slide index
+    if (window.sketchModalInstance && window.sketchModalInstance.goToSlide) {
+      window.sketchModalInstance.goToSlide(startIndex);
+    }
+    
     sketchModal.classList.add('open');
     document.body.style.overflow = 'hidden';
     sketchModal.focus();
@@ -673,15 +686,61 @@ function closeSketchModal() {
   }
 }
 
+// Toggle updates functionality
+function initToggleUpdates() {
+  const toggleButton = document.getElementById('toggleUpdates');
+  const updatesList = document.getElementById('updatesList');
+  
+  if (!toggleButton || !updatesList) return;
+  
+  let isExpanded = false;
+  
+  toggleButton.addEventListener('click', () => {
+    isExpanded = !isExpanded;
+    
+    if (isExpanded) {
+      updatesList.style.display = 'block';
+      toggleButton.textContent = '−';
+      toggleButton.classList.add('expanded');
+    } else {
+      updatesList.style.display = 'none';
+      toggleButton.textContent = '+';
+      toggleButton.classList.remove('expanded');
+    }
+  });
+  
+  // Add hover effects
+  toggleButton.addEventListener('mouseenter', () => {
+    if (!isExpanded) {
+      toggleButton.classList.add('hover');
+    }
+  });
+  
+  toggleButton.addEventListener('mouseleave', () => {
+    if (!isExpanded) {
+      toggleButton.classList.remove('hover');
+    }
+  });
+}
+
 // Auto-initialize draggable gallery when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM loaded, initializing galleries...');
   
+  // Initialize toggle updates
+  initToggleUpdates();
+  
   if (document.getElementById('draggableContainer')) {
     initDraggableGallery();
   }
-  if (document.getElementById('draggableContainer2')) {
-    initDraggableGallery('draggableContainer2');
+  if (document.getElementById('draggableContainer2a')) {
+    initDraggableGallery('draggableContainer2a');
+  }
+  if (document.getElementById('draggableContainer2b')) {
+    initDraggableGallery('draggableContainer2b');
+  }
+  if (document.getElementById('draggableContainer2c')) {
+    initDraggableGallery('draggableContainer2c');
   }
   if (document.getElementById('draggableContainer3')) {
     console.log('Found draggableContainer3, initializing...');
@@ -693,6 +752,9 @@ document.addEventListener('DOMContentLoaded', () => {
       initImageCarousel('draggableContainer3');
     }, 100);
   }
+  if (document.getElementById('draggableContainer4')) {
+    initDraggableGallery('draggableContainer4');
+  }
   
   // Initialize carousel modal
   if (document.getElementById('carouselModal')) {
@@ -703,7 +765,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize sketch modal
   if (document.getElementById('sketchModal')) {
     console.log('Initializing sketch modal...');
-    initSketchModal();
+    window.sketchModalInstance = initSketchModal();
   }
 });
 
