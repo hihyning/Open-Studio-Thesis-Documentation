@@ -170,8 +170,9 @@ function initDraggableGallery(containerId = 'draggableContainer') {
     setupDragHandlers(element, index);
   });
 
-  // Special handling for sketch images in draggableContainer and draggableContainer4
-  if (containerId === 'draggableContainer' || containerId === 'draggableContainer4') {
+  // Special handling for sketch images in different containers
+  if (containerId === 'draggableContainer') {
+    // IndexSketch images - use IndexSketch modal
     const sketchImages = container.querySelectorAll('.draggable-image');
     sketchImages.forEach((sketchImage, index) => {
       // Override the click handler for sketch images
@@ -187,7 +188,28 @@ function initDraggableGallery(containerId = 'draggableContainer') {
           return;
         }
         
-        console.log('Opening sketch modal for image:', index);
+        console.log('Opening index sketch modal for image:', index);
+        openIndexSketchModal(index);
+      });
+    });
+  } else if (containerId === 'draggableContainer4') {
+    // Thesis256Sketch images - use ThesisSketch modal
+    const sketchImages = container.querySelectorAll('.draggable-image');
+    sketchImages.forEach((sketchImage, index) => {
+      // Override the click handler for sketch images
+      sketchImage.addEventListener('click', function(e) {
+        // Don't open modal if clicking on links
+        if (e.target.tagName === 'A' || e.target.closest('a')) {
+          return;
+        }
+        
+        // Check if this was a drag operation
+        if (sketchImage.dataset.wasDragged === 'true') {
+          sketchImage.dataset.wasDragged = 'false';
+          return;
+        }
+        
+        console.log('Opening thesis sketch modal for image:', index);
         openSketchModal(index);
       });
     });
@@ -573,7 +595,98 @@ function closeCarouselModal() {
   }
 }
 
-// Sketch Modal functionality
+// Index Sketch Modal functionality
+function initIndexSketchModal() {
+  const indexSketchModal = document.getElementById('indexSketchModal');
+  const indexSketchModalClose = document.getElementById('indexSketchModalClose');
+  const indexSketchSlides = indexSketchModal.querySelectorAll('.sketch-slide');
+  const indexSketchPrevBtn = indexSketchModal.querySelector('.sketch-prev-btn');
+  const indexSketchNextBtn = indexSketchModal.querySelector('.sketch-next-btn');
+  
+  let currentIndexSketchSlide = 0;
+  const totalIndexSketchSlides = indexSketchSlides.length;
+
+  function updateIndexSketchSlide() {
+    console.log('Updating index sketch slide to:', currentIndexSketchSlide);
+    
+    indexSketchSlides.forEach((slide, index) => {
+      slide.style.display = 'none';
+      slide.classList.remove('active');
+    });
+    
+    if (indexSketchSlides[currentIndexSketchSlide]) {
+      indexSketchSlides[currentIndexSketchSlide].style.display = 'block';
+      indexSketchSlides[currentIndexSketchSlide].classList.add('active');
+    }
+  }
+
+  function nextIndexSketchSlide() {
+    currentIndexSketchSlide = (currentIndexSketchSlide + 1) % totalIndexSketchSlides;
+    updateIndexSketchSlide();
+  }
+
+  function prevIndexSketchSlide() {
+    currentIndexSketchSlide = (currentIndexSketchSlide - 1 + totalIndexSketchSlides) % totalIndexSketchSlides;
+    updateIndexSketchSlide();
+  }
+
+  // Event listeners
+  if (indexSketchNextBtn) {
+    indexSketchNextBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      nextIndexSketchSlide();
+    });
+  }
+
+  if (indexSketchPrevBtn) {
+    indexSketchPrevBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      prevIndexSketchSlide();
+    });
+  }
+
+  if (indexSketchModalClose) {
+    indexSketchModalClose.addEventListener('click', closeIndexSketchModal);
+  }
+
+  // Close modal when clicking backdrop
+  indexSketchModal.addEventListener('click', function(e) {
+    if (e.target === indexSketchModal || e.target.classList.contains('modal-backdrop')) {
+      closeIndexSketchModal();
+    }
+  });
+
+  // Keyboard navigation
+  indexSketchModal.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      prevIndexSketchSlide();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      nextIndexSketchSlide();
+    } else if (e.key === 'Escape') {
+      closeIndexSketchModal();
+    }
+  });
+
+  // Make modal focusable
+  indexSketchModal.setAttribute('tabindex', '0');
+
+  return {
+    next: nextIndexSketchSlide,
+    prev: prevIndexSketchSlide,
+    goToSlide: (index) => {
+      if (index >= 0 && index < totalIndexSketchSlides) {
+        currentIndexSketchSlide = index;
+        updateIndexSketchSlide();
+      }
+    }
+  };
+}
+
+// Thesis Sketch Modal functionality
 function initSketchModal() {
   const sketchModal = document.getElementById('sketchModal');
   const sketchModalClose = document.getElementById('sketchModalClose');
@@ -662,6 +775,28 @@ function initSketchModal() {
       }
     }
   };
+}
+
+function openIndexSketchModal(startIndex = 0) {
+  const indexSketchModal = document.getElementById('indexSketchModal');
+  if (indexSketchModal) {
+    // Set the starting slide index
+    if (window.indexSketchModalInstance && window.indexSketchModalInstance.goToSlide) {
+      window.indexSketchModalInstance.goToSlide(startIndex);
+    }
+    
+    indexSketchModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    indexSketchModal.focus();
+  }
+}
+
+function closeIndexSketchModal() {
+  const indexSketchModal = document.getElementById('indexSketchModal');
+  if (indexSketchModal) {
+    indexSketchModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
 }
 
 function openSketchModal(startIndex = 0) {
@@ -762,9 +897,15 @@ document.addEventListener('DOMContentLoaded', () => {
     initCarouselModal();
   }
   
-  // Initialize sketch modal
+  // Initialize index sketch modal
+  if (document.getElementById('indexSketchModal')) {
+    console.log('Initializing index sketch modal...');
+    window.indexSketchModalInstance = initIndexSketchModal();
+  }
+  
+  // Initialize thesis sketch modal
   if (document.getElementById('sketchModal')) {
-    console.log('Initializing sketch modal...');
+    console.log('Initializing thesis sketch modal...');
     window.sketchModalInstance = initSketchModal();
   }
 });
@@ -790,6 +931,9 @@ window.utils = {
   initCarouselModal,
   openCarouselModal,
   closeCarouselModal,
+  initIndexSketchModal,
+  openIndexSketchModal,
+  closeIndexSketchModal,
   initSketchModal,
   openSketchModal,
   closeSketchModal
