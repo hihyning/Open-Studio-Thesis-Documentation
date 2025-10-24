@@ -1035,4 +1035,44 @@ transition: scale 0.2s ease;
     font-size: 1.1em;
     padding: 2px 6px;
   }
+  
+  /* Mobile carousel navigation - move buttons to bottom */
+  .carousel-nav-btn {
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+  
+  .carousel-prev-btn {
+    left: 20px;
+  }
+  
+  .carousel-next-btn {
+    right: 20px;
+  }
+  
+  /* Update hover effects for mobile carousel buttons */
+  .carousel-nav-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Mobile sketch modal navigation - move buttons to bottom */
+  .sketch-nav-btn {
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+  
+  .sketch-prev-btn {
+    left: 20px;
+  }
+  
+  .sketch-next-btn {
+    right: 20px;
+  }
+  
+  /* Update hover effects for mobile sketch buttons */
+  .sketch-nav-btn:hover {
+    transform: scale(1.1);
+  }
 }
