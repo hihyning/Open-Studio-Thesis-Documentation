@@ -448,8 +448,8 @@ function initImageCarousel(containerId = 'draggableContainer3') {
       return;
     }
     
-    console.log('Opening carousel modal');
-    openCarouselModal();
+    console.log('Opening carousel modal for container:', containerId);
+    openCarouselModal(container);
   });
 
   // Initialize
@@ -467,7 +467,7 @@ function initImageCarousel(containerId = 'draggableContainer3') {
 function initCarouselModal() {
   const carouselModal = document.getElementById('carouselModal');
   const carouselModalClose = document.getElementById('carouselModalClose');
-  const carouselSlides = carouselModal.querySelectorAll('.carousel-slide');
+  const carouselSlideContainer = carouselModal.querySelector('.carousel-slide-container');
   const carouselPrevBtn = carouselModal.querySelector('.carousel-prev-btn');
   const carouselNextBtn = carouselModal.querySelector('.carousel-next-btn');
   const carouselCounter = carouselModal.querySelector('.carousel-slide-counter');
@@ -475,14 +475,15 @@ function initCarouselModal() {
   console.log('Carousel modal elements found:', {
     modal: !!carouselModal,
     close: !!carouselModalClose,
-    slides: carouselSlides.length,
+    slideContainer: !!carouselSlideContainer,
     prevBtn: !!carouselPrevBtn,
     nextBtn: !!carouselNextBtn,
     counter: !!carouselCounter
   });
   
   let currentModalSlide = 0;
-  const totalModalSlides = carouselSlides.length;
+  let totalModalSlides = 0;
+  let carouselSlides = [];
 
   function updateModalSlide() {
     console.log('Updating modal slide to:', currentModalSlide);
@@ -500,6 +501,37 @@ function initCarouselModal() {
     if (carouselCounter) {
       carouselCounter.textContent = `Slide ${currentModalSlide + 1} of ${totalModalSlides}`;
     }
+  }
+
+  function populateModalSlides(carouselElement) {
+    // Clear existing slides
+    carouselSlideContainer.innerHTML = '';
+    carouselSlides = [];
+    
+    // Get all slides from the carousel
+    const carouselSlidesSource = carouselElement.querySelectorAll('.slide');
+    
+    // Create corresponding slides in the modal
+    carouselSlidesSource.forEach((sourceSlide, index) => {
+      const modalSlide = document.createElement('img');
+      modalSlide.src = sourceSlide.src;
+      modalSlide.alt = sourceSlide.alt;
+      modalSlide.className = 'carousel-slide';
+      if (index === 0) {
+        modalSlide.classList.add('active');
+        modalSlide.style.display = 'block';
+      } else {
+        modalSlide.style.display = 'none';
+      }
+      carouselSlideContainer.appendChild(modalSlide);
+      carouselSlides.push(modalSlide);
+    });
+    
+    totalModalSlides = carouselSlides.length;
+    currentModalSlide = 0;
+    updateModalSlide();
+    
+    console.log('Populated modal with', totalModalSlides, 'slides');
   }
 
   function nextModalSlide() {
@@ -566,6 +598,9 @@ function initCarouselModal() {
   // Make modal focusable
   carouselModal.setAttribute('tabindex', '0');
 
+  // Store function for use in openCarouselModal
+  window.populateCarouselModal = populateModalSlides;
+
   return {
     next: nextModalSlide,
     prev: prevModalSlide,
@@ -574,13 +609,21 @@ function initCarouselModal() {
         currentModalSlide = index;
         updateModalSlide();
       }
-    }
+    },
+    populateSlides: populateModalSlides
   };
 }
 
-function openCarouselModal() {
+function openCarouselModal(carouselContainer) {
   const carouselModal = document.getElementById('carouselModal');
   if (carouselModal) {
+    // Find the carousel element within the container
+    const carousel = carouselContainer.querySelector('.image-carousel');
+    if (carousel && window.populateCarouselModal) {
+      // Populate modal with slides from this carousel
+      window.populateCarouselModal(carousel);
+    }
+    
     carouselModal.classList.add('open');
     document.body.style.overflow = 'hidden';
     carouselModal.focus();
@@ -871,6 +914,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('draggableContainer2a')) {
     initDraggableGallery('draggableContainer2a');
   }
+  if (document.getElementById('draggableContainer2')) {
+    initDraggableGallery('draggableContainer2');
+  }
   if (document.getElementById('draggableContainer2b')) {
     initDraggableGallery('draggableContainer2b');
   }
@@ -885,6 +931,16 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       console.log('Initializing carousel after delay...');
       initImageCarousel('draggableContainer3');
+    }, 100);
+  }
+  if (document.getElementById('draggableContainer3Cyanotype')) {
+    console.log('Found draggableContainer3Cyanotype, initializing...');
+    initDraggableGallery('draggableContainer3Cyanotype');
+    
+    // Add a small delay to ensure everything is ready
+    setTimeout(() => {
+      console.log('Initializing carousel after delay...');
+      initImageCarousel('draggableContainer3Cyanotype');
     }, 100);
   }
   if (document.getElementById('draggableContainer4')) {

@@ -48,6 +48,7 @@ p {
   line-height: 1.4em;
   letter-spacing: -0.02em;
   font-size: 14px;
+  margin:0;
 }
 
 li {
@@ -512,6 +513,18 @@ h2 {
   letter-spacing: -0.05em;
 }
 
+h3 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  line-height: 1;
+}
+
 .micro {
   font-size: 12px;
 }
@@ -666,7 +679,8 @@ header {
   transform-origin: center;
 }
 
-#imageCarousel {
+#imageCarousel,
+#imageCarouselCyanotype {
   width: 100%;
 }
 
@@ -959,7 +973,8 @@ transition: scale 0.2s ease;
     margin-top: 60px;
   }
 
-  #imageCarousel{
+  #imageCarousel,
+  #imageCarouselCyanotype {
     width: 250px;
     height: auto;
     max-width: none;
