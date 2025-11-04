@@ -9,11 +9,12 @@ let currentFilters = {
   categories: [],
   tags: [],
   logic: 'or',
-  dateSort: 'newest'
+  dateSort: 'oldest'
 };
 let messPositions = {};
 let savedScrollPosition = 0;
 let isClosingModal = false;
+let isInitialLoad = true;
 
 // DOM elements
 const elements = {
@@ -121,7 +122,7 @@ function restoreState() {
   currentFilters.categories = urlParams.cats || savedPrefs.categories || [];
   currentFilters.tags = urlParams.tags || savedPrefs.tags || [];
   currentFilters.logic = urlParams.logic || savedPrefs.logic || 'or';
-  currentFilters.dateSort = urlParams.dateSort || savedPrefs.dateSort || 'newest';
+  currentFilters.dateSort = urlParams.dateSort || savedPrefs.dateSort || 'oldest';
   
   const cols = urlParams.cols || savedPrefs.cols || 4;
   utils.setCSSVar('--cols', cols);
@@ -462,6 +463,15 @@ function applyFilters() {
       return idA - idB; // Oldest added/updated first (lower ID numbers)
     }
   });
+  
+  // Shuffle on initial load
+  if (isInitialLoad) {
+    for (let i = filteredImages.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [filteredImages[i], filteredImages[j]] = [filteredImages[j], filteredImages[i]];
+    }
+    isInitialLoad = false;
+  }
   
   renderImages();
 }

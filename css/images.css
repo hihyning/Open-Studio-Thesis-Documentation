@@ -459,12 +459,23 @@
   margin-bottom: 0.5rem;
   letter-spacing: -0.5px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .meta p {
   font-size: 13px;
   color: var(--muted);
   margin-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+#modal-image-credit,
+#modal-image-title {
+  text-decoration: none;
+}
+
+#modal-image-credit a {
+  text-decoration: none;
 }
 
 .meta a {

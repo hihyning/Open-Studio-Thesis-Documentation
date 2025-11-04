@@ -7,8 +7,10 @@
     "year": 2009,
     "credit_url": "https://draw-down.com/products/design-as-art-bruno-munari",
     "categories": [
-      "Text",
-      "Book"
+      "Book",
+      "Commentary",
+      "History",
+      "Text"
     ],
     "notes": "great read! really crystallises my definitions on how I see design. curious about how he would think about the world today with all this new technology and merge between functionality and aesthetic enjoyment."
   },
@@ -20,10 +22,10 @@
     "year": 2023,
     "credit_url": "https://brooklynrail.org/2023/04/art_books/Mindy-Seus-Cyberfeminism-Index/",
     "categories": [
-      "Text",
       "Book",
-      "Tech",
-      "Editorial"
+      "Collection",
+      "Editorial",
+      "Tech"
     ],
     "notes": ""
   },
@@ -35,9 +37,9 @@
     "year": 2024,
     "credit_url": "https://shop.centerforbookarts.org/products/vicos-spiral-catalog",
     "categories": [
-      "Editorial",
       "Book",
-      "Text"
+      "Collection",
+      "Editorial"
     ],
     "notes": ""
   },
@@ -49,10 +51,11 @@
     "year": 2019,
     "credit_url": "https://a-new-program-for-graphic-design.org/",
     "categories": [
-      "Text",
       "Book",
-      "Pedagogy"
-    ],
+      "Education",
+      "History",
+      "Text"
+],
     "notes": ""
   },
   {
@@ -63,9 +66,10 @@
     "year": 2025,
     "credit_url": "https://scratchingthesurface.fm/stories/aggie-toppins-design-history",
     "categories": [
-      "Text",
       "Book",
-      "Pedagogy"
+      "Education",
+      "History",
+      "Text"
     ],
     "notes": ""
   },
@@ -77,10 +81,11 @@
     "year": 2008,
     "credit_url": "https://www.amazon.com/International-Library-Psychology-Principles-Gestalt/dp/0415209625",
     "categories": [
-      "Text",
       "Book",
+      "Education",
+      "History",
       "Psychology",
-      "Pedagogy"
+      "Text"
     ],
     "notes": ""
   },
@@ -92,9 +97,10 @@
     "year": 2025,
     "credit_url": "https://www.inventorypress.com/product/a-co-program-for-graphic-design",
     "categories": [
-      "Text",
       "Book",
-      "Pedagogy"
+      "Education",
+      "History",
+      "Text"
     ],
     "notes": ""
   },
@@ -106,9 +112,7 @@
     "year": 2023,
     "credit_url": "https://sites.prh.com/thecreativeact",
     "categories": [
-      "Text",
       "Book",
-      "Theory",
       "Editorial"
     ],
     "notes": "bought at NYABF 2025!"
@@ -121,11 +125,12 @@
     "year": 2025,
     "credit_url": "https://www.onomatopee.net/product/design-history-reader/",
     "categories": [
-      "Text",
       "Book",
+      "Collection",
+      "Cultural",
+      "Education",
       "History",
-      "Pedagogy",
-      "Cultural"
+      "Text"
     ],
     "notes": ""
   },
@@ -137,11 +142,12 @@
     "year": 2025,
     "credit_url": "https://www.instagram.com/p/DMEseOIyVbs/",
     "categories": [
-      "Text",
+      "Asian",
       "Book",
-      "Pedagogy",
+      "Collection",
       "Editorial",
-      "Cultural"
+      "Education",
+      "Text"
     ],
     "notes": ""
   },
@@ -154,8 +160,10 @@
     "credit_url": "https://draw-down.com/products/framework-104",
     "categories": [
       "Book",
-      "Pedagogy",
-      "Editorial"
+   "Collection",
+   "Cultural",
+   "Editorial",
+   "Education"
     ],
     "notes": ""
   },
@@ -168,8 +176,7 @@
     "credit_url": "https://draw-down.com/products/thinking-with-type-3rd-edition",
     "categories": [
       "Book",
-      "Pedagogy",
-      "Typography"
+      "Education"
     ],
     "notes": ""
   },
@@ -181,11 +188,11 @@
     "year": 1972,
     "credit_url": "https://www.ways-of-seeing.com/",
     "categories": [
-      "Text",
       "Book",
+      "Commentary",
       "History",
-      "Pedagogy",
-      "Art"
+      "Psychology",
+      "Text"
     ],
     "notes": ""
   },
@@ -197,19 +204,10 @@
     "year": 2003,
     "credit_url": "https://silviolorusso.com/work/what-design-cant-do/",
     "categories": [
-      "Text",
       "Book",
+      "Commentary",
       "History",
-      "Cultural"
-    ],
-    "tags": [
-      "#owned",
-      "#reading",
-      "#theory",
-      "#italy",
-      "#cultural",
-      "#research",
-      "#critical"
+      "Text"
     ],
     "notes": ""
   },
@@ -221,9 +219,10 @@
     "year": 2025,
     "credit_url": "https://mitpress.mit.edu/9780262551649/learning-to-see/",
     "categories": [
-      "Text",
       "Book",
-      "Pedagogy"
+      "Education",
+      "History",
+      "Text"
     ],
     "notes": ""
   },
@@ -236,33 +235,25 @@
     "credit_url": "https://seeing-making-room.net/",
     "categories": [
       "Book",
+      "Collection",
       "Editorial"
-    ],
-    "tags": [
-      "#american",
-      "#typography",
-      "#cultural",
-      "#artbook",
-      "#experimental"
     ],
     "notes": ""
   },
   {
     "id": "img-017",
-    "src": "assets/Illustration_WenjingYang.jpg",
-    "title": "L\u2018Artisan Parfumeur Illustration",
-    "creator": "Wenjing Yang",
+    "src": "assets/DesignHarder_ErikCarter.jpeg",
+    "title": "Design Harder",
+    "creator": "Erik Carter",
     "year": 2025,
-    "credit_url": "https://wenjingart.com/",
+    "credit_url": "https://www.bookideas.website/design-harder",
     "categories": [
-      "Illustration",
-      "Cultural",
-      "Art"
-    ],
-    "tags": [
-      "#asian",
-      "#woman",
-      "editorial-art"
+      "Book",
+      "Commentary",
+      "Editorial",
+      "Education",
+      "Tech",
+      "Text"
     ],
     "notes": ""
   },
@@ -274,217 +265,229 @@
     "year": 2025,
     "credit_url": "https://www.pentagram.com/work/cha-cha-festival",
     "categories": [
+      "Asian",
       "Branding",
       "Cultural",
-      "Art",
-      "Typography",
-      "Multilingual"
-    ],
-    "tags": [
-      "#asian",
-      "#woman",
-      "#CJK",
-      "#chinese"
+      "Multilingual",
+      "Typography"
     ],
     "notes": ""
   },
   {
     "id": "img-019",
-    "src": "assets/ChineseCalendarSheet.jpg",
-    "title": "Chinese Tear-off Calendar",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
+    "src": "assets/CommonDimensions_RebeccaWilkinson.jpg",
+    "title": "Common Dimensions Website",
+    "creator": "Rebecca Wilkinson",
+    "year": 2025,
+    "credit_url": "https://commondimensions.com/",
     "categories": [
-      "Cultural",
-      "Artefact",
-      "Multilingual"
-    ],
-    "tags": [
-      "#CJK",
-      "#asian",
-      "#chinese"
+      "Branding",
+      "Collection",
+      "Editorial",
+      "History",
+      "Website"
     ],
     "notes": ""
   },
   {
     "id": "img-020",
-    "src": "assets/ChineseMedicinalPackaging.jpg",
-    "title": "Chinese Medicinal Packaging",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
-    "categories": [],
-    "tags": [],
+    "src": "assets/CommonDimensionsPrint_RebeccaWilkinson.jpg",
+    "title": "Common Dimensions Print",
+    "creator": "Rebecca Wilkinson",
+    "year": 2025,
+    "credit_url": "https://draw-down.com/products/common-dimensions-no-1-dis-assembly",
+    "categories": [
+      "Branding",
+      "Collection",
+      "Editorial",
+      "History",
+      "Print"    
+    ],
     "notes": ""
   },
   {
     "id": "img-021",
-    "src": "assets/CollageArt_RamishaSattar.jpg",
-    "title": "Indian Collage Art",
-    "creator": "Ramisha Sattar",
-    "year": null,
-    "credit_url": "https://www.ramishasattar.com/",
-    "categories": [],
-    "tags": [],
+    "src": "assets/ToolkitGathering_RachelBerger.jpg",
+    "title": "A Toolkit for Gathering",
+    "creator": "Rachel Berger et al.",
+    "year": 2025,
+    "credit_url": "https://draw-down.com/products/a-toolkit-for-gathering-1",
+    "categories": [
+      "Book",
+      "Editorial",
+      "Education",
+      "Text"
+    ],
     "notes": ""
   },
   {
     "id": "img-022",
     "src": "assets/GrafisNusantara_Kerupuk-publication-itsnicethat-15.jpeg",
-    "title": "Kerupuk Print",
-    "creator": "Grafis Nusantara",
-    "year": null,
-    "credit_url": "https://www.itsnicethat.com/articles/grafis-nusantara-kerupuk-graphic-design-publication-project-270723",
-    "categories": [],
-    "tags": [],
+    "title": "Grafis Nusantarat",
+    "creator": "Rakhmat Jaka et al.",
+    "year": 2022,
+    "credit_url": "https://grafisnusantara.com/",
+    "categories": [
+      "Asian",
+      "Collection",
+      "Cultural",
+      "Website"
+    ],
     "notes": ""
   },
   {
     "id": "img-023",
-    "src": "assets/HashmatRaiConfectionery.jpg",
-    "title": "Hashmat Rai Confectionery",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
-    "categories": [],
-    "tags": [],
+    "src": "assets/DecolonizingDesign_ElizabethTunstall.jpg",
+    "title": "Decolonizing Design",
+    "creator": "Elizabeth Tunstall",
+    "year": 2023,
+    "credit_url": "https://mitpress.mit.edu/9780262047692/decolonizing-design/",
+    "categories": [
+      "Book",
+      "Commentary",
+      "Cultural",
+      "Education",
+      "History",
+      "Text"
+    ],
     "notes": ""
   },
   {
     "id": "img-024",
-    "src": "assets/MalaysianStamp.jpg",
-    "title": "Malaysian Stamp",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
-    "categories": [],
-    "tags": [],
+    "src": "assets/BlackJoyArchive_ZoePulley.gif",
+    "title": "Black Joy Archive",
+    "creator": "Zoë Pulley",
+    "year": 2025,
+    "credit_url": "https://zoepulley.com/black-joy-archive-v-iii-(2025)",
+    "categories": [
+      "Collection",
+      "Cultural",
+      "Editorial",
+      "History",
+      "Print"
+    ],
     "notes": ""
   },
   {
     "id": "img-025",
-    "src": "assets/SingKeeHong.jpg",
-    "title": "Sing Kee Hong",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
-    "categories": [],
-    "tags": [],
+    "src": "assets/DecolonizingGraphicDesign_ShammaBuhazza.jpg",
+    "title": "Decolonizing Graphic Design",
+    "creator": "Shamma Buhazza",
+    "year": 2020,
+    "credit_url": "https://www.itsnicethat.com/features/shamma-buhazza-thread-of-inspiration-graphic-design-031220",
+    "categories": [
+      "Asian",
+      "Branding",
+      "Collection",
+      "Cultural"
+    ],
     "notes": ""
   },
   {
     "id": "img-026",
-    "src": "assets/StarAnikFlyer.jpg",
-    "title": "Star Anik Flyer",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
-    "categories": [],
-    "tags": [],
+    "src": "assets/CapsLock_RubenPater.jpg",
+    "title": "Caps Lock",
+    "creator": "Ruben Pater",
+    "year": 2021,
+    "credit_url": "https://valiz.nl/en/publications/caps-lock",
+    "categories": [
+      "Book",
+      "Commentary",
+      "Editorial",
+      "History",
+      "Tech",
+      "Text"
+    ],
     "notes": ""
   },
   {
     "id": "img-027",
-    "src": "assets/WhiteRabbitCandy.jpg",
-    "title": "White Rabbit Candy Wrapper",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
-    "categories": [],
-    "tags": [],
-    "notes": ""
+    "src": "assets/CAPS_LOCK_EDUCATIONALTOOLKIT.jpg",
+    "title": "Caps Lock Educational Toolkit",
+    "creator": "Ruben Pater",
+    "year": 2021,
+    "credit_url": "https://valiz.nl/images/publicaties/CAPS_LOCK/CAPS_LOCK_EDUCATIONALTOOLKIT.pdf",
+    "categories": [
+      "Collection",
+      "Education",
+      "Print"
+    ],
+    "notes": "super interesting accompaniment to the book, definitely adds for extra engagement and effort into bringing this book into design education canon."
   },
   {
     "id": "img-028",
-    "src": "assets/XiArt.jpg",
-    "title": "Xi\u559c Tiled Art",
-    "creator": "",
-    "year": null,
-    "credit_url": "",
-    "categories": [],
-    "tags": [],
+    "src": "assets/CreativeIndependent_Kickstarter.png",
+    "title": "The Creative Independent",
+    "creator": "Kickstarter",
+    "year": 2025,
+    "credit_url": "https://thecreativeindependent.com/",
+    "categories": [
+      "Collection",
+      "Cultural",
+      "Text",
+      "Website"
+    ],
     "notes": ""
   },
   {
     "id": "img-029",
-    "src": "assets/NanyangTilePatterns.jpg",
-    "title": "Nanyang Tile Patterns",
-    "creator": "",
-    "year": null,
-    "credit_url": "https://example.com/source019",
+    "src": "assets/untoldnet_RubenPater.png",
+    "title": "untold-stories.net",
+    "creator": "Ruben Pater",
+    "year": 2025,
+    "credit_url": "https://www.untold-stories.net/",
     "categories": [
-      "Text",
-      "Book",
-      "Tech",
-      "Editorial",
-      "Pedagogy",
-      "Psychology",
-      "Theory",
-      "History",
+      "Collection",
       "Cultural",
-      "Art",
-      "Typography"
+      "Text",
+      "Website"
     ],
-    "tags": [
-      "#owned",
-      "#reading",
-      "#research",
-      "#european",
-      "#italy",
-      "#theory",
-      "#asian",
-      "#woman",
-      "#to-read",
-      "collection",
-      "#have-read",
-      "#application",
-      "#american",
-      "#history",
-      "#spiritual",
-      "#cultural",
-      "#education",
-      "owned",
-      "#british",
-      "#critical",
-      "#teaching",
-      "#typography",
-      "#artbook",
-      "#experimental"
-    ],
-    "notes": ""
+    "notes": "ruben pater's personal website where he shares his commentary and research writing on design and culture. love the home page structure (wish it was horizontal scroll though) and the vibrancy of the background colour palette."
   },
   {
     "id": "img-030",
-    "src": "assets/VintageChineseTeaPackaging.jpg",
-    "title": "Vinyage Chinese Tea Packaging",
-    "creator": "Alex Rivera",
-    "year": 1996,
-    "credit_url": "https://example.com/source030",
-    "categories": [],
-    "tags": [],
+    "src": "assets/Seasoned_KotoStudio.jpg",
+    "title": "Seasoned: The Brand Creation Kitchen",
+    "creator": "Koto Studio",
+    "year": 2025,
+    "credit_url": "https://seasoned.koto.studio/",
+    "categories": [
+      "Branding",
+      "Collection",
+      "Editorial",
+      "Education",
+      "Website"
+    ],
     "notes": ""
   },
   {
     "id": "img-031",
-    "src": "assets/ChineseWordMark.jpg",
-    "title": "Chinese Word Mark",
-    "creator": "Rachel Green",
-    "year": 1997,
-    "credit_url": "https://example.com/source031",
-    "categories": [],
-    "tags": [],
+    "src": "assets/fontlicensingmess.png",
+    "title": "fontlicensingmess.com",
+    "creator": "María Ramos, Ana Moliz",
+    "year": 2025,
+    "credit_url": "https://fontlicensingmess.com/",
+    "categories": [
+      "Education",
+      "Multilingual",
+      "Text",
+      "Typography",
+      "Website"
+    ],
     "notes": ""
   },
   {
     "id": "img-032",
-    "src": "assets/BuddistClouds.jpg",
-    "title": "Buddist Illustrated Clouds",
-    "creator": "Daniel White",
-    "year": 2020,
-    "credit_url": "https://example.com/source032",
-    "categories": [],
-    "tags": [],
+    "src": "assets/12:40_KshitijGotiwale.jpg",
+    "title": "12:40 Typeface",
+    "creator": "Kshitij Gotiwale",
+    "year": 2025,
+    "credit_url": "https://www.itsnicethat.com/articles/kshitij-gotiwale-1240-graphic-design-project-161025",
+    "categories": [
+      "Asian",
+      "Cultural",
+      "Typography"
+    ],
     "notes": ""
   },
   {
