@@ -536,27 +536,55 @@ transform: skew(-15deg);
   }
   
   .topbar .row {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+    grid-template-rows: auto auto;
     gap: 0.5rem;
   }
   
   .search-container {
+    grid-row: 1;
+    grid-column: 1 / -1;
     order: 1;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+  
+  .search-input {
+    width: 100%;
+    min-width: 0;
   }
   
   .filter-container {
+    grid-row: 2;
     order: 2;
+    margin-right: -10px;
   }
   
   .mode-container {
-    order: 3;
+    display: none;
   }
   
   .columns-container {
-    order: 4;
+    display: none;
   }
   
   .logic-container {
+    grid-row: 2;
+    order: 3;
+    margin-left: -0.5rem;
+  }
+  
+  .date-sort-container {
+    grid-row: 2;
+    order: 4;
+  }
+  
+  .shuffle-container {
+    grid-row: 2;
     order: 5;
   }
 }

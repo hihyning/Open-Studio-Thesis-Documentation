@@ -521,13 +521,17 @@
   },
   {
     "id": "img-035",
-    "src": "assets/SquareGraphicSpatial.jpg",
-    "title": "Design System",
-    "creator": "Amy Johnson",
-    "year": 2010,
-    "credit_url": "https://example.com/source035",
-    "categories": [],
-    "tags": [],
+    "src": "assets/InternetPhoneBook_KristofferTjalveElliott Cost .jpg",
+    "title": "Internet Phone Book",
+    "creator": "Kristoffer Tjalve, Elliott Cost",
+    "year": 2025,
+    "credit_url": "https://internetphonebook.net/",
+    "categories": [
+      "Book",
+      "Collection",
+      "Editorial",
+      "Tech"
+    ],
     "notes": ""
   },
   {
@@ -593,80 +597,115 @@
   },
   {
     "id": "img-040",
-    "src": "assets/FaceMappingTechnology.jpg",
-    "title": "Face Mapping Technology",
-    "creator": "Maria Santos",
-    "year": 2009,
-    "credit_url": "https://example.com/source040",
-    "categories": [],
-    "tags": [],
+    "src": "assets/636Interviews_TheBrandIdentity.jpg",
+    "title": "636 Pages of Interviews V2",
+    "creator": "The Brand Identity",
+    "year": 2023,
+    "credit_url": "https://the-brandidentity.com/store/product/the-interviews-volume-two-digital-edition",
+    "categories": [
+      "Book",
+      "Collection",
+      "Editorial",
+      "Text"
+    ],
     "notes": ""
   },
   {
     "id": "img-041",
-    "src": "assets/ObjectRecognition.jpg",
-    "title": "Object Recognition",
-    "creator": "Chan Tai Man",
-    "year": 2023,
-    "credit_url": "https://example.com/source041",
-    "categories": [],
-    "tags": [],
+    "src": "assets/IUsedToBeADesignStudent_FrankPhilippin.jpg",
+    "title": "I Used to Be a Design Student",
+    "creator": "Frank Philippin, Billy Kiosoglou",
+    "year": 2013,
+    "credit_url": "https://www.itsnicethat.com/articles/i-used-to-be-a-design-student-frank-philippin-billy-kiosoglou",
+    "categories": [
+      "Book",
+      "Collection",
+      "Editorial",
+      "Education",
+      "Text"
+    ],
     "notes": ""
   },
   {
     "id": "img-042",
-    "src": "assets/ObjectDetectionAnnotation.jpg",
-    "title": "Object Detection Annotation",
-    "creator": "Alex Rivera",
-    "year": 2002,
-    "credit_url": "https://example.com/source042",
-    "categories": [],
-    "tags": [],
+    "src": "assets/DecolonizeDesign_AnoushkaKhandwala.jpg",
+    "title": "What Does It Mean to Decolonize Design?",
+    "creator": "Anoushka Khandwala",
+    "year": 2019,
+    "credit_url": "https://eyeondesign.aiga.org/what-does-it-mean-to-decolonize-design/",
+    "categories": [
+      "Commentary",
+      "Cultural",
+      "History",
+      "Text"
+    ],
     "notes": ""
   },
   {
     "id": "img-047",
-    "src": "assets/TransparencyTexture.jpg",
-    "title": "Transparency Texture",
-    "creator": "Amy Johnson",
-    "year": 2011,
-    "credit_url": "https://example.com/source043",
-    "categories": [],
-    "tags": [],
+    "src": "assets/ThePoliticsOfDesign_RubenPater.jpg",
+    "title": "The Politics of Design",
+    "creator": "Ruben Pater",
+    "year": 2016,
+    "credit_url": "http://thepoliticsofdesign.com/",
+    "categories": [
+      "Asian",
+      "Book",
+      "Commentary",
+      "Cultural",
+      "Editorial",
+      "History",
+      "Multilingual",
+      "Text",
+      "Website"
+    ],
     "notes": ""
   },
   {
     "id": "img-044",
-    "src": "assets/HalftoneDonut.mp4",
-    "type": "video",
-    "title": "Halftone Donut",
-    "creator": "David Kim",
-    "year": 2007,
-    "credit_url": "https://example.com/source044",
-    "categories": [],
-    "tags": [],
-    "notes": ""
+    "src": "assets/PoliticsofPrint_RubenPater.l.jpg",
+    "title": "The Politics of Print",
+    "creator": "Ruben Pater",
+    "year": 2016,
+    "credit_url": "http://thepoliticsofdesign.com/about-the-book",
+    "categories": [
+      "Commentary",
+      "Cultural",
+      "Editorial",
+      "History",
+      "Print"
+    ],
+    "notes": "accompaniment to the book, seperate for purchase print?"
   },
   {
     "id": "img-045",
-    "src": "assets/PixelationBreakdown.jpg",
-    "title": "Pixelation Breakdown",
-    "creator": "Robert Lee",
-    "year": 1981,
-    "credit_url": "https://example.com/source045",
-    "categories": [],
-    "tags": [],
+    "src": "assets/The Decolonizing, or puncturing, Design Reader.png",
+    "title": "The Decolonizing, or puncturing, Design Reader",
+    "creator": "Ramon Tejada",
+    "year": 2018,
+    "credit_url": "https://www.are.na/ramon-tejada-ox4e5gvrosu/the-decolonizing-or-puncturing-design-reader",
+    "categories": [
+      "Collection",
+      "Commentary",
+      "Cultural",
+      "Multilingual",
+      "Tech"
+    ],
     "notes": ""
   },
   {
     "id": "img-046",
-    "src": "assets/DataArchive.jpg",
-    "title": "Data Archive",
-    "creator": "Rachel Green",
-    "year": 2013,
-    "credit_url": "https://example.com/source046",
-    "categories": [],
-    "tags": [],
+    "src": "assets/Why Can’t the U.S. Decolonize Its DesignEducation_ MargaretAndersen.jpg",
+    "title": "Why Can't the U.S. Decolonize Its Design Education?",
+    "creator": "Margaret Andersen",
+    "year": 2017,
+    "credit_url": "https://eyeondesign.aiga.org/why-cant-the-u-s-decolonize-its-design-education/",
+    "categories": [
+      "Commentary",
+      "Cultural",
+      "Education",
+      "Text"
+    ],
     "notes": ""
   },
   {
@@ -686,14 +725,17 @@
   },
   {
     "id": "img-048",
-    "src": "assets/DuoRotatingDisplay.mp4",
+    "src": "assets/ArtistNames.mp4",
     "type": "video",
-    "title": "Duo Rotating Display",
-    "creator": "Maria Rodriguez",
-    "year": 2000,
-    "credit_url": "https://example.com/source048",
-    "categories": [],
-    "tags": [],
+    "title": "Artists and Designers Names",
+    "creator": "Zhenya Rynzhuk",
+    "year": 2020,
+    "credit_url": "https://zhenyary.com/",
+    "categories": [
+      "Collection",
+      "Cultural",
+      "Website"
+    ],
     "notes": ""
   },
   {
@@ -707,6 +749,21 @@
       "Collection",
       "Editorial",
       "Tech",
+      "Website"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "img-050",
+    "src": "assets/The Native Graphic Design Project.png",
+    "title": "The Native Graphic Design Project",
+    "creator": "Neebinnaukzhik Southall",
+    "year": 2017,
+    "credit_url": "https://www.neebin.com/nativedesign/",
+    "categories": [
+      "Collection",
+      "Cultural",
+      "Education",
       "Website"
     ],
     "notes": ""
