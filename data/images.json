@@ -492,25 +492,31 @@
   },
   {
     "id": "img-033",
-    "src": "assets/SpatialMotionLayout.mp4",
+    "src": "assets/TremaineCollection_SynopticOffice.mp4",
     "type": "video",
-    "title": "Spatial Motion Layout",
-    "creator": "Lisa Zhang",
-    "year": 2014,
-    "credit_url": "https://example.com/source033",
-    "categories": [],
-    "tags": [],
+    "title": "Tremaine Collection",
+    "creator": "Synoptic Office",
+    "year": 2025,
+    "credit_url": "https://www.synopticoffice.com/project/tremaine-collection/",
+    "categories": [
+      "Collection",
+      "Cultural",
+      "Website"
+    ],
     "notes": ""
   },
   {
     "id": "img-034",
-    "src": "assets/PostcardAR.jpeg",
-    "title": "Postcard AR",
-    "creator": "Anna Garcia",
-    "year": 1986,
-    "credit_url": "https://example.com/source034",
-    "categories": [],
-    "tags": [],
+    "src": "assets/IrrelevantPhotos_LuanaLloyd.gif",
+    "title": "Irrelevant Photos Zine",
+    "creator": "Luana Lloyd",
+    "year": 2024,
+    "credit_url": "https://www.behance.net/gallery/205887887/irrelevant-life-photos-a-project-zine-about-observing",
+    "categories": [
+      "Editorial",
+      "Print",
+      "Typography"
+    ],
     "notes": ""
   },
   {
@@ -526,14 +532,16 @@
   },
   {
     "id": "img-036",
-    "src": "assets/CardFlipThrus.mp4",
-    "type": "video",
-    "title": "Design System",
-    "creator": "Sarah Chen",
-    "year": 1985,
-    "credit_url": "https://example.com/source036",
-    "categories": [],
-    "tags": [],
+    "src": "assets/ChoasFiles_ClaireBoon.jpg",
+    "title": "Chaos Files, Composed Folders",
+    "creator": "Claire Boon",
+    "year": 2025,
+    "credit_url": "https://www.itsnicethat.com/articles/claire-boon-graphic-design-discover-280425",
+    "categories": [
+      "Asian",
+      "Collection",
+      "Tech"
+    ],
     "notes": ""
   },
   {
@@ -541,11 +549,14 @@
     "src": "assets/LanternAR.mp4",
     "type": "video",
     "title": "Lantern AR",
-    "creator": "Jennifer Davis",
-    "year": 2013,
-    "credit_url": "https://example.com/source037",
-    "categories": [],
-    "tags": [],
+    "creator": "Kivisense",
+    "year": 2025,
+    "credit_url": "https://www.kivisense.com/",
+    "categories": [
+      "Asian",
+      "Cultural",
+      "Tech"
+    ],
     "notes": ""
   },
   {
@@ -553,23 +564,31 @@
     "src": "assets/YayoiKusamaAR.mp4",
     "type": "video",
     "title": "Yayoi Kusama AR",
-    "creator": "Amy Johnson",
-    "year": 2003,
-    "credit_url": "https://example.com/source038",
-    "categories": [],
-    "tags": [],
+    "creator": "Kivisense",
+    "year": 2025,
+    "credit_url": "https://www.kivisense.com/",
+    "categories": [
+      "Asian",
+      "Cultural",
+      "Tech"
+    ],
     "notes": ""
   },
   {
     "id": "img-039",
-    "src": "assets/DigitalThreads.mp4",
+    "src": "assets/AnimaMagazine_ACRE.mp4",
     "type": "video",
-    "title": "Digital Threads",
-    "creator": "Anna Garcia",
-    "year": 2010,
-    "credit_url": "https://example.com/source039",
-    "categories": [],
-    "tags": [],
+    "title": "Anima Magazine",
+    "creator": "ACRE Studio",
+    "year": 2023,
+    "credit_url": "https://acre.studio/work/anima-magazine",
+    "categories": [
+      "Branding",
+      "Editorial",
+      "Print",
+      "Tech",
+      "Typography"
+    ],
     "notes": ""
   },
   {
@@ -652,14 +671,17 @@
   },
   {
     "id": "img-047",
-    "src": "assets/DiagonalDataSort.mp4",
+    "src": "assets/UnveilProjects.mp4",
     "type": "video",
-    "title": "Diagonal Data Sort",
-    "creator": "Jennifer Davis",
-    "year": 1980,
-    "credit_url": "https://example.com/source047",
-    "categories": [],
-    "tags": [],
+    "title": "unveil.fr",
+    "creator": "Unveil Projects",
+    "year": 2025,
+    "credit_url": "https://unveil.fr/",
+    "categories": [
+      "Collection",
+      "Tech",
+      "Website"
+    ],
     "notes": ""
   },
   {
@@ -676,13 +698,17 @@
   },
   {
     "id": "img-049",
-    "src": "assets/ImageStack.gif",
-    "title": "Image Stack",
-    "creator": "Chan Tai Man",
-    "year": 2001,
-    "credit_url": "https://example.com/source049",
-    "categories": [],
-    "tags": [],
+    "src": "assets/EverySecond_ManonJouet.gif",
+    "title": "Every Second",
+    "creator": "Manon Jouet et al.",
+    "year": 2018,
+    "credit_url": "https://www.behance.net/gallery/80083153/Every-Second",
+    "categories": [
+      "Collection",
+      "Editorial",
+      "Tech",
+      "Website"
+    ],
     "notes": ""
   }
 ]
