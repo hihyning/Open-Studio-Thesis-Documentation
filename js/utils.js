@@ -901,12 +901,76 @@ function initToggleUpdates() {
   });
 }
 
+// IAT Lab popup functionality
+function initIATLabPopup() {
+  const iatLabLink = document.getElementById('iatLabLink');
+  const iatLabModal = document.getElementById('iatLabModal');
+  const iatLabModalClose = document.getElementById('iatLabModalClose');
+  const iatLabProceed = document.getElementById('iatLabProceed');
+  
+  if (!iatLabLink || !iatLabModal) return;
+  
+  let targetUrl = '';
+  
+  // Intercept link click
+  iatLabLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    targetUrl = iatLabLink.href;
+    iatLabModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  
+  // Proceed link
+  if (iatLabProceed) {
+    iatLabProceed.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (targetUrl) {
+        window.open(targetUrl, '_blank', 'noopener');
+      }
+      closeIATLabModal();
+    });
+  }
+  
+  // Close button
+  if (iatLabModalClose) {
+    iatLabModalClose.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      closeIATLabModal();
+    });
+  }
+  
+  // Close on backdrop click
+  iatLabModal.addEventListener('click', function(e) {
+    if (e.target === iatLabModal || e.target.classList.contains('modal-backdrop')) {
+      closeIATLabModal();
+    }
+  });
+  
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && iatLabModal.classList.contains('open')) {
+      closeIATLabModal();
+    }
+  });
+  
+  function closeIATLabModal() {
+    iatLabModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
 // Auto-initialize draggable gallery when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM loaded, initializing galleries...');
   
   // Initialize toggle updates
   initToggleUpdates();
+  
+  // Initialize IAT Lab popup
+  initIATLabPopup();
   
   if (document.getElementById('draggableContainer')) {
     initDraggableGallery();
@@ -941,6 +1005,16 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       console.log('Initializing carousel after delay...');
       initImageCarousel('draggableContainer3Cyanotype');
+    }, 100);
+  }
+  if (document.getElementById('draggableContainer4DesignHarder')) {
+    console.log('Found draggableContainer4DesignHarder, initializing...');
+    initDraggableGallery('draggableContainer4DesignHarder');
+    
+    // Add a small delay to ensure everything is ready
+    setTimeout(() => {
+      console.log('Initializing carousel after delay...');
+      initImageCarousel('draggableContainer4DesignHarder');
     }, 100);
   }
   if (document.getElementById('draggableContainer4')) {

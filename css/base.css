@@ -460,7 +460,6 @@ ul {
   right: 20px;
 }
 
-
 /* Grid Paper Background */
 .grid-paper {
   background-color: var(--bg);
@@ -684,6 +683,10 @@ header {
   width: 100%;
 }
 
+#imageCarouselDesignHarder {
+  width: 70%;
+}
+
 .draggable-image:hover {
   transform: scale(1.05) rotate(1deg);
   box-shadow: 
@@ -826,12 +829,16 @@ header {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 50vw;
+  max-height: 50vh;
   transform: scale(0.8);
   opacity: 0;
   transition: all 0.3s ease;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.image-modal.open {
+  display: flex;
 }
 
 .image-modal.open .modal-content {
@@ -871,6 +878,10 @@ header {
   height: auto;
   object-fit: contain;
   border-radius: 8px;
+}
+
+#iatLabProceed:hover {
+  font-style: italic;
 }
 
 /* Toggle Button Styles */
@@ -943,10 +954,11 @@ transition: scale 0.2s ease;
   
   .sidebar-nav {
     position: fixed;
-    margin-left: 5px;
-    max-width: 200px;
+    width: 100vw;
+    max-width: 100vw;
     display: flex;
     z-index: 1000;
+    margin-left: 0;
   }
   
   .sidebar-nav a {
@@ -974,7 +986,7 @@ transition: scale 0.2s ease;
   }
 
   #imageCarousel,
-  #imageCarouselCyanotype {
+  #imageCarouselCyanotype, #imageCarouselDesignHarder {
     width: 250px;
     height: auto;
     max-width: none;
