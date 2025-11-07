@@ -1017,6 +1017,16 @@ document.addEventListener('DOMContentLoaded', () => {
       initImageCarousel('draggableContainer4DesignHarder');
     }, 100);
   }
+  if (document.getElementById('draggableContainerThesisExchange2')) {
+    console.log('Found draggableContainerThesisExchange2, initializing...');
+    initDraggableGallery('draggableContainerThesisExchange2');
+    
+    // Add a small delay to ensure everything is ready
+    setTimeout(() => {
+      console.log('Initializing carousel after delay...');
+      initImageCarousel('draggableContainerThesisExchange2');
+    }, 100);
+  }
   if (document.getElementById('draggableContainer4')) {
     initDraggableGallery('draggableContainer4');
   }

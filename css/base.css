@@ -679,12 +679,12 @@ header {
 }
 
 #imageCarousel,
-#imageCarouselCyanotype {
+#imageCarouselCyanotype, #imageCarouselThesisExchange2 {
   width: 100%;
 }
 
 #imageCarouselDesignHarder {
-  width: 70%;
+  width: 65%;
 }
 
 .draggable-image:hover {
@@ -986,7 +986,7 @@ transition: scale 0.2s ease;
   }
 
   #imageCarousel,
-  #imageCarouselCyanotype, #imageCarouselDesignHarder {
+  #imageCarouselCyanotype, #imageCarouselDesignHarder, #imageCarouselThesisExchange2 {
     width: 250px;
     height: auto;
     max-width: none;
