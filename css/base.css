@@ -668,7 +668,7 @@ header {
   border-radius: 8px;
   cursor: grab;
   transition: all 0.1s ease;
-  box-shadow: 
+  box-shadow: s
     0 2px 8px rgba(0,0,0,0.1),
     0 1px 3px rgba(0,0,0,0.08);
   border: 1px solid rgba(255,255,255,0.2);
@@ -679,8 +679,14 @@ header {
 }
 
 #imageCarousel,
-#imageCarouselCyanotype, #imageCarouselThesisExchange2 {
+#imageCarouselCyanotype, #imageCarouselThesisExchange2, #draggableContainerMindMap {
   width: 100%;
+}
+
+.draggable-container.mind-map {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 
 #imageCarouselDesignHarder {
@@ -829,12 +835,17 @@ header {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  max-width: 50vw;
-  max-height: 50vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
   transform: scale(0.8);
   opacity: 0;
   transition: all 0.3s ease;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-modal.open {
@@ -873,11 +884,12 @@ header {
 
 .modal-image {
   max-width: 100%;
-  max-height: 80vh;
+  max-height: 85vh;
   width: auto;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
+  display: block;
 }
 
 #iatLabProceed:hover {

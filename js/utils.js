@@ -1027,6 +1027,10 @@ document.addEventListener('DOMContentLoaded', () => {
       initImageCarousel('draggableContainerThesisExchange2');
     }, 100);
   }
+  if (document.getElementById('draggableContainerMindMap')) {
+    console.log('Found draggableContainerMindMap, initializing...');
+    initDraggableGallery('draggableContainerMindMap');
+  }
   if (document.getElementById('draggableContainer4')) {
     initDraggableGallery('draggableContainer4');
   }
