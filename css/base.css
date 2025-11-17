@@ -892,6 +892,15 @@ header {
   display: block;
 }
 
+#iatLabModal {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #iatLabProceed:hover {
   font-style: italic;
 }
