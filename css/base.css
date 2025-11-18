@@ -668,7 +668,7 @@ header {
   border-radius: 8px;
   cursor: grab;
   transition: all 0.1s ease;
-  box-shadow: s
+  box-shadow: 
     0 2px 8px rgba(0,0,0,0.1),
     0 1px 3px rgba(0,0,0,0.08);
   border: 1px solid rgba(255,255,255,0.2);
@@ -893,10 +893,14 @@ header {
 }
 
 #iatLabModal {
+  display: none;
+}
+
+#iatLabModal.open {
+  display: flex;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -1069,6 +1073,11 @@ transition: scale 0.2s ease;
   .modal-content {
     max-width: 95vw;
     height: auto;
+  }
+  
+  #iatLabModal.open {
+    width: 100%;
+  
   }
   
   /* Updates list mobile styles */
