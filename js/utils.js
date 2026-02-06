@@ -165,9 +165,12 @@ function initDraggableGallery(containerId = 'draggableContainer') {
   // Store positions for each element
   const elementPositions = {};
 
+  // Sketch containers use their own modal — don't open the generic image modal on click
+  const isSketchContainer = containerId === 'draggableContainer' || containerId === 'draggableContainer4';
+
   // Make all draggable elements (images and text post-its) draggable and clickable
   draggableElements.forEach((element, index) => {
-    setupDragHandlers(element, index);
+    setupDragHandlers(element, index, isSketchContainer);
   });
 
   // Special handling for sketch images in different containers
@@ -230,7 +233,7 @@ function initDraggableGallery(containerId = 'draggableContainer') {
     }
   });
 
-  function setupDragHandlers(element, index) {
+  function setupDragHandlers(element, index, skipImageModal = false) {
     let isDragging = false;
     let hasMoved = false;
     let startX, startY, startLeft, startTop;
@@ -319,13 +322,13 @@ function initDraggableGallery(containerId = 'draggableContainer') {
         const rotation = (Math.random() - 0.5) * 6; // -3 to +3 degrees
         element.style.transform = `rotate(${rotation}deg)`;
       } else {
-        // It was a click, not a drag - reset any positioning and open modal (only for images)
+        // It was a click, not a drag - reset any positioning and open modal (only for images, and not for sketch containers)
         element.style.position = '';
         element.style.left = '';
         element.style.top = '';
         element.style.transform = '';
         
-        if (element.src) {
+        if (element.src && !skipImageModal) {
           openModal(element.src, element.alt);
         }
       }
@@ -348,8 +351,8 @@ function initDraggableGallery(containerId = 'draggableContainer') {
         element.dataset.wasDragged = 'false'; // Reset for next interaction
         return; // Don't open modal if it was a drag
       }
-      // Only open modal for images, not text post-its
-      if (element.src) {
+      // Only open modal for images, not text post-its (and not for sketch containers — they use sketch modal)
+      if (element.src && !skipImageModal) {
         openModal(element.src, element.alt);
       }
     });

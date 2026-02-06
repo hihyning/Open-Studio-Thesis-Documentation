@@ -372,94 +372,6 @@ ul {
   text-align: center;
 }
 
-.sketch-modal.open {
-  display: flex;
-}
-
-.sketch-modal-content {
-  position: relative;
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  max-width: 90vw;
-  max-height: 90vh;
-  transform: scale(0.8);
-  opacity: 0;
-  transition: all 0.3s ease;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  width: 800px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.sketch-modal.open .sketch-modal-content {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.sketch-slide-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sketch-slide {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: contain;
-  transition: opacity 0.3s ease;
-  display: none;
-}
-
-.sketch-slide.active {
-  display: block;
-}
-
-.sketch-nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: rgba(255,255,255,0.9);
-  border: 1px solid rgba(0,0,0,0.1);
-  padding: 12px 16px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink);
-}
-
-.sketch-nav-btn:hover {
-  background: rgba(255,255,255,1);
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.sketch-prev-btn {
-  left: 20px;
-}
-
-.sketch-next-btn {
-  right: 20px;
-}
-
 /* Grid Paper Background */
 .grid-paper {
   background-color: var(--bg);
@@ -903,6 +815,17 @@ header {
   margin-right: auto;
   justify-content: center;
   align-items: center;
+}
+
+/* Keep IAT Lab popup (and its box-shadow) contained to the card, not full viewport */
+#iatLabModal .modal-content {
+  width: fit-content;
+  max-width: min(90vw, 520px);
+}
+
+/* No dim overlay for IAT Lab modal — popup only */
+#iatLabModal .modal-backdrop {
+  background: transparent;
 }
 
 #iatLabProceed:hover {

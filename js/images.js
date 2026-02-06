@@ -63,6 +63,9 @@ async function init() {
     // Initialize DOM elements
     initializeElements();
     
+    // Set search placeholder with live source count
+    updateSearchPlaceholder();
+    
     // Restore state from localStorage and URL
     restoreState();
     
@@ -79,6 +82,13 @@ async function init() {
   } catch (error) {
     console.error('Failed to initialize:', error);
     showError('Failed to load images data');
+  }
+}
+
+function updateSearchPlaceholder() {
+  if (elements.search) {
+    const total = images.length;
+    elements.search.placeholder = `Search from ${total} sources...`;
   }
 }
 
