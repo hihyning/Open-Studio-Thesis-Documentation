@@ -441,20 +441,19 @@ function applyFilters() {
     
     // Category and tag filters
     if (currentFilters.categories.length > 0 || currentFilters.tags.length > 0) {
-      const hasCategory = currentFilters.categories.length === 0 || 
-        (currentFilters.logic === 'and' 
-          ? currentFilters.categories.every(cat => item.categories?.includes(cat))
-          : currentFilters.categories.some(cat => item.categories?.includes(cat)));
-      
-      const hasTag = currentFilters.tags.length === 0 || 
-        (currentFilters.logic === 'and'
-          ? currentFilters.tags.every(tag => item.tags?.includes(tag))
-          : currentFilters.tags.some(tag => item.tags?.includes(tag)));
-      
       if (currentFilters.logic === 'and') {
-        return hasCategory && hasTag;
+        const hasAllCategories = currentFilters.categories.length === 0 ||
+          currentFilters.categories.every(cat => item.categories?.includes(cat));
+        const hasAllTags = currentFilters.tags.length === 0 ||
+          currentFilters.tags.every(tag => item.tags?.includes(tag));
+        return hasAllCategories && hasAllTags;
       } else {
-        return hasCategory || hasTag;
+        // OR: show items that have ANY selected category OR ANY selected tag
+        const hasAnyCategory = currentFilters.categories.length > 0 &&
+          currentFilters.categories.some(cat => item.categories?.includes(cat));
+        const hasAnyTag = currentFilters.tags.length > 0 &&
+          currentFilters.tags.some(tag => item.tags?.includes(tag));
+        return hasAnyCategory || hasAnyTag;
       }
     }
     

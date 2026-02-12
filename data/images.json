@@ -801,5 +801,41 @@
     "Text"
     ],
     "notes": "recommended by Andrew LeClair during office hours, cross between 256 in image selection and format-enjoyed how it tries to define common terms to establish a baseline understanding"
+  },
+  {
+    "id": "img-053",
+    "src": "assets/MakingCommon_ElaineLopez.jpg",
+    "title": "Making Common",
+    "creator": "Elaine Lopez",
+    "year": 2019,
+    "credit_url": "https://digitalcommons.risd.edu/masterstheses/332/",
+    "categories": [
+"Book",
+"Commentary",
+"Cultural",
+"Editorial",
+"Education",
+"Multilingual",
+"Print",
+"Text"
+    ],
+    "notes": "Elaine's RISD MFA thesis! discusses a lot of similar themes to my own work, particularly the idea of making culturally specific work and feeling supported to do so in an educational context"
+  },
+  {
+    "id": "img-054",
+    "src": "assets/TeachingtoTransgress_BellHooks.jpg",
+    "title": "Teaching to Transgress",
+    "creator": "Bell Hooks",
+    "year": 1994,
+    "credit_url": "https://academictrap.wordpress.com/wp-content/uploads/2015/03/bell-hooks-teaching-to-transgress.pdf",
+    "categories": [
+      "Book",
+      "Commentary",
+      "Cultural",
+      "Education",
+      "History",
+      "Text"
+    ],
+    "notes": "highly suggested by Elaine, very personal account on Hook's own philosophies on education + racial justice/lens, less design and more on pedagogy"
   }
 ]
