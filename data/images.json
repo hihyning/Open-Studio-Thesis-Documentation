@@ -837,5 +837,53 @@
       "Text"
     ],
     "notes": "highly suggested by Elaine, very personal account on Hook's own philosophies on education + racial justice/lens, less design and more on pedagogy"
+  },
+  {
+    "id": "img-055",
+    "src": "assets/GobyGarden_NicoChilla.png",
+    "title": "Goby Garden",
+    "creator": "Nico Chilla",
+    "year": 2022,
+    "credit_url": "https://goby.garden/",
+    "categories": [
+      "Collection",
+      "Tech",
+      "Text",
+      "Website"
+    ],
+    "notes": "such a delightful find! Nico ended up being my NYT fellowship interviewer and when resesrching work I came across this process site also for his thesis! so cool to see that others have explored this idea and mode of exploring process before. I enjoyed how it was less organised for the public and more for himself"
+  },
+  {
+    "id": "img-056",
+    "src": "assets/Broadsheet_chsmc.org.png",
+    "title": "Broadsheet",
+    "creator": "Chase McCoy",
+    "year": 2026,
+    "credit_url": "https://broadsheet.chsmc.org/",
+    "categories": [
+      "Collection",
+      "Tech",
+      "Text",
+      "Website"
+    ],
+    "notes": "this was the original site that inspired Nico's, enjoying the references"
+  },
+  {
+    "id": "img-057",
+    "src": "assets/UntappedJournal.png",
+    "title": "Making Space–Untapped Journal",
+    "creator": "Untapped Journal",
+    "year": 2026,
+    "credit_url": "https://untappedjournal.com/making-space",
+    "categories": [
+      "Branding",
+      "Collection",
+      "Cultural",
+      "Editorial",
+      "History",
+      "Text",
+      "Website"
+    ],
+    "notes": "found this site through the name, since its about to be our thesis fair brand lol, Jennifer sent it into the slack as a reference, loved the way the information was organised and the simplistic identity"
   }
 ]
