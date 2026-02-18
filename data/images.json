@@ -885,5 +885,57 @@
       "Website"
     ],
     "notes": "found this site through the name, since its about to be our thesis fair brand lol, Jennifer sent it into the slack as a reference, loved the way the information was organised and the simplistic identity"
+  },
+  {
+    "id": "img-058",
+    "src": "assets/EyeonDesign_AIGA.jpg",
+    "title": "What It Means to Be a Designer Today",
+    "creator": "AIGA’s Eye on Design",
+    "year": 2022,
+    "credit_url": "https://www.aiga.org/perspectives/aiga-eye-on-design",
+    "categories": [
+      "Book",
+      "Collection",
+      "Commentary",
+      "Cultural",
+      "Education",
+      "History",
+      "Print",
+      "Tech",
+      "Text"
+    ],
+    "notes": "finally bought this book and have been a fan of Eye on Design forever, so glad to see the format of essay collection being put together"
+  },
+  {
+    "id": "img-059",
+    "src": "assets/Typecooker.png",
+    "title": "Typecooker",
+    "creator": "Erik van Blokland",
+    "year": 2011,
+    "credit_url": "https://typecooker.com/",
+    "categories": [
+      "Education",
+      "Tech",
+      "Website"
+    ],
+    "notes": "type design educational tool that generates ideas for typeface practice, introduced in my type design class"
+  },
+  {
+    "id": "img-060",
+    "src": "assets/Public Pedagogy_Darren Raven.png",
+    "title": "Public Pedagogy",
+    "creator": "Darren Raven",
+    "year": 2026,
+    "credit_url": "https://www.instagram.com/drnraven/",
+    "categories": [
+      "Collection",
+      "Commentary",
+      "Cultural",
+      "Education",
+      "Tech",
+      "Text",
+      "Typography"
+    ],
+    "notes": "daily posting practice of Uni Manchester prof who wants to democratise design education in this digital zine like format, very inspiring content+form wise"
   }
 ]

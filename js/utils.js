@@ -984,6 +984,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('draggableContainer2')) {
     initDraggableGallery('draggableContainer2');
   }
+  if (document.getElementById('draggableContainer5')) {
+    initDraggableGallery('draggableContainer5');
+  }
   if (document.getElementById('draggableContainer2b')) {
     initDraggableGallery('draggableContainer2b');
   }
